@@ -1,0 +1,842 @@
+\begin{thebibliography}{105}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Chatterjee et~al.(2010)Chatterjee, Henzinger, and
+  Piterman}]{ChaHP2010}
+\bibinfo{author}{K.~Chatterjee}, \bibinfo{author}{T.~A. Henzinger},
+  \bibinfo{author}{N.~Piterman},
+\newblock \bibinfo{title}{{Strategy logic}},
+\newblock \bibinfo{journal}{Information and Computation} \bibinfo{volume}{208}
+  (\bibinfo{year}{2010}) \bibinfo{pages}{677--693}.
+%Type = Article
+\bibitem[{Zhang and Thielscher(2015)}]{ZhangT2015}
+\bibinfo{author}{D.~Zhang}, \bibinfo{author}{M.~Thielscher},
+\newblock \bibinfo{title}{{Representing and Reasoning about Game Strategies}},
+\newblock \bibinfo{journal}{Journal of Philosophical Logic}
+  \bibinfo{volume}{44} (\bibinfo{year}{2015}) \bibinfo{pages}{203--236}.
+%Type = Inproceedings
+\bibitem[{Xiong and Liu(2016)}]{XiongL2016a}
+\bibinfo{author}{L.~Xiong}, \bibinfo{author}{Y.~Liu},
+\newblock \bibinfo{title}{{Strategy Representation and Reasoning for Incomplete
+  Information Concurrent Games in the Situation Calculus}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Fifth International
+  Joint Conference on Artificial Intelligence (IJCAI-2016)},
+  \bibinfo{year}{2016}, pp. \bibinfo{pages}{1322--1329}.
+%Type = Book
+\bibitem[{Ferguson(2018)}]{Fer2018}
+\bibinfo{author}{T.~S. Ferguson}, \bibinfo{title}{{Game Theory}},
+  \bibinfo{publisher}{World Scientific}, \bibinfo{year}{2018}.
+%Type = Article
+\bibitem[{Bouton(1901)}]{Bou1901}
+\bibinfo{author}{C.~L. Bouton},
+\newblock \bibinfo{title}{{Nim, a Game with a Complete Mathematical Theory}},
+\newblock \bibinfo{journal}{Annals of Mathematics} \bibinfo{volume}{3}
+  (\bibinfo{year}{1901}) \bibinfo{pages}{35--39}.
+%Type = Article
+\bibitem[{Wythoff(1907)}]{Wyt1907}
+\bibinfo{author}{W.~A. Wythoff},
+\newblock \bibinfo{title}{A modification of the game of nim},
+\newblock \bibinfo{journal}{Nieuw Archief voor Wiskunde} \bibinfo{volume}{7}
+  (\bibinfo{year}{1907}) \bibinfo{pages}{199--202}.
+%Type = Article
+\bibitem[{Schuh(1952)}]{Sch1952}
+\bibinfo{author}{F.~Schuh},
+\newblock \bibinfo{title}{{The Game of Divisions}},
+\newblock \bibinfo{journal}{Nieuw Tijdschrift voor Wiskunde}
+  \bibinfo{volume}{39} (\bibinfo{year}{1952}) \bibinfo{pages}{299--304}.
+%Type = Article
+\bibitem[{Ferguson(1998)}]{Fer1998}
+\bibinfo{author}{T.~S. Ferguson},
+\newblock \bibinfo{title}{{Some Chip Transfer Games}},
+\newblock \bibinfo{journal}{Theoretical Computer Science} \bibinfo{volume}{191}
+  (\bibinfo{year}{1998}) \bibinfo{pages}{157--171}.
+%Type = Article
+\bibitem[{Liu and Zhao(2015)}]{LiuZ2015}
+\bibinfo{author}{W.~Liu}, \bibinfo{author}{M.~Zhao},
+\newblock \bibinfo{title}{{General Restrictions of Wythoff-like Games}},
+\newblock \bibinfo{journal}{Theoretical Computer Science} \bibinfo{volume}{602}
+  (\bibinfo{year}{2015}) \bibinfo{pages}{80--88}.
+%Type = Article
+\bibitem[{Ahn et~al.(2018)Ahn, Chen, Chen, Erives, Fleming, Gerovitch,
+  Gopalakrishna, Khovanova, Malur, Polina, and Sahoo}]{AhnCCEFGGKMPS2017}
+\bibinfo{author}{J.~Ahn}, \bibinfo{author}{B.~Chen}, \bibinfo{author}{R.~Chen},
+  \bibinfo{author}{E.~Erives}, \bibinfo{author}{J.~Fleming},
+  \bibinfo{author}{M.~Gerovitch}, \bibinfo{author}{T.~Gopalakrishna},
+  \bibinfo{author}{T.~Khovanova}, \bibinfo{author}{N.~Malur},
+  \bibinfo{author}{N.~Polina}, \bibinfo{author}{P.~Sahoo},
+\newblock \bibinfo{title}{{On Variations of Nim and Chomp}},
+\newblock \bibinfo{journal}{Minnesota Journal of Undergraduate Mathematics}
+  \bibinfo{volume}{4} (\bibinfo{year}{2018}) \bibinfo{pages}{1--11}.
+%Type = Article
+\bibitem[{Golomb(1966)}]{Gol1966}
+\bibinfo{author}{S.~W. Golomb},
+\newblock \bibinfo{title}{A mathematical investigation of games of
+  ``take-away"},
+\newblock \bibinfo{journal}{Journal of Combinatorial Theory}
+  \bibinfo{volume}{1} (\bibinfo{year}{1966}) \bibinfo{pages}{443--458}.
+%Type = Article
+\bibitem[{Beaulieu et~al.(2013)Beaulieu, Burke, and Duch{\^e}ne}]{BeaBD2013}
+\bibinfo{author}{G.~Beaulieu}, \bibinfo{author}{K.~Burke},
+  \bibinfo{author}{E.~Duch{\^e}ne},
+\newblock \bibinfo{title}{{Impartial Coloring Games}},
+\newblock \bibinfo{journal}{Theoretical Computer Science} \bibinfo{volume}{485}
+  (\bibinfo{year}{2013}) \bibinfo{pages}{49--60}.
+%Type = Article
+\bibitem[{Sopena(2016)}]{Sop2016}
+\bibinfo{author}{E.~Sopena},
+\newblock \bibinfo{title}{{$i$-Mark: A new subtraction division game}},
+\newblock \bibinfo{journal}{Theoretical Computer Science} \bibinfo{volume}{627}
+  (\bibinfo{year}{2016}) \bibinfo{pages}{90--101}.
+%Type = Article
+\bibitem[{Gurvich and Ho(2018)}]{GurH2018}
+\bibinfo{author}{V.~Gurvich}, \bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{On tame, pet, domestic, and miserable impartial
+  games}},
+\newblock \bibinfo{journal}{Discrete Applied Mathematics} \bibinfo{volume}{243}
+  (\bibinfo{year}{2018}) \bibinfo{pages}{54--72}.
+%Type = Inproceedings
+\bibitem[{de~Jonge and Zhang(2016)}]{JonZ2016}
+\bibinfo{author}{D.~de~Jonge}, \bibinfo{author}{D.~Zhang},
+\newblock \bibinfo{title}{{Lifted Backward Search for General Game Playing}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Ninth Australasian
+  Joint Conference on Advances in Artificial Intelligence (AI-2016)},
+  \bibinfo{year}{2016}, pp. \bibinfo{pages}{3--16}.
+%Type = Article
+\bibitem[{Fox and Long(2003)}]{FoxL2003}
+\bibinfo{author}{M.~Fox}, \bibinfo{author}{D.~Long},
+\newblock \bibinfo{title}{{PDDL2.1 : An Extension to PDDL for Expressing
+  Temporal Planning Domains}},
+\newblock \bibinfo{journal}{Journal of Artificial Intelligence Research}
+  \bibinfo{volume}{20} (\bibinfo{year}{2003}) \bibinfo{pages}{61--124}.
+%Type = Inproceedings
+\bibitem[{Udupa et~al.(2013)Udupa, Raghavan, Deshmukh, Mador-Haim, Martin, and
+  Alur}]{UduRDMMA2013}
+\bibinfo{author}{A.~Udupa}, \bibinfo{author}{A.~Raghavan},
+  \bibinfo{author}{J.~V. Deshmukh}, \bibinfo{author}{S.~Mador-Haim},
+  \bibinfo{author}{M.~M.~K. Martin}, \bibinfo{author}{R.~Alur},
+\newblock \bibinfo{title}{{TRANSIT: Specifying Protocols with Concolic
+  Snippets}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-Fourth Annual ACM
+  SIGPLAN Conference on Programming Language Design and Implementation
+  (PLDI-2013)}, \bibinfo{year}{2013}, pp. \bibinfo{pages}{287--296}.
+%Type = Incollection
+\bibitem[{Moura and Bj{\o}rner(2008)}]{MouB2008}
+\bibinfo{author}{L.~D. Moura}, \bibinfo{author}{N.~Bj{\o}rner},
+\newblock \bibinfo{title}{{Z3: an Efficient SMT Solver}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Fourteenth International
+  Conference on Tools and Algorithms for the Construction and Analysis of
+  Systems (TACAS-2008)}, volume \bibinfo{volume}{4963} of
+  \textit{\bibinfo{series}{Lecture Notes in Computer Science}},
+  \bibinfo{publisher}{Springer}, \bibinfo{year}{2008}, pp.
+  \bibinfo{pages}{337--340}.
+%Type = Incollection
+\bibitem[{Barrett et~al.(2011)Barrett, Conway, Deters, Hadarean, Jovanovic,
+  King, Reynolds, and Tinelli}]{BarCDHJKRT2011}
+\bibinfo{author}{C.~Barrett}, \bibinfo{author}{C.~L. Conway},
+  \bibinfo{author}{M.~Deters}, \bibinfo{author}{L.~Hadarean},
+  \bibinfo{author}{D.~Jovanovic}, \bibinfo{author}{T.~King},
+  \bibinfo{author}{A.~Reynolds}, \bibinfo{author}{C.~Tinelli},
+\newblock \bibinfo{title}{{CVC4}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenety-Third
+  International Conference on Computer Aided Verification (CAV-2011)}, volume
+  \bibinfo{volume}{6806} of \textit{\bibinfo{series}{Lecture Notes in Computer
+  Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2011}, pp.
+  \bibinfo{pages}{171--177}.
+%Type = Incollection
+\bibitem[{Cimatti et~al.(2013)Cimatti, Griggio, Schaafsma, and
+  Sebastiani}]{CimGSS2013}
+\bibinfo{author}{A.~Cimatti}, \bibinfo{author}{A.~Griggio},
+  \bibinfo{author}{B.~J. Schaafsma}, \bibinfo{author}{R.~Sebastiani},
+\newblock \bibinfo{title}{{The MathSAT5 SMT Solver}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Nineteenth International
+  Conference on Tools and Algorithms for the Construction and Analysis of
+  Systems (TACAS-2013)}, volume \bibinfo{volume}{7795} of
+  \textit{\bibinfo{series}{Lecture Notes in Computer Science}},
+  \bibinfo{publisher}{Springer}, \bibinfo{year}{2013}, pp.
+  \bibinfo{pages}{93--107}.
+%Type = Inproceedings
+\bibitem[{Wu et~al.(2020)Wu, Fang, Xiong, Lai, Qiao, Chen, and
+  Rong}]{WuFXLQCR2020}
+\bibinfo{author}{K.~Wu}, \bibinfo{author}{L.~Fang}, \bibinfo{author}{L.~Xiong},
+  \bibinfo{author}{Z.~Lai}, \bibinfo{author}{Y.~Qiao},
+  \bibinfo{author}{K.~Chen}, \bibinfo{author}{F.~Rong},
+\newblock \bibinfo{title}{{Automatic Synthesis of Generalized Winning
+  Strategies of Impartial Combinatorial Games Using {SMT} Solvers}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Ninth International
+  Joint Conference on Artificial Intelligence (IJCAI-2020)},
+  \bibinfo{year}{2020}, pp. \bibinfo{pages}{1703--1711}.
+%Type = Inproceedings
+\bibitem[{Fang et~al.(2024)Fang, Yang, Cheng, Hao, Guan, and Xiong}]{FanYD2024}
+\bibinfo{author}{L.~Fang}, \bibinfo{author}{M.~Yang},
+  \bibinfo{author}{D.~Cheng}, \bibinfo{author}{Y.~Hao},
+  \bibinfo{author}{Q.~Guan}, \bibinfo{author}{L.~Xiong},
+\newblock \bibinfo{title}{{Generalized Strategy Synthesis of Infinite-State
+  Impartial Combinatorial Games via Exact Binary Classification}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Third International
+  Conference on Autonomous Agents and Multiagent Systems (AAMAS-2024)},
+  \bibinfo{year}{2024}, pp. \bibinfo{pages}{562--570}.
+%Type = Article
+\bibitem[{Cooper(1972)}]{Coo1972}
+\bibinfo{author}{D.~C. Cooper},
+\newblock \bibinfo{title}{{Theorem Proving in Arithmetic without
+  Multiplication}},
+\newblock \bibinfo{journal}{Machine Intelligence} \bibinfo{volume}{7}
+  (\bibinfo{year}{1972}) \bibinfo{pages}{300}.
+%Type = Incollection
+\bibitem[{Monniaux(2010)}]{Mon2010}
+\bibinfo{author}{D.~Monniaux},
+\newblock \bibinfo{title}{{Quantifier Elimination by Lazy Model Enumeration}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Second
+  International Conference on Computer Aided Verification (CAV-2010)}, volume
+  \bibinfo{volume}{6174} of \textit{\bibinfo{series}{Lecture Notes in Computer
+  Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2010}, pp.
+  \bibinfo{pages}{585--599}.
+%Type = Article
+\bibitem[{Ginsburg and Spanier(1966)}]{GinS1966}
+\bibinfo{author}{S.~Ginsburg}, \bibinfo{author}{E.~Spanier},
+\newblock \bibinfo{title}{{Semigroups, Presburger formulas, and languages}},
+\newblock \bibinfo{journal}{Pacific Journal of Mathematics}
+  \bibinfo{volume}{16} (\bibinfo{year}{1966}) \bibinfo{pages}{285--296}.
+%Type = Article
+\bibitem[{Cobham(1969)}]{Cob1969}
+\bibinfo{author}{A.~Cobham},
+\newblock \bibinfo{title}{On the base-dependence of sets of numbers
+  recognizable by finite automata},
+\newblock \bibinfo{journal}{Mathematical Systems Theory} \bibinfo{volume}{3}
+  (\bibinfo{year}{1969}) \bibinfo{pages}{186--192}.
+%Type = Book
+\bibitem[{Minsky(1967)}]{Min1967}
+\bibinfo{author}{M.~Minsky}, \bibinfo{title}{{Computation: Finite and Infinite
+  Machines}}, \bibinfo{publisher}{Prentice-Hall}, \bibinfo{year}{1967}.
+%Type = Article
+\bibitem[{Hermes(1954)}]{Her1954}
+\bibinfo{author}{H.~Hermes},
+\newblock \bibinfo{title}{Die universalit\"{a}t programmgesteuerter
+  rechenmaschinen},
+\newblock \bibinfo{journal}{Mathematisch-Physikalische Semesterberichte
+  (G\"{o}ttingen)} \bibinfo{volume}{4} (\bibinfo{year}{1954})
+  \bibinfo{pages}{42--53}.
+%Type = Article
+\bibitem[{Ershov(1958)}]{Ers1958}
+\bibinfo{author}{A.~P. Ershov},
+\newblock \bibinfo{title}{Ob operatsionnykh algoritmakh},
+\newblock \bibinfo{journal}{Doklady Akademii Nauk SSSR} \bibinfo{volume}{122}
+  (\bibinfo{year}{1958}) \bibinfo{pages}{967--970}.
+%Type = Article
+\bibitem[{P\'{e}ter(1958)}]{Pet1958}
+\bibinfo{author}{R.~P\'{e}ter},
+\newblock \bibinfo{title}{Graphschemata und rekursive funktionen},
+\newblock \bibinfo{journal}{Dialectica} \bibinfo{volume}{12}
+  (\bibinfo{year}{1958}) \bibinfo{pages}{373--393}.
+%Type = Article
+\bibitem[{Minsky(1961)}]{Min1961}
+\bibinfo{author}{M.~L. Minsky},
+\newblock \bibinfo{title}{{Recursive Unsolvability of Post's Problem of ``Tag"
+  and other Topics in Theory of Turing Machines}},
+\newblock \bibinfo{journal}{Annals of Mathematics} \bibinfo{volume}{74}
+  (\bibinfo{year}{1961}) \bibinfo{pages}{437--455}.
+%Type = Book
+\bibitem[{Cutland(1980)}]{Cut1980}
+\bibinfo{author}{N.~J. Cutland}, \bibinfo{title}{{Computability: An
+  introduction to recursive function theory}}, \bibinfo{publisher}{Cambridge
+  University Press}, \bibinfo{year}{1980}.
+%Type = Inproceedings
+\bibitem[{Zermelo(1913)}]{Zer1913}
+\bibinfo{author}{E.~Zermelo},
+\newblock \bibinfo{title}{{\"U}ber eine anwendung der mengenlehre auf die
+  theorie des schachspiels},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Fifth International
+  Congress of Mathematicians Conference (ICM-1913)}, \bibinfo{year}{1913}, pp.
+  \bibinfo{pages}{501--504}.
+%Type = Incollection
+\bibitem[{Gale and Stewart(1953)}]{GalS1953}
+\bibinfo{author}{D.~Gale}, \bibinfo{author}{F.~M. Stewart},
+\newblock \bibinfo{title}{{Infinite games with perfect information}},
+\newblock in: \bibinfo{editor}{H.~W. Kuhn}, \bibinfo{editor}{A.~W. Tucker}
+  (Eds.), \bibinfo{booktitle}{Contributions to the Theory of Games},
+  volume~\bibinfo{volume}{2} of \textit{\bibinfo{series}{Annals of Mathematics
+  Studies}}, \bibinfo{publisher}{Princeton University Press},
+  \bibinfo{year}{1953}, pp. \bibinfo{pages}{245--266}.
+%Type = Article
+\bibitem[{Hoffmann and Brafman(2006)}]{HofB2006}
+\bibinfo{author}{J.~Hoffmann}, \bibinfo{author}{R.~I. Brafman},
+\newblock \bibinfo{title}{{Conformant planning via heuristic forward search: A
+  new approach}},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{170}
+  (\bibinfo{year}{2006}) \bibinfo{pages}{507--541}.
+%Type = Article
+\bibitem[{Rintanen(2012)}]{Rin2012}
+\bibinfo{author}{J.~Rintanen},
+\newblock \bibinfo{title}{{Planning as satisfiability: Heuristics}},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{193}
+  (\bibinfo{year}{2012}) \bibinfo{pages}{45--86}.
+%Type = Inproceedings
+\bibitem[{Presburger(1929)}]{Pre1929}
+\bibinfo{author}{M.~Presburger},
+\newblock \bibinfo{title}{\"{U}ber die vollst\"{a}ndigkeit eines gewissen
+  systems der arithmetik ganzer zahlen, in welchem die addition als einzige
+  operation hervortritt},
+\newblock in: \bibinfo{booktitle}{Comptes Rendus du I congrès de
+  Mathématiciens des Pays Slaves}, \bibinfo{year}{1929}, pp.
+  \bibinfo{pages}{92--101}.
+%Type = Article
+\bibitem[{Fraenkel(2011)}]{Fra2011}
+\bibinfo{author}{A.~S. Fraenkel},
+\newblock \bibinfo{title}{{Aperiodic subtraction games}},
+\newblock \bibinfo{journal}{Electronic Journal of Combinatorics}
+  \bibinfo{volume}{18} (\bibinfo{year}{2011}) \bibinfo{pages}{1--12}.
+%Type = Article
+\bibitem[{Yaglom(2001)}]{Yag2001}
+\bibinfo{author}{I.~M. Yaglom},
+\newblock \bibinfo{title}{Two games with matchsticks},
+\newblock \bibinfo{journal}{Kvant Selecta: Combinatorics, I}
+  \bibinfo{volume}{1} (\bibinfo{year}{2001}) \bibinfo{pages}{1--8}.
+%Type = Book
+\bibitem[{Berlekamp et~al.(2001)Berlekamp, Conway, and Guy}]{BerCG2001}
+\bibinfo{author}{E.~R. Berlekamp}, \bibinfo{author}{J.~H. Conway},
+  \bibinfo{author}{R.~K. Guy}, \bibinfo{title}{Winning Ways for Your
+  Mathematical Plays}, \bibinfo{edition}{2nd} ed., \bibinfo{publisher}{AK
+  Peters/CRC Press}, \bibinfo{year}{2001}.
+%Type = Article
+\bibitem[{Larsson and W\"{a}stlund(2013)}]{LarW2013}
+\bibinfo{author}{U.~Larsson}, \bibinfo{author}{J.~W\"{a}stlund},
+\newblock \bibinfo{title}{{From heaps of matches to the limits of
+  computability}},
+\newblock \bibinfo{journal}{The Electronic Journal of Combinatorics}
+  \bibinfo{volume}{20} (\bibinfo{year}{2013}) \bibinfo{pages}{1--12}.
+%Type = Article
+\bibitem[{Larsson(2013)}]{Lar2013}
+\bibinfo{author}{U.~Larsson},
+\newblock \bibinfo{title}{Impartial games emulating one-dimensional cellular
+  automata and undecidability},
+\newblock \bibinfo{journal}{Journal of Combinatorial Theory, Series A}
+  \bibinfo{volume}{120} (\bibinfo{year}{2013}) \bibinfo{pages}{1116--1130}.
+%Type = Inproceedings
+\bibitem[{Chu et~al.(2023)Chu, Cai, and Luo}]{ChuCL2023}
+\bibinfo{author}{Y.~Chu}, \bibinfo{author}{S.~Cai}, \bibinfo{author}{C.~Luo},
+\newblock \bibinfo{title}{{NuWLS: Improving Local Search for (Weighted) Partial
+  MaxSAT by New Weighting Techniques}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-Seventh AAAI
+  Conference on Artificial Intelligence (AAAI-2023)}, \bibinfo{year}{2023}, pp.
+  \bibinfo{pages}{3915--3923}.
+%Type = Article
+\bibitem[{Welter(1952)}]{Wel1952}
+\bibinfo{author}{C.~P. Welter},
+\newblock \bibinfo{title}{{The advancing operation in a special abelian
+  group}},
+\newblock \bibinfo{journal}{Indagationes Mathematicae} \bibinfo{volume}{55}
+  (\bibinfo{year}{1952}) \bibinfo{pages}{304--314}.
+%Type = Incollection
+\bibitem[{Alur et~al.(2017)Alur, Radhakrishna, and Udupa}]{AlurRU2017}
+\bibinfo{author}{R.~Alur}, \bibinfo{author}{A.~Radhakrishna},
+  \bibinfo{author}{A.~Udupa},
+\newblock \bibinfo{title}{{Scaling Enumerative Program Synthesis via Divide and
+  Conquer}},
+\newblock in: \bibinfo{booktitle}{Proceedings of Twenty-Third International
+  Conference on Tools and Algorithms for the Construction and Analysis of
+  Systems (TACAS-2017)}, volume \bibinfo{volume}{10205} of
+  \textit{\bibinfo{series}{Lecture Notes in Computer Science}},
+  \bibinfo{publisher}{Springer}, \bibinfo{year}{2017}, pp.
+  \bibinfo{pages}{319--336}.
+%Type = Book
+\bibitem[{Watson(2002)}]{Wat2002}
+\bibinfo{author}{J.~Watson}, \bibinfo{title}{Strategy: an introduction to game
+  theory}, \bibinfo{edition}{{Third}} ed., \bibinfo{publisher}{W. W. Norton \&
+  Company}, \bibinfo{year}{2002}.
+%Type = Article
+\bibitem[{Beling and Rogalski(2020)}]{BelM2020}
+\bibinfo{author}{P.~Beling}, \bibinfo{author}{M.~Rogalski},
+\newblock \bibinfo{title}{{On Pruning Search Trees of Impartial Games}},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{283}
+  (\bibinfo{year}{2020}) \bibinfo{pages}{103262}.
+%Type = Book
+\bibitem[{Heineman et~al.(2008)Heineman, Pollice, and Selkow}]{HeiPS2008}
+\bibinfo{author}{G.~T. Heineman}, \bibinfo{author}{G.~Pollice},
+  \bibinfo{author}{S.~Selkow}, \bibinfo{title}{Algorithms in a Nutshell},
+  \bibinfo{publisher}{O'Reilly Media}, \bibinfo{year}{2008}.
+%Type = Inproceedings
+\bibitem[{Luo and Liu(2019)}]{LuoL2019}
+\bibinfo{author}{K.~Luo}, \bibinfo{author}{Y.~Liu},
+\newblock \bibinfo{title}{{Automatic Verification of FSA Strategies via
+  Counterexample-Guided Local Search for Invariants}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Eighth
+  International Joint Conference on Artificial Intelligence (IJCAI-2019)},
+  \bibinfo{year}{2019}, pp. \bibinfo{pages}{1814--1821}.
+%Type = Inproceedings
+\bibitem[{Luo and Liu(2022)}]{LuoL2022}
+\bibinfo{author}{K.~Luo}, \bibinfo{author}{Y.~Liu},
+\newblock \bibinfo{title}{{Automated Synthesis of Generalized Invariant
+  Strategies via Counterexample-Guided Strategy Refinement}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-Sixth AAAI
+  Conference on Artificial Intelligence (AAAI-2022)}, \bibinfo{year}{2022}, pp.
+  \bibinfo{pages}{5800--5808}.
+%Type = Inproceedings
+\bibitem[{Pnueli and Rosner(1989)}]{PnuR1989}
+\bibinfo{author}{A.~Pnueli}, \bibinfo{author}{R.~Rosner},
+\newblock \bibinfo{title}{{On the Synthesis of a Reactive Module}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Sixteenth ACM
+  SIGPLAN-SIGACT Symposium Conference on Principles of programming languages
+  (POPL-1989)}, \bibinfo{year}{1989}, pp. \bibinfo{pages}{179--190}.
+%Type = Inproceedings
+\bibitem[{Asarin et~al.(1998)Asarin, Maler, Pnueli, and Sifakis}]{AsaMPS1998}
+\bibinfo{author}{E.~Asarin}, \bibinfo{author}{O.~Maler},
+  \bibinfo{author}{A.~Pnueli}, \bibinfo{author}{J.~Sifakis},
+\newblock \bibinfo{title}{{Controller Synthesis for Timed Automata}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Fifth International
+  Federation of Automatic Control Conference on System Structure and Control
+  (SSC-1998)}, \bibinfo{year}{1998}, pp. \bibinfo{pages}{447--452}.
+%Type = Inproceedings
+\bibitem[{Niklas et~al.(2015)Niklas, Alexander, Nina, and Leonid}]{NikAN2015}
+\bibinfo{author}{E.~Niklas}, \bibinfo{author}{L.~Alexander},
+  \bibinfo{author}{N.~Nina}, \bibinfo{author}{R.~Leonid},
+\newblock \bibinfo{title}{{SAT-based Strategy Extraction in Reachability
+  Games}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Ninth International
+  Conference on Artificial Intelligence (AAAI-2015)}, \bibinfo{year}{2015}, pp.
+  \bibinfo{pages}{3738--3745}.
+%Type = Inproceedings
+\bibitem[{Zhu et~al.(2017)Zhu, Tabajara, Li, Pu, and Vardi}]{ZhuTLPV2017}
+\bibinfo{author}{S.~Zhu}, \bibinfo{author}{L.~M. Tabajara},
+  \bibinfo{author}{J.~Li}, \bibinfo{author}{G.~Pu}, \bibinfo{author}{M.~Y.
+  Vardi},
+\newblock \bibinfo{title}{{Symbolic LTL$_f$ Synthesis}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Sixth International
+  Joint Conference on Artificial Intelligence (IJCAI-2017)},
+  \bibinfo{year}{2017}, pp. \bibinfo{pages}{1362--1369}.
+%Type = Inproceedings
+\bibitem[{Camacho et~al.(2018)Camacho, Muise, Baier, and
+  McIlraith}]{CamMBM2018}
+\bibinfo{author}{A.~Camacho}, \bibinfo{author}{C.~Muise},
+  \bibinfo{author}{J.~A. Baier}, \bibinfo{author}{S.~A. McIlraith},
+\newblock \bibinfo{title}{{LTL Realizability via Safety and Reachability
+  Games}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Seventh
+  International Joint Conference on Artificial Intelligence (IJCAI-2018)},
+  \bibinfo{year}{2018}, pp. \bibinfo{pages}{4683--4691}.
+%Type = Inproceedings
+\bibitem[{Giacomo et~al.(2022)Giacomo, Favorito, Li, Vardi, Xiao, and
+  Zhu}]{GiaFLVX2022}
+\bibinfo{author}{G.~D. Giacomo}, \bibinfo{author}{M.~Favorito},
+  \bibinfo{author}{J.~Li}, \bibinfo{author}{M.~Y. Vardi},
+  \bibinfo{author}{S.~Xiao}, \bibinfo{author}{S.~Zhu},
+\newblock \bibinfo{title}{{LTL$_f$ Synthesis as {AND-OR} Graph Search:
+  Knowledge Compilation at Work}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-First International
+  Joint Conference on Artificial Intelligence (IJCAI-2022)},
+  \bibinfo{year}{2022}, pp. \bibinfo{pages}{2591--2598}.
+%Type = Incollection
+\bibitem[{Balachander et~al.(2023)Balachander, Filiot, and Raskin}]{BalFR2023}
+\bibinfo{author}{M.~Balachander}, \bibinfo{author}{E.~Filiot},
+  \bibinfo{author}{J.~Raskin},
+\newblock \bibinfo{title}{{LTL Reactive Synthesis with a Few Hints}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Ninth International
+  Conference on Tools and Algorithms for the Construction and Analysis of
+  Systems (TACAS-2023)}, volume \bibinfo{volume}{13994} of
+  \textit{\bibinfo{series}{Lecture Notes in Computer Science}},
+  \bibinfo{publisher}{Springer}, \bibinfo{year}{2023}, pp.
+  \bibinfo{pages}{309--328}.
+%Type = Incollection
+\bibitem[{Kret{\'{\i}}nsk{\'{y}} et~al.(2023)Kret{\'{\i}}nsk{\'{y}},
+  Meggendorfer, Prokop, and Rieder}]{KreMPR2023}
+\bibinfo{author}{J.~Kret{\'{\i}}nsk{\'{y}}}, \bibinfo{author}{T.~Meggendorfer},
+  \bibinfo{author}{M.~Prokop}, \bibinfo{author}{S.~Rieder},
+\newblock \bibinfo{title}{{Guessing Winning Policies in LTL Synthesis by
+  Semantic Learning}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-Fifth International
+  Conference on Computer Aided Verification (CAV-2023)}, volume
+  \bibinfo{volume}{13964} of \textit{\bibinfo{series}{Lecture Notes in Computer
+  Science}}, \bibinfo{publisher}{Springer, Cham}, \bibinfo{year}{2023}, pp.
+  \bibinfo{pages}{390--414}.
+%Type = Incollection
+\bibitem[{de~Alfaro et~al.(2001)de~Alfaro, Henzinger, and Majumdar}]{AlfHM2001}
+\bibinfo{author}{L.~de~Alfaro}, \bibinfo{author}{T.~A. Henzinger},
+  \bibinfo{author}{R.~Majumdar},
+\newblock \bibinfo{title}{{Symbolic Algorithms for Infinite-State Games}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twelfth International
+  Conference on Computer Aided Verification (CAV-2001)}, volume
+  \bibinfo{volume}{2102} of \textit{\bibinfo{series}{Lecture Notes in Computer
+  Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2001}, pp.
+  \bibinfo{pages}{536--550}.
+%Type = Incollection
+\bibitem[{Neider and Topcu(2016)}]{NeiT2016}
+\bibinfo{author}{D.~Neider}, \bibinfo{author}{U.~Topcu},
+\newblock \bibinfo{title}{{An Automaton Learning Approach to Solving Safety
+  Games over Infinite Graphs}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-second
+  International Conference on Tools and Algorithms for the Construction and
+  Analysis of Systems (TACAS-2016)}, volume \bibinfo{volume}{9636} of
+  \textit{\bibinfo{series}{Lecture Notes in Computer Science}},
+  \bibinfo{publisher}{Springer}, \bibinfo{year}{2016}, pp.
+  \bibinfo{pages}{204--221}.
+%Type = Incollection
+\bibitem[{Cachat(2002)}]{Cac2002}
+\bibinfo{author}{T.~Cachat},
+\newblock \bibinfo{title}{{Symbolic Strategy Synthesis for Games on Pushdown
+  Graphs}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-ninth International
+  Colloquium on Automata, Languages and Programming (ICALP-2002)}, volume
+  \bibinfo{volume}{2380} of \textit{\bibinfo{series}{Lecture Notes in Computer
+  Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2002}, pp.
+  \bibinfo{pages}{704--715}.
+%Type = Inproceedings
+\bibitem[{Chatterjee and Fijalkow(2013)}]{ChaF2013}
+\bibinfo{author}{K.~Chatterjee}, \bibinfo{author}{N.~Fijalkow},
+\newblock \bibinfo{title}{{Infinite-state games with finitary conditions}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-First EACSL Annual
+  Conference on Computer Science Logic (CSL-2013)}, \bibinfo{publisher}{Schloss
+  Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik}, \bibinfo{year}{2013}, pp.
+  \bibinfo{pages}{181--196}.
+%Type = Article
+\bibitem[{Cachat(2003)}]{Cac2003}
+\bibinfo{author}{T.~Cachat},
+\newblock \bibinfo{title}{{Uniform Solution of Parity Games on
+  Prefix-Recognizable Graphs}},
+\newblock \bibinfo{journal}{Electronic Notes in Theoretical Computer Science}
+  \bibinfo{volume}{68} (\bibinfo{year}{2003}) \bibinfo{pages}{71--84}.
+%Type = Inproceedings
+\bibitem[{Beyene et~al.(2014)Beyene, Chaudhuri, Popeea, and
+  Rybalchenko}]{BeyCPR2014}
+\bibinfo{author}{T.~Beyene}, \bibinfo{author}{S.~Chaudhuri},
+  \bibinfo{author}{C.~Popeea}, \bibinfo{author}{A.~Rybalchenko},
+\newblock \bibinfo{title}{{A Constraint-based Approach to Solving Games on
+  Infinite Graphs}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Forty-First ACM
+  SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL-2014)},
+  \bibinfo{year}{2014}, pp. \bibinfo{pages}{221--233}.
+%Type = Article
+\bibitem[{Farzan and Kincaid(2017)}]{FarK2018}
+\bibinfo{author}{A.~Farzan}, \bibinfo{author}{Z.~Kincaid},
+\newblock \bibinfo{title}{{Strategy Synthesis for Linear Arithmetic Games}},
+\newblock \bibinfo{journal}{Proceedings of the ACM on Programming Languages}
+  \bibinfo{volume}{2} (\bibinfo{year}{2017}) \bibinfo{pages}{1--30}.
+%Type = Incollection
+\bibitem[{Baier et~al.(2021)Baier, Coenen, Finkbeiner, Funke, Jantsch, and
+  Siber}]{BaiCF2021}
+\bibinfo{author}{C.~Baier}, \bibinfo{author}{N.~Coenen},
+  \bibinfo{author}{B.~Finkbeiner}, \bibinfo{author}{F.~Funke},
+  \bibinfo{author}{S.~Jantsch}, \bibinfo{author}{J.~Siber},
+\newblock \bibinfo{title}{{Causality-based game solving}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-Third International
+  Conference on Computer Aided Verification (CAV-2021)}, volume
+  \bibinfo{volume}{12759} of \textit{\bibinfo{series}{Lecture Notes in Computer
+  Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2021}, pp.
+  \bibinfo{pages}{894--917}.
+%Type = Inproceedings
+\bibitem[{Faella and Parlato(2023)}]{FaeP2023}
+\bibinfo{author}{M.~Faella}, \bibinfo{author}{G.~Parlato},
+\newblock \bibinfo{title}{{Reachability Games Modulo Theories with a Bounded
+  Safety Player}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-Seventh AAAI
+  Conference on Artificial Intelligence (AAAI-2023)}, \bibinfo{year}{2023}, pp.
+  \bibinfo{pages}{6330--6337}.
+%Type = Incollection
+\bibitem[{Beyene et~al.(2013)Beyene, Popeea, and Rybalchenko}]{BeyPR2013}
+\bibinfo{author}{T.~A. Beyene}, \bibinfo{author}{C.~Popeea},
+  \bibinfo{author}{A.~Rybalchenko},
+\newblock \bibinfo{title}{{Solving Existentially Quantified Horn Clauses}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Fifth International
+  Conference on Computer Aided Verification (CAV-2013)}, volume
+  \bibinfo{volume}{8044} of \textit{\bibinfo{series}{Lecture Notes in Computer
+  Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2013}, pp.
+  \bibinfo{pages}{869--882}.
+%Type = Inproceedings
+\bibitem[{Farzan and Kincaid(2016)}]{FarK2016}
+\bibinfo{author}{A.~Farzan}, \bibinfo{author}{Z.~Kincaid},
+\newblock \bibinfo{title}{{Linear Arithmetic Satisfiability via Strategy
+  Improvement}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Fifth International
+  Joint Conference on Artificial Intelligence (IJCAI-2016)},
+  \bibinfo{year}{2016}, pp. \bibinfo{pages}{735--743}.
+%Type = Inproceedings
+\bibitem[{Daniel and Oliver(2019)}]{DanO2019}
+\bibinfo{author}{N.~Daniel}, \bibinfo{author}{M.~Oliver},
+\newblock \bibinfo{title}{{Learning-based Synthesis of Safety Controllers}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Nineteenth International
+  Conference on Formal Methods in Computer Aided Design (FMCAD-2019)},
+  \bibinfo{organization}{IEEE}, \bibinfo{year}{2019}, pp.
+  \bibinfo{pages}{120--128}.
+%Type = Article
+\bibitem[{Heim and Dimitrova(2024)}]{HeiR2024}
+\bibinfo{author}{P.~Heim}, \bibinfo{author}{R.~Dimitrova},
+\newblock \bibinfo{title}{{Solving Infinite-state Games via Acceleration}},
+\newblock \bibinfo{journal}{Proceedings of the ACM on Programming Languages}
+  \bibinfo{volume}{8} (\bibinfo{year}{2024}) \bibinfo{pages}{1696--1726}.
+%Type = Inproceedings
+\bibitem[{Levesque(2005)}]{Lev2005}
+\bibinfo{author}{H.~J. Levesque},
+\newblock \bibinfo{title}{{Planning with Loops}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Nineteenth International
+  Joint Conference on Artificial Intelligence (IJCAI-2005)},
+  \bibinfo{year}{2005}, pp. \bibinfo{pages}{509--515}.
+%Type = Inproceedings
+\bibitem[{Hu and Levesque(2010)}]{HuL2010}
+\bibinfo{author}{Y.~Hu}, \bibinfo{author}{H.~J. Levesque},
+\newblock \bibinfo{title}{{A Correctness Result for Reasoning about
+  One-Dimensional Planning Problems}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twelfth International
+  Conference on Principles of Knowledge Representation and Reasoning
+  (KR-2010)}, \bibinfo{year}{2010}, pp. \bibinfo{pages}{362--371}.
+%Type = Inproceedings
+\bibitem[{Hu and Giacomo(2011)}]{HuG2011}
+\bibinfo{author}{Y.~Hu}, \bibinfo{author}{G.~D. Giacomo},
+\newblock \bibinfo{title}{{Generalized Planning: Synthesizing Plans that Work
+  for Multiple Environments}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Second
+  International Joint Conference on Artificial Intelligence (IJCAI-2011)},
+  \bibinfo{year}{2011}, pp. \bibinfo{pages}{918--923}.
+%Type = Article
+\bibitem[{Srivastava et~al.(2011)Srivastava, Immerman, and
+  Zilberstein}]{SriIZ2011}
+\bibinfo{author}{S.~Srivastava}, \bibinfo{author}{N.~Immerman},
+  \bibinfo{author}{S.~Zilberstein},
+\newblock \bibinfo{title}{A new representation and associated algorithms for
+  generalized planning},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{175}
+  (\bibinfo{year}{2011}) \bibinfo{pages}{615--647}.
+%Type = Article
+\bibitem[{Srivastava et~al.(2012)Srivastava, Immerman, and
+  Zilberstein}]{SriIZ2012}
+\bibinfo{author}{S.~Srivastava}, \bibinfo{author}{N.~Immerman},
+  \bibinfo{author}{S.~Zilberstein},
+\newblock \bibinfo{title}{{Applicability conditions for plans with loops:
+  Computability results and algorithms}},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{191}
+  (\bibinfo{year}{2012}) \bibinfo{pages}{1--19}.
+%Type = Inproceedings
+\bibitem[{Bonet et~al.(2009)Bonet, Palacios, and Geffner}]{BonPG2009}
+\bibinfo{author}{B.~Bonet}, \bibinfo{author}{H.~Palacios},
+  \bibinfo{author}{H.~Geffner},
+\newblock \bibinfo{title}{{Automatic Derivation of Memoryless Policies and
+  Finite-State Controllers Using Classical Planners}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Nineteenth International
+  Conference on Automated Planning and Scheduling (ICAPS-2009)},
+  \bibinfo{year}{2009}, pp. \bibinfo{pages}{34--41}.
+%Type = Inproceedings
+\bibitem[{Bonet and Geffner(2015)}]{BonG2015}
+\bibinfo{author}{B.~Bonet}, \bibinfo{author}{H.~Geffner},
+\newblock \bibinfo{title}{{Policies that Generalize: Solving Many Planning
+  Problems with the Same Policy}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Fourth
+  International Joint Conference on Artificial Intelligence (IJCAI-2015)},
+  \bibinfo{year}{2015}, pp. \bibinfo{pages}{2798--2804}.
+%Type = Inproceedings
+\bibitem[{Segovia et~al.(2016)Segovia, Jim{\'e}nez, and Jonsson}]{SegJJ2016}
+\bibinfo{author}{J.~Segovia}, \bibinfo{author}{S.~Jim{\'e}nez},
+  \bibinfo{author}{A.~Jonsson},
+\newblock \bibinfo{title}{Generalized planning with procedural domain control
+  knowledge},
+\newblock in: \bibinfo{booktitle}{Proceedings of the International Conference
+  on Automated Planning and Scheduling}, \bibinfo{year}{2016}, pp.
+  \bibinfo{pages}{285--293}.
+%Type = Article
+\bibitem[{Segovia-Aguas et~al.(2019)Segovia-Aguas, Jim{\'e}nez, and
+  Jonsson}]{SegJJ2019}
+\bibinfo{author}{J.~Segovia-Aguas}, \bibinfo{author}{S.~Jim{\'e}nez},
+  \bibinfo{author}{A.~Jonsson},
+\newblock \bibinfo{title}{{Computing programs for generalized planning using a
+  classical planner}},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{272}
+  (\bibinfo{year}{2019}) \bibinfo{pages}{52--85}.
+%Type = Inproceedings
+\bibitem[{Segovia-Aguas et~al.(2021)Segovia-Aguas, Celorrio, and
+  Jonsson}]{SegJJ2021}
+\bibinfo{author}{J.~Segovia-Aguas}, \bibinfo{author}{S.~J. Celorrio},
+  \bibinfo{author}{A.~Jonsson},
+\newblock \bibinfo{title}{{Generalized Planning as Heuristic Search}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-First International
+  Conference on Automated Planning and Scheduling (ICAPS-2021)},
+  \bibinfo{year}{2021}, pp. \bibinfo{pages}{569--577}.
+%Type = Inproceedings
+\bibitem[{Srivastava et~al.(2011)Srivastava, Zilberstein, Immerman, and
+  Geffner}]{SriZIG2011}
+\bibinfo{author}{S.~Srivastava}, \bibinfo{author}{S.~Zilberstein},
+  \bibinfo{author}{N.~Immerman}, \bibinfo{author}{H.~Geffner},
+\newblock \bibinfo{title}{{Qualitative Numeric Planning}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Fifth AAAI
+  Conference on Artificial Intelligence (AAAI-2011)}, \bibinfo{year}{2011}, pp.
+  \bibinfo{pages}{1010--1016}.
+%Type = Inproceedings
+\bibitem[{Bonet et~al.(2019{\natexlab{a}})Bonet, Franc\`{e}s, and
+  Geffner}]{BonFG2019}
+\bibinfo{author}{B.~Bonet}, \bibinfo{author}{G.~Franc\`{e}s},
+  \bibinfo{author}{H.~Geffner},
+\newblock \bibinfo{title}{{Learning Features and Abstract Actions for Computing
+  Generalized Plans}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-Third AAAI
+  Conference on Artificial Intelligence (AAAI-2019)},
+  \bibinfo{year}{2019}{\natexlab{a}}, pp. \bibinfo{pages}{2703--2710}.
+%Type = Inproceedings
+\bibitem[{Bonet et~al.(2019{\natexlab{b}})Bonet, Fuentetaja, E-Mart\'{\i}n, and
+  Borrajo}]{BonFEB2019}
+\bibinfo{author}{B.~Bonet}, \bibinfo{author}{R.~Fuentetaja},
+  \bibinfo{author}{Y.~E-Mart\'{\i}n}, \bibinfo{author}{D.~Borrajo},
+\newblock \bibinfo{title}{{Guarantees for Sound Abstractions for Generalized
+  Planning}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Eighth
+  International Joint Conference on Artificial Intelligence (IJCAI-2019)},
+  \bibinfo{year}{2019}{\natexlab{b}}, pp. \bibinfo{pages}{1566--1573}.
+%Type = Inproceedings
+\bibitem[{Lomuscio and Michaliszyn(2014)}]{lomM2014}
+\bibinfo{author}{A.~Lomuscio}, \bibinfo{author}{J.~Michaliszyn},
+\newblock \bibinfo{title}{{An Abstraction Technique for the Verification of
+  Multi-Agent Systems Against ATL Specifications}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Fourteenth International
+  Conference on Principles of Knowledge Representation and Reasoning
+  (KR-2014)}, \bibinfo{year}{2014}, pp. \bibinfo{pages}{428--437}.
+%Type = Inproceedings
+\bibitem[{Lomuscio and Michliszyn(2016)}]{lomM2016}
+\bibinfo{author}{A.~Lomuscio}, \bibinfo{author}{J.~Michliszyn},
+\newblock \bibinfo{title}{Verification of multi-agent systems via predicate
+  abstraction against atlk specifications},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Eighteen International
+  Conference on Autonomous Agents and Multiagent Systems (AAMAS-2016)},
+  \bibinfo{year}{2016}, pp. \bibinfo{pages}{662--670}.
+%Type = Inproceedings
+\bibitem[{Belardinelli et~al.(2016)Belardinelli, Lomuscio, and
+  Michaliszyn}]{BelLM2016}
+\bibinfo{author}{F.~Belardinelli}, \bibinfo{author}{A.~Lomuscio},
+  \bibinfo{author}{J.~Michaliszyn},
+\newblock \bibinfo{title}{Agent-based refinement for predicate abstraction of
+  multi-agent systems},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Second European
+  Conference on Artificial Intelligence (ECAI-2016)}, \bibinfo{year}{2016}, pp.
+  \bibinfo{pages}{286--294}.
+%Type = Article
+\bibitem[{Belardinelli et~al.(2023)Belardinelli, Ferrando, and
+  Malvone}]{BelFM2023}
+\bibinfo{author}{F.~Belardinelli}, \bibinfo{author}{A.~Ferrando},
+  \bibinfo{author}{V.~Malvone},
+\newblock \bibinfo{title}{An abstraction-refinement framework for verifying
+  strategic properties in multi-agent systems with imperfect information},
+\newblock \bibinfo{journal}{Artificial Intelligence} \bibinfo{volume}{316}
+  (\bibinfo{year}{2023}) \bibinfo{pages}{103847}.
+%Type = Inproceedings
+\bibitem[{{De Giacomo} et~al.(2016){De Giacomo}, Murano, Rubin, and
+  Stasio}]{GiacomoMRS2016}
+\bibinfo{author}{G.~{De Giacomo}}, \bibinfo{author}{A.~Murano},
+  \bibinfo{author}{S.~Rubin}, \bibinfo{author}{A.~D. Stasio},
+\newblock \bibinfo{title}{{Imperfect-Information Games and Generalized
+  Planning}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-fifth International
+  Joint Conference on Artificial Intelligence (IJCAI-2016)},
+  \bibinfo{year}{2016}, pp. \bibinfo{pages}{1037--1043}.
+%Type = Article
+\bibitem[{Cairns and Ho(2010)}]{CaiH2010}
+\bibinfo{author}{G.~Cairns}, \bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{Min, A Combinatorial Game Having a Connection With
+  Prime Numbers}},
+\newblock \bibinfo{journal}{Integers} \bibinfo{volume}{10}
+  (\bibinfo{year}{2010}) \bibinfo{pages}{765--770}.
+%Type = Article
+\bibitem[{Ho(2016)}]{Ho2016}
+\bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{Three-pile Sharing Nim and the Quadratic Time
+  Winning Strategy}},
+\newblock \bibinfo{journal}{Theoretical Computer Science} \bibinfo{volume}{646}
+  (\bibinfo{year}{2016}) \bibinfo{pages}{49--60}.
+%Type = Article
+\bibitem[{Albert and Nowakowski(2004)}]{AlbN2004}
+\bibinfo{author}{M.~Albert}, \bibinfo{author}{R.~J. Nowakowski},
+\newblock \bibinfo{title}{{Nim Restrictions}},
+\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial
+  Number Theory} \bibinfo{volume}{4} (\bibinfo{year}{2004})
+  \bibinfo{pages}{1--10}.
+%Type = Article
+\bibitem[{Smith and St\u{a}nic\u{a}(2002)}]{SmiS2002}
+\bibinfo{author}{F.~Smith}, \bibinfo{author}{P.~St\u{a}nic\u{a}},
+\newblock \bibinfo{title}{{Comply/Constrain Games or Games with a Muller
+  Twist}},
+\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial
+  Number Theory} \bibinfo{volume}{2} (\bibinfo{year}{2002})
+  \bibinfo{pages}{1--11}.
+%Type = Article
+\bibitem[{Gavel and Strimling(2004)}]{GavS2004}
+\bibinfo{author}{H.~Gavel}, \bibinfo{author}{P.~Strimling},
+\newblock \bibinfo{title}{{Nim with a Modular Muller Twist}},
+\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial
+  Number Theory} \bibinfo{volume}{4} (\bibinfo{year}{2004})
+  \bibinfo{pages}{1--9}.
+%Type = Article
+\bibitem[{Albert and Nowakowski(2011)}]{AlbN2001}
+\bibinfo{author}{M.~H. Albert}, \bibinfo{author}{R.~J. Nowakowski},
+\newblock \bibinfo{title}{{The Game of End-Nim}},
+\newblock \bibinfo{journal}{Electronic Journal of Combinatorics}
+  \bibinfo{volume}{8} (\bibinfo{year}{2011}) \bibinfo{pages}{1--12}.
+%Type = Article
+\bibitem[{Sprague(1937)}]{Spr1937}
+\bibinfo{author}{R.~Sprague},
+\newblock \bibinfo{title}{{\"U}ber zwei abarten von nim},
+\newblock \bibinfo{journal}{Tohoku Mathematical Journal} \bibinfo{volume}{43}
+  (\bibinfo{year}{1937}) \bibinfo{pages}{351--354}.
+%Type = Article
+\bibitem[{Dufour and Heubach(2013)}]{DufH2013}
+\bibinfo{author}{M.~Dufour}, \bibinfo{author}{S.~Heubach},
+\newblock \bibinfo{title}{{Circular Nim Games}},
+\newblock \bibinfo{journal}{The Electronic Journal of Combinatorics}
+  \bibinfo{volume}{20} (\bibinfo{year}{2013}) \bibinfo{pages}{1--26}.
+%Type = Article
+\bibitem[{Kahane and Fraenkel(1987)}]{KahF1987}
+\bibinfo{author}{J.~Kahane}, \bibinfo{author}{A.~S. Fraenkel},
+\newblock \bibinfo{title}{{$k$-Welter--A Generalization of Welter's Game}},
+\newblock \bibinfo{journal}{Journal of Combinatorial Theory, Series A}
+  \bibinfo{volume}{46} (\bibinfo{year}{1987}) \bibinfo{pages}{1--20}.
+%Type = Article
+\bibitem[{Ho(2014)}]{Ho2014}
+\bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{The Max--Welter Game}},
+\newblock \bibinfo{journal}{Discrete Mathematics} \bibinfo{volume}{318}
+  (\bibinfo{year}{2014}) \bibinfo{pages}{41--47}.
+%Type = Article
+\bibitem[{Fraenkel(1982)}]{Fra1982}
+\bibinfo{author}{A.~S. Fraenkel},
+\newblock \bibinfo{title}{How to beat your wythoff games' opponent on three
+  fronts},
+\newblock \bibinfo{journal}{The American Mathematical Monthly}
+  \bibinfo{volume}{89} (\bibinfo{year}{1982}) \bibinfo{pages}{353--361}.
+%Type = Article
+\bibitem[{Duchene et~al.(2009)Duchene, Fraenkel, Gravier, and
+  Nowakowski}]{DucFGN2009}
+\bibinfo{author}{E.~Duchene}, \bibinfo{author}{A.~Fraenkel},
+  \bibinfo{author}{S.~Gravier}, \bibinfo{author}{R.~J. Nowakowski},
+\newblock \bibinfo{title}{{Another bridge between Nim and Wythoff}},
+\newblock \bibinfo{journal}{The Australasian Journal of Combinatorics}
+  \bibinfo{volume}{44} (\bibinfo{year}{2009}) \bibinfo{pages}{43--56}.
+%Type = Article
+\bibitem[{Fraenkel and Ho(2015)}]{FraH2014}
+\bibinfo{author}{A.~S. Fraenkel}, \bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{When are Translations of P-positions of Wythoff's
+  Game P-positions?}},
+\newblock \bibinfo{journal}{Integers} \bibinfo{volume}{15A}
+  (\bibinfo{year}{2015}) \bibinfo{pages}{1--12}.
+%Type = Article
+\bibitem[{Gurvich(2012)}]{Gur2012}
+\bibinfo{author}{V.~Gurvich},
+\newblock \bibinfo{title}{{Further Generalizations of the Wythoff Game and the
+  Minimum Excludant}},
+\newblock \bibinfo{journal}{Discrete Applied Mathematics} \bibinfo{volume}{160}
+  (\bibinfo{year}{2012}) \bibinfo{pages}{941--947}.
+%Type = Article
+\bibitem[{Liu and Li(2014)}]{LiuL2014}
+\bibinfo{author}{W.~Liu}, \bibinfo{author}{H.~Li},
+\newblock \bibinfo{title}{{General Restriction of $(s, t) $-Wythoff's Game}},
+\newblock \bibinfo{journal}{The Electronic Journal of Combinatorics}
+  \bibinfo{volume}{21} (\bibinfo{year}{2014}) \bibinfo{pages}{2--44}.
+%Type = Article
+\bibitem[{Eric and Sylvain(2009)}]{EriS2009}
+\bibinfo{author}{D.~Eric}, \bibinfo{author}{G.~Sylvain},
+\newblock \bibinfo{title}{{Geometrical Extensions of Wythoff’s game}},
+\newblock \bibinfo{journal}{Discrete Mathematics} \bibinfo{volume}{309}
+  (\bibinfo{year}{2009}) \bibinfo{pages}{3595--3608}.
+
+\end{thebibliography}

@@ -1273,7 +1273,6 @@ Hence, this paper does not include the illustration and experimental comparison 
     	The problem deciding if a state is winning for an LIA-definable ICG is decidable.
     \end{theorem}
 
-    \begin{color}{red}
     \looseness=-1
     We make a comparison between Algorithms \ref{alg:IsWinningState} and \ref{alg:IsWinningState'}.
     Algorithms \ref{alg:IsWinningState} and \ref{alg:IsWinningState'} employ fundamentally different strategies to solve the same problem. 
@@ -1286,7 +1285,7 @@ Hence, this paper does not include the illustration and experimental comparison 
     In terms of generality and theoretical proof, Algorithm \ref{alg:IsWinningState} cannot serve as a general decision procedure for all LIA-definable ICGs, as its reliance on iterating through successors makes it unable to handle cases where a state has infinitely many successors.
 	Conversely, the symbolic approach of Algorithm \ref{alg:IsWinningState'} allows it to handle games with infinite successors, thereby providing a theoretical proof of decidability.
     To summarize, Algorithm \ref{alg:IsWinningState} is an efficient but non-general algorithm, whereas Algorithm \ref{alg:IsWinningState'} is a general algorithm designed for theoretical completeness, albeit with a higher computational cost.
-	\end{color}
+
 %    \begin{proof}
 %    	We design an algorithm, illustrated in Algorithm \ref{alg:IsWinningState'}, to check if any legal state is winning.
 %    	
@@ -1951,86 +1950,94 @@ We first introduce the main algorithm, illustrated in Algorithm \ref{alg:SynWinS
 
 
 \subsection{The main algorithm}
+\begin{color}{red}
 \looseness=-1
-The main synthesis algorithm first generate a pool of candidate actions for the set of positive states.
-For each action, we synthesize its condition formula via the candidate formula generation approach.
-This step will continue until we synthesize a winning strategy that consists of a set of pairs of action and its condition formula. 
-The following gives a comprehensive explanation of Algorithm \ref{alg:SynWinStrat}.
-
-\looseness=-1
-After the process of synthesizing winning formulas, we obtain the winning formula $\phi$ along with two sets $\positiveSet$ of winning states and $\negativeSet$ of losing states, which serve as inputs to Algorithm \ref{alg:SynWinStrat}.
-In the main loop of Algorithm \ref{alg:SynWinStrat}, it first generates a pool $\act_p$ of semi-ground actions such that every state $s \in \positiveSet$ has at least one action $a \in \act_p$ that transforms $s$ to a losing state $\suc(s, a)$ (Line 3).
-For every action $a$ of $\act_p$, if it does not appear in the strategy $\delta$, then the inner loop of Algorithm \ref{alg:SynWinStrat} attempts to generate a formula $\psi_a$ and produces a rule $(\psi_a, a)$ (Lines 4 - 17).
-We generate the formula $\phi_a$ via candidate formula generation approach, which was introduced in Section \ref{sec:GenCandForm}.
-%exact binary classification problem.
-We then collect the set $\positiveSet_a$ of positive states and $\negativeSet_a$ of negative states for this problem (Lines 5 - 11).
-A state $s \in \positiveSet$ is a positive state for generating the formula $\phi_a$, if the following conditions hold: (1) the action $a$ is applicable over $s$; and (2) the successor state $\suc(s, a)$ is a losing state.
-In contrast, the set $\negativeSet_a$ includes the positive states of $\positiveSet$ not comply with the above two conditions and all negative states of $\negativeSet$.
-% Similarly to Algorithm \ref{alg:SynWinForm}, it enumerates a set $\Psi_a$ of arithmetic atoms of increasing sizes and then creates the candidate formula $\psi_a$ that classifies $\positiveSet_a$ from $\negativeSet_a$.
-Similarly to Algorithm \ref{alg:SynWinForm}, it creates the candidate formula 
-$\psi_a$ that classifies $\positiveSet_a$ from $\negativeSet_a$.
+Algorithm~\ref{alg:SynWinStrat} presents a counterexample-guided inductive synthesis (CEGIS) approach for synthesizing a winning strategy.
+Building upon the winning formula $\phi$ and the initial sets of winning ($\positiveSet$) and losing ($\negativeSet$) states derived from Algorithm~\ref{alg:SynWinForm}, 
+this algorithm iteratively constructs a set of rules, $\delta = \set{(\psi_a, a)}$, that collectively form a winning and complete strategy.
 
 \looseness=-1
-The correctness of the rule $(\psi_a, a)$ will be validated. % according to the constraint for the winning rule (cf. Definition \ref{def:consWinRule}), which will be illustrated in Section \ref{sec:winFormCorVer} (Line 13).
-If the rule $(\psi_a, a)$ is winning, then no counterexample is returned by the SMT solver (Lines 14 and 15).
-Otherwise, we are given a set $S'$ of states certifying that $\psi_a$ is not a desired formula for the action $a$.
-%It is easily verified from the constraint for the winning rule that (1) 
-Each state $s \in S'$ enjoy the following two properties: (1) $s$ is winning states; and (2) $s$ is not an applicable state for $a$, or the successor state $\suc(s, a)$ is not a losing state.	
-We also examine the completeness property of $(\psi_a, a)$. % according to the constraint for the complete rule, which will be illustrated in Section \ref{sec:winFormCorVer} (cf. Definition \ref{def:consWinRule}).
-This is because, in some cases, action $a$ is the unique action that changes some winning states to a losing state, but $\psi_a$ may not involve these winning states.
-We therefore enlarge the set $\positiveSet$ by the above winning states (Line 17).
-(When and how does Algorithm 2 generate a new set of actions ??)
-(Is it possible consider incomplete rule ??)
+The core design philosophy of this algorithm lies in its "accumulate-then-verify" strategy. 
+It does not demand that every rule generated within a single iteration be perfect (i.e., both winning and complete) immediately. 
+Instead, it adopts a phased approach: first, it ensures that all accepted rules are winning, allowing some of them to be temporarily incomplete, and collects them. 
+Finally, at the end of each iteration, it performs a unified check on the global completeness of the entire strategy.
 
 \looseness=-1
-After obtaining a set $\delta$ of winning rules, we will check if $\delta$ forms a winning strategy, that is, verifying if the formula $\bigvee_{(\psi_a, a) \in \delta} \psi_a$ is the winning formula (Line 18).
-Since we have obtained the winning formula $\phi$, it suffices to check if $\phi$ and $\bigvee_{(\psi_a, a) \in \delta} \psi_a$ are logically equivalent under the background theory $\constraint$. 
-If it is the case (that is, $S^* = \emptyset$), the algorithm yields the simplified winning strategy (Line 20).
-The simplification procedure eliminates some rules that are covered by the other rules.
-Given a set of rules $(\psi_i, a_i)$ for $1 \leq i \leq n$, we say $(\psi_i, a_i)$ is redundant, iff $\psi_i \models \bigvee_{j \neq i}\psi_j$.
-In this case, the rule $(\psi_i, a_i)$ can be eliminated since performing some action $a_j$ in every state satisfying $\psi_i$ leads to a losing state.
-If the formula $\bigvee_{(\psi_a, a) \in \delta} \psi_a$ is not the winning formula, then some winning states $s$ do not have an semi-ground action $a$ such that the successor state $\suc(s, a)$ is a losing state.
-The set $\positiveSet$ will be extended by $S^*$ for the next iteration of the main loop (Line 22).
+To implement this strategy, the algorithm maintains several key data structures. 
+The set of winning states is dynamically managed through three subsets: $\positiveSet$, which accumulates all known winning states; 
+$\positiveSet'$, which holds newly discovered winning states (counterexamples) within the current iteration; 
+and $\positiveSet''$, a snapshot of $\positiveSet'$ used for action enumeration and training set generation in a single loop. 
+This design facilitates an incremental learning process, focusing each iteration on refining the strategy based on new information, thereby enhancing computational efficiency. 
+Similarly, actions are categorized into a finished action pool $\act^f$ and an unfinished action pool $\act^u$. 
+To support its core strategy, the candidate strategy itself is partitioned into two sets: 
+$\delta^c$ for rules verified as both winning and complete, and $\delta^w$ for rules that are confirmed as winning but whose completeness is not yet determined.
 
+\looseness=-1
+The core of the algorithm operates within a main loop that terminates only when a globally complete strategy is found. 
+In each iteration, the algorithm first enumerates new semi-ground actions from the states in $\positiveSet''$ (Line 5), 
+then processes the union of these new actions and those in the unfinished pool $\act^u$. 
+For each action $a$, a dedicated training set $(\positiveSet_a, \negativeSet_a)$ is constructed. 
+If $a$ is being considered for the first time, this set is built from all currently known states (Line 10 - 12); 
+if $a \in \act^u$, the existing training set is incrementally updated with the new states from $\positiveSet''$ (Line 13 - 15). 
+Based on this training set, a candidate generation procedure synthesizes a condition formula $\psi_a$, forming a candidate rule $(\psi_a, a)$ (Line 16).
 
+\looseness=-1
+A unique two-stage verification process is applied to each candidate rule. 
+First, the rule is checked against the winning constraint (Line 17). 
+If this check fails, the returned counterexamples $S^w_a$ are added to $\positiveSet'$ for the next refinement iteration, and the action $a$ is placed in $\act^u$ (Line 27 - 29). 
+If the rule is verified as winning, it is immediately checked against the completeness constraint (Line 19). 
+If it is also complete, the rule is added to $\delta^c$ and the action $a$ is moved to $\act^f$ (Line 20 - 22). 
+However, if it is winning but incomplete, the algorithm adopts its key strategy: 
+instead of discarding the rule, it is temporarily stored in $\delta^w$, and the counterexamples to its completeness $S^c_a$ are added to $\positiveSet'$ (Line 23 - 26).
 
+\looseness=-1
+The key advantage of this design is that it avoids prematurely discarding an effective action $a$ merely because its individual condition formula, 
+$\psi_a$, cannot immediately cover all applicable scenarios (i.e., cannot achieve completeness). 
+The algorithm allows these "partially effective" winning rules to be temporarily retained, recognizing that their combination, either in later iterations or with other newly generated rules, might collectively constitute a complete strategy. 
+This approach provides greater flexibility to the synthesis process.
 
-\begin{table}[h]
-	\centering
+\looseness=-1
+After iterating through all candidate actions, the algorithm aggregates all rules from $\delta^c$ and $\delta^w$ and simplifies them to form a candidate strategy $\delta$ (Line 30). 
+Finally, a global completeness check is performed. According to Definition~\ref{def:winRule}, this is done by verifying if the disjunction of all condition formulas in $\delta$ is logically equivalent to the winning formula $\phi$ under the constraint $\constraint$ (Line 31). 
+If the equivalence holds, a winning and complete strategy has been synthesized, and the algorithm terminates (Line 32). 
+Otherwise, the counterexamples from this check $S^c$ are used to augment the set of winning states, initiating a new iteration of the refinement loop (Line 33).
+\end{color}
+
+{\red \begin{table}[h]
+    \centering
         \fontsize{9}{15}  
         \selectfont
         \setlength{\tabcolsep}{8pt}
-	\begin{tabular}{|c|c|c|c|c|c|c|}
-		\hline
-		Round & $\act_p$ & $\positiveSet_a$ & $\negativeSet_a$ & $\psi_a$ & $S'$ & $S^*$ \\ \hline
-		\multirow{4}*{1} & $take(1)$ & $ 1, 5 $ &$0, 2, 3, 4$& $v \modulo_4 1$ & $\emptyset$ & \multirow{4}*{$9$}\\ \cline{2-6}
-		& $take(2)$ & $ 2 $ & $ 0, 1, 3, 4, 5$ & $v = 2$ & $ 6 $ &\\ \cline{2-6}
-		& $take(3)$ & $ 3 $ & $ 0, 1, 2, 4, 5$ & $v = 3$ & $ 7 $ &\\ \cline{2-6}
-		& $take(v)$ & $ 1, 2, 3 $ & $ 0, 4, 5 $ & $v \geq 1 \land v < 4$ & $\emptyset$ &\\ \hline
-		
-		\multirow{3}*{2} &$take(2)$ & $ 2 , 6 $ & $ 0, 1, 3, 4, 5, 7, 9$ & $v \modulo_4 2$ & $ \emptyset $ & \multirow{3}*{$\emptyset$} \\ \cline{2-6}
-		& $take(3)$ & $ 3, 7 $ & $ 0, 1, 2, 4, 5, 6, 9$ & $v \modulo_4 3$ & $ \emptyset $ &\\ \cline{2-6}
-		& $take(v-4)$ & $ 5, 6, 7 $ & $ 0, 1, 2, 3, 4, 9$ & $v \geq 5 \land v < 8$ & $ \emptyset $ &\\ \hline
-		
-	\end{tabular}
-	\caption{A run of synthesizing the winning strategy}
-	\label{table:synWinRule}
-\end{table}
-\begin{example} \rm
-	\looseness=-1
-	Table \ref{table:synWinRule} shows the synthesis process of the winning strategy of Take-away-$3$ game.
-	In the first iteration, four actions $take(1)$, $take(2)$, $take(3)$ and $take(v)$ as well as their corresponding condition $\psi_a$ are generated.
-	The two rules $(v = 2, take(2))$ and $(v = 3, take(3))$ are winning but incomplete.
-	The two states $6$ and $7$ are the evidences of incompleteness of the above two rules, respectively.
-	The other two rules $(v \modulo_4 1, take(1))$ and $(v \geq 1 \land v < 4, take(v))$ are both winning and complete and hence constitute a strategy.
-	However, this strategy is incomplete since the formula $(v \modulo_4 1) \lor (v \geq 1 \land v < 4)$ ignores the winning state $9$ that is a counterexample provided by the SMT solver.
-    
-	In the second iteration, a new action $take(v - 4)$ is added into the set $\act_p$.
-	The condition of this action together with $take(2)$ and $take(3)$ which fail in the first iteration are generated.
-	The three rules $(v \modulo_4 2, take(2))$, $(v \modulo_4 3, take(3))$ and $(v \geq 5 \land v < 8, take(v - 4))$ are winning and complete.
-	We put them together and obtain the final winning strategy $\set{(v \modulo_4 1, take(1)), (v \modulo_4 2, take(2)),(v \modulo_4 3, take(3)), (v \geq 1 \land v < 4, take(v)), (v \geq 5 \land v < 8, take(v - 4))}$.
-    \qed
-\end{example}	
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Round & $\act_p$ & $\positiveSet_a$ & $\negativeSet_a$ & $\psi_a$ & $S^c_a$ & $S^c$ \\ \hline
+        \multirow{4}*{1} & $take(1)$ & $ 1, 5 $ &$2, 3, 4$& $v \modulo_4 1$ & $\emptyset$ & \multirow{4}*{$6$}\\ \cline{2-6}
+        & $take(2)$ & $ 2 $ & $ 1, 3, 4, 5$ & $v = 2$ & $ 6 $ &\\ \cline{2-6} 
+        & $take(3)$ & $ 3 $ & $ 1, 2, 4, 5$ & $v = 3$ & $ 7 $ &\\ \cline{2-6}
+        & $take(v)$ & $ 1, 2, 3 $ & $ 4, 5$ & $v \geq 1 \land v < 4$ & $\emptyset$ &\\ \hline
+        
+        \multirow{3}*{2} &$take(2)$ & $ 2 , 6 $ & $1, 3, 4, 5, 7$ & $v \modulo_4 2$ & $ \emptyset $ & \multirow{3}*{$\emptyset$} \\ \cline{2-6}
+        & $take(3)$ & $ 3, 7 $ & $ 1, 2, 4, 5, 6$ & $v = 3 \vee v= 7$ & $ 11 $ &\\ \cline{2-6}
+        & $take(v  \%  4)$ & $1, 2, 3,5, 6, 7 $ & $4$ & $ v < 8 \vee v \modulo_4 3$ & $ 9 $ &\\ \hline
+         
+    \end{tabular}
+    \caption{A run of synthesizing the winning strategy }
+    \label{table:synWinRule}
+\end{table}}
+
+{\red \begin{example} \rm
+    \looseness=-1
+    Table \ref{table:synWinRule} shows the synthesis process of the winning strategy for the Take-away-$3$ game under the new algorithm. 
+	In the first iteration, four actions $take(1)$, $take(2)$, $take(3)$ and $take(v)$ and the algorithm learns rules for the four generated actions based on the initial set of $P=\{1, 2, 3,5\} $ and  $N=\{0, 4\}$.
+	The rules $(v = 2, take(2))$ and $(v = 3, take(3))$ are winning but incomplete, with counterexamples $S^c_a = \{6\}$ and $S^c_a = \{7\}$. 
+	The other two rules $(v \modulo_4 1, take(1))$ and $(v \geq 1 \land v < 4, take(v))$ are both winning and complete.
+	After the rule learning for all actions is complete, the algorithm aggregates and simplifies all generated winning rules (regardless of their completeness) into a strategy $\delta$.	 
+	However, the $\delta = \set{(v \modulo_4 1, take(1)), (v = 2, take(2)), (v = 3, take(3)), (v \geq 1 \land v < 4, take(v))}$ fails on the completeness check, returning a counterexample $S^c=\{6\}$.
+
+    In the second iteration, a new action $take(v \mod 4)$ is added, and the conditions for $take(2)$ and $take(3)$ are refined.
+	The rules $(v \modulo_4 2, take(2))$ become winning and complete ($S^c_a=\emptyset$), but $(v = 3 \vee v = 7, take(3))$ and $(v = 5 \vee v = 6 \vee v \modulo_4 3, take(v - 4))$ are incomplete, with counterexamples $S^c_a = \{11\}$ and $S^c_a = \{9\}$. 
+	But the final simplified strategy $\delta = \set{(v \modulo_4 1, take(1)), (v \modulo_4 2, take(2)), (v \modulo_4 3, take(3))}$ is complete ($S^c=\emptyset$)  and the algorithm successfully synthesizes the final winning strategy and terminates. \qed
+\end{example}}	
 
 \subsection{Correctness verification} \label{sec:winStrCorVer}
 \looseness=-1
@@ -2091,9 +2098,7 @@ In this subsection, we present the constraints for the winning strategy that is 
 %We first check the correctness of each rule $(\psi_i, a_i)$, and then verify if $\bigvee_i \psi_i$ is equivalent to the winning formula.
 
 \looseness=-1
-Each rule generated in Algorithm \ref{alg:SynWinStrat} is guaranteed to be complete and winning (According to the new algorithm ??).
-In addition, the formula $\bigvee_{(\psi_a, a) \in \delta} \psi_a$ is the winning formula.	
-We therefore obtain soundness theorem of Algorithm \ref{alg:SynWinStrat} for synthesizing winning strategies.
+{\red In our design, every rule admitted to $\delta^c$ is proven winning and complete by the per-rule constraints, while rules collected in $\delta^w$ are winning (possibly incomplete). The returned strategy $\delta$ additionally passes the global completeness check, i.e., $\bigvee_{(\psi_a, a) \in \delta} \psi_a$ is equivalent to the winning formula $\phi$. Hence Algorithm~\ref{alg:SynWinStrat} is sound for synthesizing winning strategies.}
 
 \begin{corollary} \label{cor:winStr}
 	Let $\Pi = \tuple{\statevar, \act, \constraint, \estate}$ be an ICG.
@@ -2101,16 +2106,9 @@ We therefore obtain soundness theorem of Algorithm \ref{alg:SynWinStrat} for syn
 \end{corollary}
 
 \begin{proofsketch}
-	We first verify the set $\delta$ of rules returned by Algorithm 2 is a winning strategy.
-	Line 13 checks if a rule $(\psi_a, a)$ is winning.
-	If $S' = \emptyset$, then the constraints for the winning rule are valid (Line 14).
-	By Theorem \ref{thm:consWinForm}, $(\psi_a, a)$ is a winning rule and Line 15 adds it into $\delta$.
-	Hence, $\delta$ is a winning strategy.
-	
-	
-	We then verify the $\delta$ is a complete strategy.
-	Line 19 checks if the formula $(\bigvee_{(\psi_a, a) \in \delta} \psi_a)$ is the winning formula.
-	If $S^* = \emptyset$, then the set of rules is a complete strategy (Line 15).
+{\red We first argue that the set $\delta$ returned by Algorithm~\ref{alg:SynWinStrat} is winning. Line 13 checks whether a rule $(\psi_a,a)$ satisfies the winning constraint; if $S^w_a = \emptyset$, then (by Definition~\ref{def:consWinRule}) $(\psi_a,a)$ is winning, and Line 15 inserts it into $\delta$ in canonical form. Thus all rules in $\delta$ are winning, so $\delta$ is a winning strategy.}
+
+{\red Next, we prove completeness of $\delta$. Line 19 performs the global strategy completeness check by testing whether $\bigvee_{(\psi_a,a)\in\delta}\psi_a$ is equivalent to $\phi$. If $S^c = \emptyset$, then $\delta$ covers the entire winning region and is complete; Line 20 returns $\delta$.}
 \end{proofsketch}
 
 
@@ -2123,7 +2121,7 @@ We therefore obtain soundness theorem of Algorithm \ref{alg:SynWinStrat} for syn
 	It is easy to carry forward our approach to computing winning strategies via the following minor modifications.
 	(1) In the step of synthesizing winning formulas, classifying legal states into winning and losing states is based on the new definition.
 	(2) The first and second constraints for winning formulas (cf. Definition \ref{def:consWinForm}) are replaced by $\constraint \land \estate \rightarrow \phi$ and $(\constraint \land \neg \estate \land \phi) \rightarrow \exists \statevar' [\trans(\act) \land \neg \phi[\statevar/\statevar']]$, respectively. 
-	(3) The constraint for the winning rule $(\psi, a)$ (cf. Definition 7) is replaced by $\constraint \land \neg \estate \land \psi \rightarrow \{ \pre(a)  \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']]$.
+	(3) The constraint for the winning rule $(\psi, a)$ (cf. Definition 7) is replaced by $\constraint \land \neg \estate \land \psi \rightarrow  \pre(a)  \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']]$.
 	
 	%	\section{Theoretical results (??)} \label{sec:TheorRes}
 	\looseness=-1
