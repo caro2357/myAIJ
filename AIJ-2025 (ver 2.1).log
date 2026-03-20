@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  24 OCT 2025 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  31 OCT 2025 21:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -860,13 +860,13 @@ LaTeX Warning: Float too large for page by 104.74292pt on input line 1782.
 [31]
 
 [32]
-Overfull \hbox (5.09212pt too wide) in paragraph at lines 2011--2024
+
+[33]
+Overfull \hbox (5.09212pt too wide) in paragraph at lines 2064--2077
  [][] 
  []
 
 
-
-[33]
 
 [34]
 
@@ -875,25 +875,27 @@ Overfull \hbox (5.09212pt too wide) in paragraph at lines 2011--2024
 [36]
 
 [37]
-Overfull \hbox (4.67282pt too wide) in paragraph at lines 2222--2230
+
+[38]
+Overfull \hbox (4.67282pt too wide) in paragraph at lines 2275--2283
  [][] 
  []
 
 
 
-[38]
-<fig/normal-sub-f.png, id=849, 462.528pt x 346.896pt>
+[39]
+<fig/normal-sub-f.png, id=871, 462.528pt x 346.896pt>
 File: fig/normal-sub-f.png Graphic file (type png)
 <use fig/normal-sub-f.png>
-Package pdftex.def Info: fig/normal-sub-f.png  used on input line 2249.
+Package pdftex.def Info: fig/normal-sub-f.png  used on input line 2302.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-sub-s.png, id=851, 462.528pt x 346.896pt>
+<fig/normal-sub-s.png, id=873, 462.528pt x 346.896pt>
 File: fig/normal-sub-s.png Graphic file (type png)
 <use fig/normal-sub-s.png>
-Package pdftex.def Info: fig/normal-sub-s.png  used on input line 2254.
+Package pdftex.def Info: fig/normal-sub-s.png  used on input line 2307.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
-Overfull \hbox (12.99033pt too wide) in paragraph at lines 2236--2260
+Overfull \hbox (12.99033pt too wide) in paragraph at lines 2289--2313
 []\T1/cmr/m/n/10 Table []5[] sum-ma-rizes the re-sults about syn-the-siz-ing win-ning strate-gies. SynEnum
  []
 
@@ -901,7 +903,7 @@ Overfull \hbox (12.99033pt too wide) in paragraph at lines 2236--2260
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (3.43587pt too wide) in paragraph at lines 2270--2294
+Overfull \hbox (3.43587pt too wide) in paragraph at lines 2323--2347
  [][] 
  []
 
@@ -910,90 +912,90 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[39]
+[40]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2306.
+(Font)              size <5> substituted on input line 2359.
 
-LaTeX Font Info:    Calculating math sizes for size <4> on input line 2310.
+LaTeX Font Info:    Calculating math sizes for size <4> on input line 2363.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2310.
+(Font)              size <5> substituted on input line 2363.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <4> not available
-(Font)              size <5> substituted on input line 2313.
+(Font)              size <5> substituted on input line 2366.
 
 
-Overfull \hbox (0.63158pt too wide) in paragraph at lines 2310--2333
+Overfull \hbox (0.63158pt too wide) in paragraph at lines 2363--2386
  [][] 
  []
 
-<fig/normal-nim-f.png, id=861, 462.528pt x 346.896pt>
+<fig/normal-nim-f.png, id=883, 462.528pt x 346.896pt>
 File: fig/normal-nim-f.png Graphic file (type png)
 <use fig/normal-nim-f.png>
-Package pdftex.def Info: fig/normal-nim-f.png  used on input line 2340.
+Package pdftex.def Info: fig/normal-nim-f.png  used on input line 2393.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-nim-s.png, id=862, 462.528pt x 346.896pt>
+<fig/normal-nim-s.png, id=884, 462.528pt x 346.896pt>
 File: fig/normal-nim-s.png Graphic file (type png)
 <use fig/normal-nim-s.png>
-Package pdftex.def Info: fig/normal-nim-s.png  used on input line 2345.
+Package pdftex.def Info: fig/normal-nim-s.png  used on input line 2398.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1003,282 +1005,282 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[40 <./fig/normal-sub-f.png> <./fig/normal-sub-s.png>]
-
-[41]
-<fig/normal-welter-f.png, id=877, 462.528pt x 346.896pt>
-File: fig/normal-welter-f.png Graphic file (type png)
-<use fig/normal-welter-f.png>
-Package pdftex.def Info: fig/normal-welter-f.png  used on input line 2393.
-(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-welter-s.png, id=878, 462.528pt x 346.896pt>
-File: fig/normal-welter-s.png Graphic file (type png)
-<use fig/normal-welter-s.png>
-Package pdftex.def Info: fig/normal-welter-s.png  used on input line 2398.
-(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
+[41 <./fig/normal-sub-f.png> <./fig/normal-sub-s.png>]
 
 [42]
+<fig/normal-welter-f.png, id=898, 462.528pt x 346.896pt>
+File: fig/normal-welter-f.png Graphic file (type png)
+<use fig/normal-welter-f.png>
+Package pdftex.def Info: fig/normal-welter-f.png  used on input line 2446.
+(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
+<fig/normal-welter-s.png, id=899, 462.528pt x 346.896pt>
+File: fig/normal-welter-s.png Graphic file (type png)
+<use fig/normal-welter-s.png>
+Package pdftex.def Info: fig/normal-welter-s.png  used on input line 2451.
+(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[43]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 2411.
+(Font)              size <5> substituted on input line 2464.
 
-LaTeX Font Info:    Calculating math sizes for size <3> on input line 2414.
+LaTeX Font Info:    Calculating math sizes for size <3> on input line 2467.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.09999> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <1.5> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.09999> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <1.5> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.09999> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <1.5> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <2.09999> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <1.5> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <2.09999> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <1.5> not available
-(Font)              size <5> substituted on input line 2414.
+(Font)              size <5> substituted on input line 2467.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <3> not available
-(Font)              size <5> substituted on input line 2417.
+(Font)              size <5> substituted on input line 2470.
 
 
 
-[43 <./fig/normal-nim-f.png> <./fig/normal-nim-s.png>]
+[44 <./fig/normal-nim-f.png> <./fig/normal-nim-s.png>]
 
-[44 <./fig/normal-welter-f.png> <./fig/normal-welter-s.png>]
+[45 <./fig/normal-welter-f.png> <./fig/normal-welter-s.png>]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2439.
+(Font)              size <5> substituted on input line 2492.
 
-LaTeX Font Info:    Calculating math sizes for size <2> on input line 2442.
+LaTeX Font Info:    Calculating math sizes for size <2> on input line 2495.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <1.4> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <1> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <1.4> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <1> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <1.4> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <1> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <1.4> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <1> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <1.4> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <1> not available
-(Font)              size <5> substituted on input line 2442.
+(Font)              size <5> substituted on input line 2495.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <2> not available
-(Font)              size <5> substituted on input line 2445.
+(Font)              size <5> substituted on input line 2498.
 
 
-Overfull \hbox (8.1625pt too wide) in paragraph at lines 2442--2456
+Overfull \hbox (8.1625pt too wide) in paragraph at lines 2495--2509
  [][] 
  []
 
-<fig/normal-wythoff-f.png, id=908, 462.528pt x 346.896pt>
+<fig/normal-wythoff-f.png, id=929, 462.528pt x 346.896pt>
 File: fig/normal-wythoff-f.png Graphic file (type png)
 <use fig/normal-wythoff-f.png>
-Package pdftex.def Info: fig/normal-wythoff-f.png  used on input line 2463.
+Package pdftex.def Info: fig/normal-wythoff-f.png  used on input line 2516.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-wythoff-s.png, id=909, 462.528pt x 346.896pt>
+<fig/normal-wythoff-s.png, id=930, 462.528pt x 346.896pt>
 File: fig/normal-wythoff-s.png Graphic file (type png)
 <use fig/normal-wythoff-s.png>
-Package pdftex.def Info: fig/normal-wythoff-s.png  used on input line 2468.
+Package pdftex.def Info: fig/normal-wythoff-s.png  used on input line 2521.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[45]
-<fig/normal-chomp-f.png, id=920, 462.528pt x 346.896pt>
-File: fig/normal-chomp-f.png Graphic file (type png)
-<use fig/normal-chomp-f.png>
-Package pdftex.def Info: fig/normal-chomp-f.png  used on input line 2513.
-(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-chomp-s.png, id=921, 462.528pt x 346.896pt>
-File: fig/normal-chomp-s.png Graphic file (type png)
-<use fig/normal-chomp-s.png>
-Package pdftex.def Info: fig/normal-chomp-s.png  used on input line 2518.
-(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
 [46]
+<fig/normal-chomp-f.png, id=941, 462.528pt x 346.896pt>
+File: fig/normal-chomp-f.png Graphic file (type png)
+<use fig/normal-chomp-f.png>
+Package pdftex.def Info: fig/normal-chomp-f.png  used on input line 2566.
+(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
+<fig/normal-chomp-s.png, id=942, 462.528pt x 346.896pt>
+File: fig/normal-chomp-s.png Graphic file (type png)
+<use fig/normal-chomp-s.png>
+Package pdftex.def Info: fig/normal-chomp-s.png  used on input line 2571.
+(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
-LaTeX Warning: Text page 47 contains only floats.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[47 <./fig/normal-wythoff-f.png> <./fig/normal-wythoff-s.png> <./fig/normal-chomp-f.png> <./fig/normal-chomp-s.png>]
+[47]
 
-[48]
-<fig/misere-sub-f.png, id=947, 462.528pt x 346.896pt>
+LaTeX Warning: Text page 48 contains only floats.
+
+
+
+[48 <./fig/normal-wythoff-f.png> <./fig/normal-wythoff-s.png> <./fig/normal-chomp-f.png> <./fig/normal-chomp-s.png>]
+
+[49]
+<fig/misere-sub-f.png, id=969, 462.528pt x 346.896pt>
 File: fig/misere-sub-f.png Graphic file (type png)
 <use fig/misere-sub-f.png>
-Package pdftex.def Info: fig/misere-sub-f.png  used on input line 2569.
+Package pdftex.def Info: fig/misere-sub-f.png  used on input line 2622.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-sub-s.png, id=948, 462.528pt x 346.896pt>
+<fig/misere-sub-s.png, id=970, 462.528pt x 346.896pt>
 File: fig/misere-sub-s.png Graphic file (type png)
 <use fig/misere-sub-s.png>
-Package pdftex.def Info: fig/misere-sub-s.png  used on input line 2574.
+Package pdftex.def Info: fig/misere-sub-s.png  used on input line 2627.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
-Overfull \hbox (5.64815pt too wide) in paragraph at lines 2620--2643
+Overfull \hbox (5.64815pt too wide) in paragraph at lines 2673--2696
  [][] 
  []
 
-<fig/misere-nim-f.png, id=953, 462.528pt x 346.896pt>
+<fig/misere-nim-f.png, id=975, 462.528pt x 346.896pt>
 File: fig/misere-nim-f.png Graphic file (type png)
 <use fig/misere-nim-f.png>
-Package pdftex.def Info: fig/misere-nim-f.png  used on input line 2650.
+Package pdftex.def Info: fig/misere-nim-f.png  used on input line 2703.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-nim-s.png, id=954, 462.528pt x 346.896pt>
+<fig/misere-nim-s.png, id=976, 462.528pt x 346.896pt>
 File: fig/misere-nim-s.png Graphic file (type png)
 <use fig/misere-nim-s.png>
-Package pdftex.def Info: fig/misere-nim-s.png  used on input line 2655.
+Package pdftex.def Info: fig/misere-nim-s.png  used on input line 2708.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
 
-[49 <./fig/misere-sub-f.png> <./fig/misere-sub-s.png>]
+[50 <./fig/misere-sub-f.png> <./fig/misere-sub-s.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/misere-welter-f.png, id=969, 462.528pt x 346.896pt>
+<fig/misere-welter-f.png, id=990, 462.528pt x 346.896pt>
 File: fig/misere-welter-f.png Graphic file (type png)
 <use fig/misere-welter-f.png>
-Package pdftex.def Info: fig/misere-welter-f.png  used on input line 2701.
+Package pdftex.def Info: fig/misere-welter-f.png  used on input line 2754.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-welter-s.png, id=970, 462.528pt x 346.896pt>
+<fig/misere-welter-s.png, id=991, 462.528pt x 346.896pt>
 File: fig/misere-welter-s.png Graphic file (type png)
 <use fig/misere-welter-s.png>
-Package pdftex.def Info: fig/misere-welter-s.png  used on input line 2706.
+Package pdftex.def Info: fig/misere-welter-s.png  used on input line 2759.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
 
-[50]
+[51]
 
-LaTeX Warning: Text page 51 contains only floats.
+LaTeX Warning: Text page 52 contains only floats.
 
 
 
-[51 <./fig/misere-nim-f.png> <./fig/misere-nim-s.png>]
+[52 <./fig/misere-nim-f.png> <./fig/misere-nim-s.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (1.77713pt too wide) in paragraph at lines 2720--2734
+Overfull \hbox (1.77713pt too wide) in paragraph at lines 2773--2787
  [][] 
  []
 
 
-Overfull \hbox (4.79028pt too wide) in paragraph at lines 2742--2756
+Overfull \hbox (4.79028pt too wide) in paragraph at lines 2795--2809
  [][] 
  []
 
-<fig/misere-wythoff-f.png, id=982, 462.528pt x 346.896pt>
+<fig/misere-wythoff-f.png, id=1003, 462.528pt x 346.896pt>
 File: fig/misere-wythoff-f.png Graphic file (type png)
 <use fig/misere-wythoff-f.png>
-Package pdftex.def Info: fig/misere-wythoff-f.png  used on input line 2763.
+Package pdftex.def Info: fig/misere-wythoff-f.png  used on input line 2816.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-wythoff-s.png, id=983, 462.528pt x 346.896pt>
+<fig/misere-wythoff-s.png, id=1004, 462.528pt x 346.896pt>
 File: fig/misere-wythoff-s.png Graphic file (type png)
 <use fig/misere-wythoff-s.png>
-Package pdftex.def Info: fig/misere-wythoff-s.png  used on input line 2768.
+Package pdftex.def Info: fig/misere-wythoff-s.png  used on input line 2821.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1291,20 +1293,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[52]
-<fig/misere-chomp-f.png, id=996, 462.528pt x 346.896pt>
+[53]
+<fig/misere-chomp-f.png, id=1018, 462.528pt x 346.896pt>
 File: fig/misere-chomp-f.png Graphic file (type png)
 <use fig/misere-chomp-f.png>
-Package pdftex.def Info: fig/misere-chomp-f.png  used on input line 2812.
+Package pdftex.def Info: fig/misere-chomp-f.png  used on input line 2865.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-chomp-s.png, id=997, 462.528pt x 346.896pt>
+<fig/misere-chomp-s.png, id=1019, 462.528pt x 346.896pt>
 File: fig/misere-chomp-s.png Graphic file (type png)
 <use fig/misere-chomp-s.png>
-Package pdftex.def Info: fig/misere-chomp-s.png  used on input line 2817.
+Package pdftex.def Info: fig/misere-chomp-s.png  used on input line 2870.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
 
-[53 <./fig/misere-welter-f.png> <./fig/misere-welter-s.png>]
+[54 <./fig/misere-welter-f.png> <./fig/misere-welter-s.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1316,13 +1318,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[54]
+[55]
 
-[55 <./fig/misere-wythoff-f.png> <./fig/misere-wythoff-s.png>]
+[56 <./fig/misere-wythoff-f.png> <./fig/misere-wythoff-s.png>]
 
-[56 <./fig/misere-chomp-f.png> <./fig/misere-chomp-s.png>]
-
-[57]
+[57 <./fig/misere-chomp-f.png> <./fig/misere-chomp-s.png>]
 
 [58]
 
@@ -1336,414 +1336,291 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [63]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3324.
-
-
-
 [64]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3345.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3345.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3345.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3345.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3345.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3345.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3345.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3370.
-
-
 
 [65]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3398.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3398.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3398.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3398.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3398.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3398.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3398.
-
-
-
 [66]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3428.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3450.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3450.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3450.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3450.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3450.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3450.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3450.
-
-
 
 [67]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3487.
+(hyperref)                removing `\begingroup' on input line 3440.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3487.
+(hyperref)                removing `\<let>-command' on input line 3440.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3487.
+(hyperref)                removing `\NAT@ctype' on input line 3440.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3487.
+(hyperref)                removing `\z@' on input line 3440.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3487.
+(hyperref)                removing `\let' on input line 3440.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3487.
+(hyperref)                removing `\let' on input line 3440.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3487.
+(hyperref)                removing `\new@ifnextchar' on input line 3440.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 3461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 3461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 3461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3461.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 3461.
 
 
 
 [68]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3516.
+(hyperref)                removing `math shift' on input line 3486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3516.
+(hyperref)                removing `math shift' on input line 3486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3516.
+(hyperref)                removing `\begingroup' on input line 3486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3516.
+(hyperref)                removing `\<let>-command' on input line 3486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3516.
+(hyperref)                removing `\NAT@ctype' on input line 3486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3516.
+(hyperref)                removing `\z@' on input line 3486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3516.
+(hyperref)                removing `\let' on input line 3486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 3486.
 
 
 
 [69]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3546.
+(hyperref)                removing `\begingroup' on input line 3514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3546.
+(hyperref)                removing `\<let>-command' on input line 3514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3546.
+(hyperref)                removing `\NAT@ctype' on input line 3514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3546.
+(hyperref)                removing `\z@' on input line 3514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3546.
+(hyperref)                removing `\let' on input line 3514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3546.
+(hyperref)                removing `\let' on input line 3514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3546.
+(hyperref)                removing `\new@ifnextchar' on input line 3514.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 3544.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 3544.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 3544.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3544.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3544.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3544.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 3544.
 
 
 
 [70]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3587.
+(hyperref)                removing `\begingroup' on input line 3566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3587.
+(hyperref)                removing `\<let>-command' on input line 3566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3587.
+(hyperref)                removing `\NAT@ctype' on input line 3566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3587.
+(hyperref)                removing `\z@' on input line 3566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3587.
+(hyperref)                removing `\let' on input line 3566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3587.
+(hyperref)                removing `\let' on input line 3566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3587.
+(hyperref)                removing `\new@ifnextchar' on input line 3566.
 
 
 
 [71]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3613.
+(hyperref)                removing `\begingroup' on input line 3603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3613.
+(hyperref)                removing `\<let>-command' on input line 3603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3613.
+(hyperref)                removing `\NAT@ctype' on input line 3603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3613.
+(hyperref)                removing `\z@' on input line 3603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3613.
+(hyperref)                removing `\let' on input line 3603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3613.
+(hyperref)                removing `\let' on input line 3603.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3613.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3613.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3613.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3642.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3642.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3642.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3642.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3642.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3642.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3642.
+(hyperref)                removing `\new@ifnextchar' on input line 3603.
 
 
 
 [72]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 3632.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 3632.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 3632.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3632.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3632.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3632.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 3632.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 3662.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 3662.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 3662.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3662.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3662.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3662.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 3662.
+
+
+
 [73]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3679.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\begingroup' on input line 3703.
@@ -1777,759 +1654,878 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [74]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3724.
+(hyperref)                removing `math shift' on input line 3729.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3724.
+(hyperref)                removing `math shift' on input line 3729.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3724.
+(hyperref)                removing `\begingroup' on input line 3729.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3724.
+(hyperref)                removing `\<let>-command' on input line 3729.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3724.
+(hyperref)                removing `\NAT@ctype' on input line 3729.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3724.
+(hyperref)                removing `\z@' on input line 3729.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3724.
+(hyperref)                removing `\let' on input line 3729.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3729.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 3729.
 
 
 
 [75]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3753.
+(hyperref)                removing `\begingroup' on input line 3758.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3753.
+(hyperref)                removing `\<let>-command' on input line 3758.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3753.
+(hyperref)                removing `\NAT@ctype' on input line 3758.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3753.
+(hyperref)                removing `\z@' on input line 3758.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3753.
+(hyperref)                removing `\let' on input line 3758.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3753.
+(hyperref)                removing `\let' on input line 3758.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3753.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3773.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3773.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3773.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3773.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3773.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3773.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3773.
+(hyperref)                removing `\new@ifnextchar' on input line 3758.
 
 
 
 [76]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3800.
+(hyperref)                removing `\begingroup' on input line 3795.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3800.
+(hyperref)                removing `\<let>-command' on input line 3795.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3800.
+(hyperref)                removing `\NAT@ctype' on input line 3795.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3800.
+(hyperref)                removing `\z@' on input line 3795.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3800.
+(hyperref)                removing `\let' on input line 3795.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3800.
+(hyperref)                removing `\let' on input line 3795.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3800.
+(hyperref)                removing `\new@ifnextchar' on input line 3795.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3823.
+(hyperref)                removing `\begingroup' on input line 3819.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3823.
+(hyperref)                removing `\<let>-command' on input line 3819.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3823.
+(hyperref)                removing `\NAT@ctype' on input line 3819.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3823.
+(hyperref)                removing `\z@' on input line 3819.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3823.
+(hyperref)                removing `\let' on input line 3819.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3823.
+(hyperref)                removing `\let' on input line 3819.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3823.
+(hyperref)                removing `\new@ifnextchar' on input line 3819.
 
 
 
 [77]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3845.
+(hyperref)                removing `\begingroup' on input line 3840.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3845.
+(hyperref)                removing `\<let>-command' on input line 3840.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3845.
+(hyperref)                removing `\NAT@ctype' on input line 3840.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3845.
+(hyperref)                removing `\z@' on input line 3840.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3845.
+(hyperref)                removing `\let' on input line 3840.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3845.
+(hyperref)                removing `\let' on input line 3840.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3845.
+(hyperref)                removing `\new@ifnextchar' on input line 3840.
 
 
 
 [78]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3870.
+(hyperref)                removing `\begingroup' on input line 3869.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3870.
+(hyperref)                removing `\<let>-command' on input line 3869.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3870.
+(hyperref)                removing `\NAT@ctype' on input line 3869.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3870.
+(hyperref)                removing `\z@' on input line 3869.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3870.
+(hyperref)                removing `\let' on input line 3869.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3870.
+(hyperref)                removing `\let' on input line 3869.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3870.
+(hyperref)                removing `\new@ifnextchar' on input line 3869.
 
 
 
 [79]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3907.
+(hyperref)                removing `\begingroup' on input line 3889.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3907.
+(hyperref)                removing `\<let>-command' on input line 3889.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3907.
+(hyperref)                removing `\NAT@ctype' on input line 3889.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3907.
+(hyperref)                removing `\z@' on input line 3889.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3907.
+(hyperref)                removing `\let' on input line 3889.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3907.
+(hyperref)                removing `\let' on input line 3889.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3907.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3931.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3931.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3931.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3931.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3931.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3931.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3931.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3931.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3931.
+(hyperref)                removing `\new@ifnextchar' on input line 3889.
 
 
 
 [80]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3959.
+(hyperref)                removing `\begingroup' on input line 3916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3959.
+(hyperref)                removing `\<let>-command' on input line 3916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3959.
+(hyperref)                removing `\NAT@ctype' on input line 3916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3959.
+(hyperref)                removing `\z@' on input line 3916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3959.
+(hyperref)                removing `\let' on input line 3916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3959.
+(hyperref)                removing `\let' on input line 3916.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3959.
+(hyperref)                removing `\new@ifnextchar' on input line 3916.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 3939.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 3939.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 3939.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3939.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3939.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 3939.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 3939.
 
 
 
 [81]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 3988.
+(hyperref)                removing `\begingroup' on input line 3961.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 3988.
+(hyperref)                removing `\<let>-command' on input line 3961.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 3988.
+(hyperref)                removing `\NAT@ctype' on input line 3961.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 3988.
+(hyperref)                removing `\z@' on input line 3961.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3988.
+(hyperref)                removing `\let' on input line 3961.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 3988.
+(hyperref)                removing `\let' on input line 3961.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 3988.
+(hyperref)                removing `\new@ifnextchar' on input line 3961.
 
 
 
 [82]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4067.
+(hyperref)                removing `\begingroup' on input line 3986.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4067.
+(hyperref)                removing `\<let>-command' on input line 3986.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4067.
+(hyperref)                removing `\NAT@ctype' on input line 3986.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4067.
+(hyperref)                removing `\z@' on input line 3986.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4067.
+(hyperref)                removing `\let' on input line 3986.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4067.
+(hyperref)                removing `\let' on input line 3986.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4067.
+(hyperref)                removing `\new@ifnextchar' on input line 3986.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4067.
+(hyperref)                removing `\begingroup' on input line 4023.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4067.
+(hyperref)                removing `\<let>-command' on input line 4023.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 4023.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4023.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4023.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4023.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 4023.
 
 
 
 [83]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4100.
+(hyperref)                removing `math shift' on input line 4047.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4100.
+(hyperref)                removing `math shift' on input line 4047.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4100.
+(hyperref)                removing `\begingroup' on input line 4047.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4100.
+(hyperref)                removing `\<let>-command' on input line 4047.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4100.
+(hyperref)                removing `\NAT@ctype' on input line 4047.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4100.
+(hyperref)                removing `\z@' on input line 4047.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4100.
+(hyperref)                removing `\let' on input line 4047.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4100.
+(hyperref)                removing `\let' on input line 4047.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4100.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4127.
+(hyperref)                removing `\new@ifnextchar' on input line 4047.
 
 
 
 [84]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4156.
+(hyperref)                removing `\begingroup' on input line 4075.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4156.
+(hyperref)                removing `\<let>-command' on input line 4075.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4156.
+(hyperref)                removing `\NAT@ctype' on input line 4075.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4156.
+(hyperref)                removing `\z@' on input line 4075.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4156.
+(hyperref)                removing `\let' on input line 4075.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4156.
+(hyperref)                removing `\let' on input line 4075.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4156.
+(hyperref)                removing `\new@ifnextchar' on input line 4075.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4156.
+(hyperref)                removing `\begingroup' on input line 4104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4156.
+(hyperref)                removing `\<let>-command' on input line 4104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 4104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 4104.
 
 
 
 [85]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4186.
+(hyperref)                removing `math shift' on input line 4183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4186.
+(hyperref)                removing `math shift' on input line 4183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4186.
+(hyperref)                removing `\begingroup' on input line 4183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4186.
+(hyperref)                removing `\<let>-command' on input line 4183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4186.
+(hyperref)                removing `\NAT@ctype' on input line 4183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4186.
+(hyperref)                removing `\z@' on input line 4183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4186.
+(hyperref)                removing `\let' on input line 4183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4186.
+(hyperref)                removing `\let' on input line 4183.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4186.
+(hyperref)                removing `\new@ifnextchar' on input line 4183.
 
 
 
 [86]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4218.
+(hyperref)                removing `math shift' on input line 4216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4218.
+(hyperref)                removing `math shift' on input line 4216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4218.
+(hyperref)                removing `\begingroup' on input line 4216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4218.
+(hyperref)                removing `\<let>-command' on input line 4216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4218.
+(hyperref)                removing `\NAT@ctype' on input line 4216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4218.
+(hyperref)                removing `\z@' on input line 4216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4218.
+(hyperref)                removing `\let' on input line 4216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4218.
+(hyperref)                removing `\let' on input line 4216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4218.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4218.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4218.
+(hyperref)                removing `\new@ifnextchar' on input line 4216.
 
 
 
 [87]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4255.
+(hyperref)                removing `math shift' on input line 4243.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4255.
+(hyperref)                removing `math shift' on input line 4243.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4255.
+(hyperref)                removing `\begingroup' on input line 4243.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4255.
+(hyperref)                removing `\<let>-command' on input line 4243.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4255.
+(hyperref)                removing `\NAT@ctype' on input line 4243.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4255.
+(hyperref)                removing `\z@' on input line 4243.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4255.
+(hyperref)                removing `\let' on input line 4243.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4255.
+(hyperref)                removing `\let' on input line 4243.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4255.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4255.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4255.
+(hyperref)                removing `\new@ifnextchar' on input line 4243.
 
 
 
 [88]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4295.
+(hyperref)                removing `math shift' on input line 4272.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4295.
+(hyperref)                removing `math shift' on input line 4272.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 4295.
+(hyperref)                removing `\begingroup' on input line 4272.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4295.
+(hyperref)                removing `\<let>-command' on input line 4272.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4295.
+(hyperref)                removing `\NAT@ctype' on input line 4272.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4295.
+(hyperref)                removing `\z@' on input line 4272.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4295.
+(hyperref)                removing `\let' on input line 4272.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4295.
+(hyperref)                removing `\let' on input line 4272.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4295.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4295.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4295.
+(hyperref)                removing `\new@ifnextchar' on input line 4272.
 
 
 
 [89]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4328.
+(hyperref)                removing `math shift' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4328.
+(hyperref)                removing `subscript' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4328.
+(hyperref)                removing `subscript' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4328.
+(hyperref)                removing `math shift' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4328.
+(hyperref)                removing `\begingroup' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4328.
+(hyperref)                removing `\<let>-command' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4328.
+(hyperref)                removing `\NAT@ctype' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 4363.
+(hyperref)                removing `\z@' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 4363.
+(hyperref)                removing `\let' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 4363.
+(hyperref)                removing `\let' on input line 4302.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 4363.
+(hyperref)                removing `\new@ifnextchar' on input line 4302.
+
+
+
+[90]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4363.
+(hyperref)                removing `subscript' on input line 4334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 4363.
+(hyperref)                removing `subscript' on input line 4334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 4363.
+(hyperref)                removing `math shift' on input line 4334.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 4334.
 
-[90] (./AIJ-2025 (ver 2.1).bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 4334.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 4334.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4334.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4334.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4334.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 4334.
+
+
 
 [91]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 4371.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4411.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 4411.
+
+
+
 [92]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 4444.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 4444.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 4444.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4444.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4444.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4444.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 4444.
+
+
 
 [93]
 
-[94]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 4479.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 4479.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 4479.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4479.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4479.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 4479.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 4479.
+
+
+
+[94] (./AIJ-2025 (ver 2.1).bbl
 
 [95]
-Underfull \hbox (badness 1852) in paragraph at lines 370--377
-[]\T1/cmr/m/n/10 K. Luo, Y. Liu,  Au-to-matic Ver-i-fi-ca-tion of FSA Strate-gies via
- []
-
-
 
 [96]
 
@@ -2540,12 +2536,27 @@ Underfull \hbox (badness 1852) in paragraph at lines 370--377
 [99]
 
 [100]
+Underfull \hbox (badness 1852) in paragraph at lines 299--303
+[]\T1/cmr/m/n/10 K. Luo, Y. Liu,  Au-to-matic Ver-i-fi-ca-tion of FSA Strate-gies via
+ []
+
+
 
 [101]
 
-[102])
+[102]
 
-[103] (./AIJ-2025 (ver 2.1).aux)
+[103]
+
+[104]
+
+[105]
+
+[106]
+
+[107])
+
+[108] (./AIJ-2025 (ver 2.1).aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2559,18 +2570,18 @@ Package rerunfilecheck Info: File `"AIJ-2025 (ver 2.1)".out' has not changed.
 (rerunfilecheck)             Checksum: 032A73A75DF85722DC43CB0090D8B64D;13194.
  ) 
 Here is how much of TeX's memory you used:
- 27417 strings out of 473190
- 494840 string characters out of 5719979
- 892627 words of memory out of 5000000
- 49617 multiletter control sequences out of 15000+600000
- 587972 words of font info for 122 fonts, out of 8000000 for 9000
+ 27499 strings out of 473190
+ 496141 string characters out of 5719979
+ 893253 words of memory out of 5000000
+ 49663 multiletter control sequences out of 15000+600000
+ 589346 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,23n,91p,1489b,806s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on "AIJ-2025 (ver 2.1).pdf" (103 pages, 1303842 bytes).
+ 84i,23n,91p,1489b,812s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on "AIJ-2025 (ver 2.1).pdf" (108 pages, 1338611 bytes).
 PDF statistics:
- 1786 PDF objects out of 2073 (max. 8388607)
- 1545 compressed objects within 16 object streams
- 560 named destinations out of 1000 (max. 500000)
+ 1866 PDF objects out of 2073 (max. 8388607)
+ 1617 compressed objects within 17 object streams
+ 594 named destinations out of 1000 (max. 500000)
  697 words of extra memory for PDF output out of 10000 (max. 10000000)
 

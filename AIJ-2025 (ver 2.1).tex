@@ -726,7 +726,7 @@ Hence, this paper does not include the illustration and experimental comparison 
 
 	\looseness=-1
 	The winning formula $\phi$ along with the formula $\constraint$ exactly characterizes the set of winning states.
-%	Each condition illustrated in the definition of winning formulas corresponds to each rule given in the definition of winning states (cf. Definition \ref{def:wlState}).
+	%Each condition illustrated in the definition of winning formulas corresponds to each rule given in the definition of winning states (cf. Definition \ref{def:wlState}).
 	In general, there are many logical different winning formulas for an ICG.
 	But they are logically equivalent under the background theory $\constraint$, that is, $\constraint \models \phi \equiv \phi'$.
 	Hence, we sometimes call a winning formula the winning one.
@@ -1579,7 +1579,7 @@ Hence, this paper does not include the illustration and experimental comparison 
 %	\small
 %	\caption{$\tt{SynWinStrat}(\phi, \positiveSet, \negativeSet)$}
 %	\label{alg:SynWinStrat}
-%	\KwIn{$\Pi = \tuple{\statevar, \act, z, \estate}$: an LIA-definable ICG; \\
+%	\KwIn{$\Pi = \tuple{\statevar, \act, \constraint, \estate}$: an LIA-definable ICG; \\
 %		 \hspace*{12.5mm}$\phi$: the winning formula of the $\Pi$; \\
 %		 \hspace*{12.5mm}$\positiveSet$: the set of positive states; \\
 %		 \hspace*{12.5mm}$\negativeSet$: the set of negative states.}
@@ -1691,7 +1691,7 @@ Hence, this paper does not include the illustration and experimental comparison 
 	\small
 	\caption{$\tt{SynWinStrat}(\phi, \positiveSet, \negativeSet)$}
 	\label{alg:SynWinStrat}
-	\KwIn{$\Pi = \tuple{\statevar, \act, z, \estate}$: an LIA-definable ICG; \\
+	\KwIn{$\Pi = \tuple{\statevar, \act, \constraint, \estate}$: an LIA-definable ICG; \\
 		\hspace*{12.5mm}$\phi$: the winning formula of the $\Pi$; \\
 		\hspace*{12.5mm}$\positiveSet$: the set of positive states; \\
 		\hspace*{12.5mm}$\negativeSet$: the set of negative states.}
@@ -1944,15 +1944,17 @@ Hence, this paper does not include the illustration and experimental comparison 
 %}
 %\end{algorithm}
 
+
+
+
 \looseness=-1
 In this section, we also devise a CEGIS approach to synthesizing winning strategies.
 We first introduce the main algorithm, illustrated in Algorithm \ref{alg:SynWinStrat}, and followed by correctness verification of winning strategies.
 
 
 \subsection{The main algorithm}
-\begin{color}{red}
 \looseness=-1
-Algorithm~\ref{alg:SynWinStrat} presents a counterexample-guided inductive synthesis (CEGIS) approach for synthesizing a winning strategy.
+Algorithm \ref{alg:SynWinStrat} presents a counterexample-guided inductive synthesis (CEGIS) approach for synthesizing a winning strategy.
 Building upon the winning formula $\phi$ and the initial sets of winning ($\positiveSet$) and losing ($\negativeSet$) states derived from Algorithm~\ref{alg:SynWinForm}, 
 this algorithm iteratively constructs a set of rules, $\delta = \set{(\psi_a, a)}$, that collectively form a winning and complete strategy.
 
@@ -1974,8 +1976,9 @@ $\delta^c$ for rules verified as both winning and complete, and $\delta^w$ for r
 
 \looseness=-1
 The core of the algorithm operates within a main loop that terminates only when a globally complete strategy is found. 
-In each iteration, the algorithm first enumerates new semi-ground actions from the states in $\positiveSet''$ (Line 5), 
+In each iteration, the algorithm first enumerates new actions from the states in $\positiveSet''$ (Line 5), 
 then processes the union of these new actions and those in the unfinished pool $\act^u$. 
+The following Algorithm \ref{alg:EnumerateActions} provides a more detailed description of the enumeration method. 
 For each action $a$, a dedicated training set $(\positiveSet_a, \negativeSet_a)$ is constructed. 
 If $a$ is being considered for the first time, this set is built from all currently known states (Line 10 - 12); 
 if $a \in \act^u$, the existing training set is incrementally updated with the new states from $\positiveSet''$ (Line 13 - 15). 
@@ -2001,9 +2004,59 @@ After iterating through all candidate actions, the algorithm aggregates all rule
 Finally, a global completeness check is performed. According to Definition~\ref{def:winRule}, this is done by verifying if the disjunction of all condition formulas in $\delta$ is logically equivalent to the winning formula $\phi$ under the constraint $\constraint$ (Line 31). 
 If the equivalence holds, a winning and complete strategy has been synthesized, and the algorithm terminates (Line 32). 
 Otherwise, the counterexamples from this check $S^c$ are used to augment the set of winning states, initiating a new iteration of the refinement loop (Line 33).
-\end{color}
 
-{\red \begin{table}[h]
+
+\begin{algorithm}[!t]
+
+    \caption{$\tt{EnumerateActions}(\positiveSet)$}
+    \label{alg:EnumerateActions}
+    \KwIn{$\Pi = \tuple{\statevar, \act, \constraint, \estate}$: an LIA-definable ICG; \\
+		\hspace*{12.5mm}$\positiveSet$: the set of positive states; }
+    \KwOut{$\act_p$: enumerated action sets}
+
+    $\act_p \leftarrow \emptyset$
+
+    \ForEach{$a \in \act$} 
+	{
+		$K_a  \assign \set{k \in {Dom}(k) \mid \pre(a(k)) \land \constraint}$
+            
+            \ForEach{$k \in K_a$}
+			{
+                $\positiveSet_a ,  \negativeSet_a\assign \emptyset$
+
+                \ForEach{$s \in \positiveSet$}
+				{
+                    \If{$s \models \pre(a) \text{ and } \suc(s, a) \in \loseSet$}
+					{
+                        $\positiveSet_a \assign \positiveSet_a \cup \set{s}$
+
+                         $\act_p \assign \act_p \cup \set{a}$
+                    }
+                    \Else 
+					{
+                        $\negativeSet_a \assign \negativeSet_a \cup \set{s}$    
+					}
+                }                    
+            }
+	}
+
+	\Return  {$\act_p$}
+
+\end{algorithm}
+
+
+\looseness=-1
+Algorithm \ref{alg:EnumerateActions} provides a procedure for enumerating candidate actions from the current set of winning states $\positiveSet$ in an LIA-definable ICG. 
+For each action $a$ in the action set $\act$, the algorithm systematically explores all possible parameter instantiations $k$ within the domain of $a$, subject to the precondition $\pre(a(k))$ and the global constraint $\constraint$. 
+For each such instantiation, the algorithm iterates over all states in $\positiveSet$, identifying those for which the action $a$ is applicable and leads to a losing state after execution. 
+These states are collected into $\positiveSet_a$, while the remaining states are added to $\negativeSet_a$. 
+Whenever a valid action-state pair is found, the corresponding action is added to the enumerated action set $\act_p$. 
+This targeted enumeration ensures that only actions capable of transitioning winning states to losing states are considered for subsequent strategy synthesis, 
+thereby improving both the efficiency and relevance of the candidate action pool.
+
+
+
+\begin{table}[h]
     \centering
         \fontsize{9}{15}  
         \selectfont
@@ -2023,9 +2076,9 @@ Otherwise, the counterexamples from this check $S^c$ are used to augment the set
     \end{tabular}
     \caption{A run of synthesizing the winning strategy }
     \label{table:synWinRule}
-\end{table}}
+\end{table}
 
-{\red \begin{example} \rm
+\begin{example} \rm
     \looseness=-1
     Table \ref{table:synWinRule} shows the synthesis process of the winning strategy for the Take-away-$3$ game under the new algorithm. 
 	In the first iteration, four actions $take(1)$, $take(2)$, $take(3)$ and $take(v)$ and the algorithm learns rules for the four generated actions based on the initial set of $P=\{1, 2, 3,5\} $ and  $N=\{0, 4\}$.
@@ -2037,7 +2090,7 @@ Otherwise, the counterexamples from this check $S^c$ are used to augment the set
     In the second iteration, a new action $take(v \mod 4)$ is added, and the conditions for $take(2)$ and $take(3)$ are refined.
 	The rules $(v \modulo_4 2, take(2))$ become winning and complete ($S^c_a=\emptyset$), but $(v = 3 \vee v = 7, take(3))$ and $(v = 5 \vee v = 6 \vee v \modulo_4 3, take(v - 4))$ are incomplete, with counterexamples $S^c_a = \{11\}$ and $S^c_a = \{9\}$. 
 	But the final simplified strategy $\delta = \set{(v \modulo_4 1, take(1)), (v \modulo_4 2, take(2)), (v \modulo_4 3, take(3))}$ is complete ($S^c=\emptyset$)  and the algorithm successfully synthesizes the final winning strategy and terminates. \qed
-\end{example}}	
+\end{example}	
 
 \subsection{Correctness verification} \label{sec:winStrCorVer}
 \looseness=-1
@@ -2098,7 +2151,7 @@ In this subsection, we present the constraints for the winning strategy that is 
 %We first check the correctness of each rule $(\psi_i, a_i)$, and then verify if $\bigvee_i \psi_i$ is equivalent to the winning formula.
 
 \looseness=-1
-{\red In our design, every rule admitted to $\delta^c$ is proven winning and complete by the per-rule constraints, while rules collected in $\delta^w$ are winning (possibly incomplete). The returned strategy $\delta$ additionally passes the global completeness check, i.e., $\bigvee_{(\psi_a, a) \in \delta} \psi_a$ is equivalent to the winning formula $\phi$. Hence Algorithm~\ref{alg:SynWinStrat} is sound for synthesizing winning strategies.}
+In our design, every rule admitted to $\delta^c$ is proven winning and complete by the per-rule constraints, while rules collected in $\delta^w$ are winning (possibly incomplete). The returned strategy $\delta$ additionally passes the global completeness check, i.e., $\bigvee_{(\psi_a, a) \in \delta} \psi_a$ is equivalent to the winning formula $\phi$. Hence Algorithm~\ref{alg:SynWinStrat} is sound for synthesizing winning strategies.
 
 \begin{corollary} \label{cor:winStr}
 	Let $\Pi = \tuple{\statevar, \act, \constraint, \estate}$ be an ICG.
@@ -2106,9 +2159,9 @@ In this subsection, we present the constraints for the winning strategy that is 
 \end{corollary}
 
 \begin{proofsketch}
-{\red We first argue that the set $\delta$ returned by Algorithm~\ref{alg:SynWinStrat} is winning. Line 13 checks whether a rule $(\psi_a,a)$ satisfies the winning constraint; if $S^w_a = \emptyset$, then (by Definition~\ref{def:consWinRule}) $(\psi_a,a)$ is winning, and Line 15 inserts it into $\delta$ in canonical form. Thus all rules in $\delta$ are winning, so $\delta$ is a winning strategy.}
+ We first argue that the set $\delta$ returned by Algorithm~\ref{alg:SynWinStrat} is winning. Line 13 checks whether a rule $(\psi_a,a)$ satisfies the winning constraint; if $S^w_a = \emptyset$, then (by Definition~\ref{def:consWinRule}) $(\psi_a,a)$ is winning, and Line 15 inserts it into $\delta$ in canonical form. Thus all rules in $\delta$ are winning, so $\delta$ is a winning strategy.
 
-{\red Next, we prove completeness of $\delta$. Line 19 performs the global strategy completeness check by testing whether $\bigvee_{(\psi_a,a)\in\delta}\psi_a$ is equivalent to $\phi$. If $S^c = \emptyset$, then $\delta$ covers the entire winning region and is complete; Line 20 returns $\delta$.}
+ Next, we prove completeness of $\delta$. Line 19 performs the global strategy completeness check by testing whether $\bigvee_{(\psi_a,a)\in\delta}\psi_a$ is equivalent to $\phi$. If $S^c = \emptyset$, then $\delta$ covers the entire winning region and is complete; Line 20 returns $\delta$.
 \end{proofsketch}
 
 
@@ -2870,8 +2923,43 @@ The precondition and effect of action $take(k)$ in Subtraction game are as follo
 \looseness=-1
 Two classical methods for solving the winning strategy of finite-state ICGs are backward induction \cite{Wat2002} and alpha-beta pruning \cite{BelM2020,HeiPS2008}.
 Backward induction reasons backward from the ending state to the given initial state. For games with large state spaces, the computational complexity of backward induction increases rapidly, leading to low algorithmic efficiency and making it difficult to handle complex games. 
-Alpha-beta pruning is a well-known pruning method for minimax trees. It reduces the number of nodes in the search tree that captures the plays from the given initial state by two players. However, the effectiveness of the alpha-beta pruning method depends on the traversal order of the nodes. If the traversal order is suboptimal, the effectiveness of pruning will be impacted. Recently, \citet{BelM2020} proposed a novel approach to prune the search tree based on the node values calculated by the Sprague-Grundy function under the normal rule. The approach is inspired by the alpha-beta pruning technique, with the key difference being that they use the mex function to assign values to the tree nodes, rather than the traditional minimization/maximization approach. But the above approaches do not work for infinite-state ICGs.
-(Add papers about computing SG-values ??)
+Alpha-beta pruning is a well-known pruning method for minimax trees. It reduces the number of nodes in the search tree that captures the plays from the given initial state by two players. However, the effectiveness of the alpha-beta pruning method depends on the traversal order of the nodes. If the traversal order is suboptimal, the effectiveness of pruning will be impacted. 
+
+\begin{color}{red}
+\looseness=-1
+However, there exists a different theoretical tool that is orthogonal to minimax search: the Sprague-Grundy theorem. 
+This theory was built upon Bouton's complete mathematical analysis of the game of Nim \cite{Bou1901}, 
+and was independently generalized to all short impartial games by Sprague \cite{sprague1935} and Grundy \cite{grundy1939}. 
+The theory assigns a non-negative integer value to every game position $s$, known as the Sprague-Grundy value (or nimber). 
+This value $G(s)$ is defined recursively as the "Minimum Excluded value" (mex) of the set of SG-values of all its successor positions $t \in N(s)$: $G(s) = \text{mex}(\{G(t) : t \in N(s)\})$.
+The utility of the SG-value is twofold. 
+First, it directly determines the outcome: a position is a losing position if and only if its SG-value is 0. 
+Second, it allows for the efficient analysis of decomposable games. 
+A game $s$ that is a sum of independent sub-games $s_1, \dots, s_k$ has a total SG-value equal to the "nim-sum" (bitwise XOR, denoted by $\oplus$) of its components: $G(s) = G(s_1) \oplus \dots \oplus G(s_k)$. 
+Despite the completeness of this theory, computing SG-values for a single, non-decomposable game by direct application of the mex definition still requires a deep recursive tree search, which can be computationally intensive. 
+Therefore, how to efficiently prune this SG-value search tree has become a significant research problem. 
+To address this computational challenge, several game-agnostic optimization algorithms have been proposed. 
+\cite{lemoine2012} computes the SG-value $G(s)$ by sequentially testing $n=0, 1, 2, \dots$. 
+It verifies if $G(s) = n$ by checking if the corresponding \textit{sum of games} $s + \langle n \rangle_{nim}$ is a losing position, based on the properties of the nim-sum.
+\cite{BelM2020} provides a different optimization strategy. 
+They directly adapt the principles of $\alpha-\beta$ pruning to the mex function. 
+Their algorithms (e.g., \texttt{cut}, \texttt{scut}) prune the search tree by passing a set of potential SG-values down the tree and cutting off branches. 
+This method also successfully incorporates standard search optimizations like Enhanced Transposition Cutoff (ETC).
+
+Recent research has also begun to bridge SG-value computation with machine learning.  
+\cite{riis2024} shows they struggle to learn mathematically "simpler" impartial games like Nim. 
+This difficulty is attributed to the challenge neural networks face in capturing the underlying mathematical structure required for SG-value computation. 
+In response, the paper proposed an AlphaZero-inspired model incorporating game history that successfully mastered Nim, connecting classical combinatorial game theory with modern RL-based policy search.
+
+Furthermore, an important line of research combines SG-value with $\alpha-\beta$ search, particularly in decomposable positions. 
+\cite{muller1999} pioneered "Decomposition Search," applying it to Go endgames. 
+This method uses the SG theorem to analyze independent sub-games separately, using the computed nimbers for heuristic evaluation, move ordering, or pruning within an $\alpha-\beta$ search. 
+Recently, \cite{uiterwijk2019} employed a similar strategy to solve the game of Cram, combining combinatorial game theory (CGT) with an $\alpha-\beta$ solver, transposition tables, and SG-value endgame databases.
+
+In contrast to these game-agnostic computational methods, another large body of research focuses on analyzing the SG-values of specific games to find analytical solutions or mathematical properties. Examples include analyses of the SG-function for the game of Euclid \cite{cairns2011, nivasch2006}, Wythoff's game \cite{blass1990}, and Grundy's game \cite{guy1956g}, as well as studies on the periodicity of nim-values in games like peg duotaire \cite{grossman2004}. 
+However, these game-specific analytical approaches rely on deep mathematical insights into each game's rules, whereas this paper aims to provide a more general framework for automatic synthesis based on LIA formalization, which does not depend on such game-specific pre-analysis.
+\end{color}
+
 
 \looseness=-1
 \citet{LuoL2019} extended the situation calculus for formalizing ICGs.
@@ -2930,10 +3018,12 @@ For example, it fails to solve the $2$-piled Nim game for the state $v_1 = 6 \la
 By contrast, our approach succeeds in computing generalized winning strategies, which works for not only one state but also all winning states, for the $2$-piled Nim game in 3.91 seconds.
 
 \looseness=-1
-\citet{BaiCF2021} presents a causality-based algorithm for solving two-player reachability games defined by logical constraints. The approach leverages Craig interpolation to identify necessary subgoals—critical game slices the reachability player must traverse—and recursively decomposes the game along these subgoals. This enables the extraction of structured winning strategies.
+\citet{BaiCF2021} presents a causality-based algorithm for solving two-player reachability games defined by logical constraints. The approach leverages Craig interpolation to identify necessary subgoals—critical game slices the reachability player must traverse—and recursively decomposes the game along these subgoals. 
+This enables the extraction of structured winning strategies.
 % \citet{BaiCF2021} propose a method based on Craig interpolation using subgoals, which are slices of the game a reachability player must traverse to reach the target. 
 % Recently, \citet{FaeP2023} introduces a special form of logical reachability games, in which the safety player has a bounded number of moves from all game confgurations, whereas the reachability player has no such limitation. Then they propose a direct reduction to determine the winner of a GMT and a winning strategy using only CHC solvers. As shown in \cite{FaeP2023}, the running times are signifcantly lower compared to implementations of \citet{BaiCF2021}. 
-Recently, \citet{FaeP2023} consider introduces a special class of logical reachability games, called GMTs (logical reachability games modulo theories), where the safety player has a limited number of moves per configuration, while the reachability player has no such restriction. The authors show that GMTs can model real-world problems, such as the Cinderella-Stepmother game, and demonstrate how determining the winner in these games can be reduced to solving a system of constrained Horn clauses (CHCs).
+Recently, \citet{FaeP2023} consider introduces a special class of logical reachability games, called GMTs (logical reachability games modulo theories), where the safety player has a limited number of moves per configuration, while the reachability player has no such restriction. 
+The authors show that GMTs can model real-world problems, such as the Cinderella-Stepmother game, and demonstrate how determining the winner in these games can be reduced to solving a system of constrained Horn clauses (CHCs).
 As shown in \cite{FaeP2023}, the running times are significantly lower compared to implementations of \citet{BaiCF2021}. 
 % In addition to the differences mentioned above, these approaches have two common points. 
 
@@ -2948,14 +3038,40 @@ The majority of ICGs contain only integer variables and require congruence modul
 Previous research has used LIA-based formalization, but it only supports safety games \citep{DanO2019}.
 \citet{DanO2019} proposes a machine learning framework for synthesizing reactive controllers in safety games, particularly those defined over infinite or prohibitively large graphs. The core technique involves a feedback loop between a symbolic teacher component and a learning algorithm, where the learning algorithm learns a winning set, an approximation of the vertices from which the system player can win. The learning process iteratively refines this set using counterexamples provided by the teacher.
 The paper also introduces a decision tree learning algorithm tailored for this setting, ensuring the efficient learning of winning sets. 
+However, the approaches can only compute an approximate winning set starting from a given state, meaning the winning set does not fully cover all possible winning states, and the corresponding winning strategy does not cover all winning paths.
 % \citet{DanO2019} propose a machine learning framework based on LIA whose interaction with their environment is modeled by games over infinite graphs. However, this framework applies only to safety games.
-Recently, \citet{HeiR2024} propose a symbolic method that supports LIA for solving infinite-state games, including objectives such as reachability, safety, Büchi, and co-Büchi. This approach introduces acceleration lemmas, a class of simple inductive statements, and leverages them to accelerate the convergence of the game-solving process. 
+
 % Although the approach supports LIA-based formalization, it has a limitation as same as \citep{DanO2019}: 
 % it cannot compute exact winning region, which means it are unable to generate strategies for all winning states. 
-However, the two approaches can only compute an approximate winning set starting from a given state, meaning the winning set does not fully cover all possible winning states, and the corresponding winning strategy does not cover all winning paths.
+
 % #### 自动机，前面都是基于LIA
 % Before this, \citet{StaDK2021} proposed a fixpoint-based tool called GenSys, which also could not compute exact winning region. Although \citet{StaDK2021} later extended the tool in \cite{StaDK2023} to achieve exact winning region computation, the resulting winning strategy is still represented by an automaton.
+\begin{color}{red}
+\looseness=-1
+Recent advances in strategy synthesis for infinite-state systems have yielded a range of complementary techniques. One such direction is automata learning. 
+\citet{NeiT2016} proposed a query-based learning framework for synthesizing safety controllers over infinite graphs. 
+By iteratively querying a symbolic teacher and refining hypothesis automata, they converge toward correct winning regions and corresponding strategies. 
+While elegant in its interactivity, the approach relies on a structured teacher and is not easily generalizable to more complex objectives beyond safety. 
+Our method operates in a constraint-solving framework with explicit support for linear arithmetic, enabling broader applicability under formal guarantees.
 
+Symbolic fixpoint methods have also been extended to support LTL synthesis. 
+\citet{StaDK2021} developed a layer-wise fixed-point algorithm that decomposes LTL games into nested safety and Büchi subgames, which are solved symbolically using SMT-based fixpoint computations. 
+Although this approach supports a broad class of LTL objectives without relying on user-supplied strategy templates, it still requires pre-processing into a decomposable game structure and may encounter scalability issues for deeply nested specifications.
+
+Acceleration-based synthesis has recently been introduced as a means to ensure convergence in symbolic algorithms over infinite domains. 
+\citet{HeiR2024} apply numerical acceleration techniques to extrapolate fixed-point iterations in reachability games, allowing strategy construction to terminate even when traditional fixpoint loops diverge. 
+To solve infinite-state games, this approach supports the LIA technique, enabling it to handle a range of objectives including reachability, safety, Büchi, and co-Büchi. 
+It introduces "acceleration lemmas" — i.e., a class of simple inductive statements — to further accelerate the convergence of the game-solving process. 
+But it has a limitation as same as \citep{DanO2019}: it is unable to generate strategies for all winning states.
+
+To further improve scalability, \citet{SchHDN2024} propose a localized attractor computation scheme that decomposes infinite-state games into subgames with tractable structure.
+By computing permissive strategies within local attractor regions and aggregating them into a global strategy, their method achieves significant performance gains. 
+However, the locality assumption may still lead to incomplete strategies in games where progress conditions span across multiple attractors. 
+
+\citet{AzzopardiPDS2025} address the synthesis of full LTL specifications over infinite-state arenas via an abstraction-refinement loop. 
+Their approach constructs an abstract LTL game and iteratively refines it using counterstrategies, thereby achieving generality and completeness. 
+Nevertheless, the approach depends heavily on the effectiveness of predicate refinement and may suffer from predicate explosion for complex specifications. 
+\end{color}
 
 \subsection{Generalized planning} 
 \looseness=-1
@@ -3306,9 +3422,9 @@ By adapting the belief-state construction, \citeauthor{GiacomoMRS2016} remove im
 % 	(3) The constraint for verifying a rule $(\psi, a)$ (cf. Definition 7) is replaced by $\constraint \land \neg \estate \land \psi \rightarrow \{ \pre(a)  \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']]$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Domains}
-%{\red 1.discuss the properties, benefits, and limitations of the benchmark set ??}
+%{\red 1.discuss the properties, benefits, and limitations of the benchmark set }
 %
-%{\red 2.What benchmarks did they include in Wu’s paper and do you still outperform them on those benchmarks??}
+%{\red 2.What benchmarks did they include in Wu’s paper and do you still outperform them on those benchmarks}
 
 % We evaluate the performance of our approach on the following $5$ categories of ICGs\footnote{\url{https://github.com/luckyhaoyunlai/domain}}.% classification basis 
 % Each category contains not only the original game but also its extensions or invariants.
