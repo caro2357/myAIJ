@@ -2201,7 +2201,7 @@ In this subsection, we present the constraints for the winning strategy that is 
 \begin{definition} \label{def:consWinRule} \rm
 	Let $\Pi = \tuple{\statevar, \act, \constraint, \estate}$ be an ICG and $\phi$ a winning formula of $\Pi$.
 	\begin{itemize}
-		\item The constraint for the winning rule $(\psi, a)$ is $(\constraint \land \phi \land \psi) \rightarrow \{\pre(a) \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']\}$.
+		\item The constraint for the winning rule $(\psi, a)$ is $(\constraint \land \phi \land \psi) \rightarrow \{\pre(a) \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']]\}$.
 		
 		\item The constraint for the complete rule $(\psi, a)$ is $\exists \statevar' [\trans(a) \land \neg \phi[\statevar/\statevar']] \rightarrow \psi$.
 	\end{itemize}		
@@ -2218,12 +2218,12 @@ In this subsection, we present the constraints for the winning strategy that is 
 	($\Rightarrow$): Assume that $(\psi, a)$ is a winning rule.
 	Let $s$ be a state satisfying $\constraint \land \phi \land \psi$.
 	By the definition of winning rules (cf. Definition \ref{def:winRule}), $a$ is applicable in $s$ and $\suc(s, a)$ is a losing state.
-	It follows that $s \models \pre(a) \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']$.
+	It follows that $s \models \pre(a) \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']]$.
 	Hence, the constraint for the winning rule is valid.
 	
 	($\Leftarrow$): Assume that $(\psi, a)$ is a rule s.t. the constraint for the winning rule is valid.
 	Let $s$ be a state satisfying $\constraint \land \phi \land \psi$.
-	By the constraint for the winning rule, we get that $s \models \pre(a) \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']$.
+	By the constraint for the winning rule, we get that $s \models \pre(a) \land \forall \statevar' [\trans(a) \rightarrow \neg \phi[\statevar/\statevar']]$.
 	It follows that $a$ is applicable in $s$ and $\suc(s, a)$ is a losing state.
 	Hence, $(\psi, a)$ is a winning rule.
 	
@@ -2311,14 +2311,14 @@ The two variants, based on different candidate formula generation methods, are r
 Our tool takes as input a PDDL-like file that formalizes an ICG and outputs the winning formula and strategy for this ICG.
 %the approach for generating candidate solutions based on the enumeration method and exact binary classification as shown in Section 5, as well as the algorithms \ref{alg:SynWinForm} and \ref{alg:SynWinStrat} presented in Sections 4 and 7, in Python 3.7. We refer to the algorithms based on the two approaches as SynEnum and SynMS, respectively.
 %Our implementation reads a PDDL-like file that describes the formalization of an ICG and outputs the winning formula and strategy for this ICG.
-We employ Z3 \cite{MouB2008} as the SMT solver to verify the correctness of the winning formula and strategy as well as to determine if a state is winning (??).
+We employ Z3 \cite{MouB2008} as the SMT solver to verify the correctness of the winning formula and strategy as well as to determine if a state is winning.
 We adopt NuWLS \cite{ChuCL2023} as the partial MaxSAT solver in order to choose the small set of generated arithmetic atoms.
 NuWLS is an incomplete partial MaxSAT solver and may return a sub-optimal solution.
 This however has no influence on the soundness of the chosen set as the solution satisfies the hard constraint.
 By Theorem \ref{thm:exactBinClass}, we can always construct a formula from the chosen set that distinguishes the set of positive states from that of negative states.
 The time-out bounds for Z3 and NuWLS are $10$ and $3$ seconds, respectively.
 The experiments were conducted on a PC with an Intel Core i7-7700 $3.60$ GHz CPU and $16$GB RAM running under Windows 10, with a runtime cutoff of $1,200$ seconds.
-Source codes are provided in this link\footnote{\url{XXXX}}.
+Source codes are provided in this link\footnote{\url{https://github.com/caro2357/SynMS}}.
 
 
 \subsection{Benchmarks}
@@ -2326,12 +2326,63 @@ Source codes are provided in this link\footnote{\url{XXXX}}.
 We evaluated the performance of our approach SynEnum and SynMS on a large number of ICG domains that consist of the following $5$ categories: Subtraction \cite{Yag2001}, Nim \cite{Bou1901}, Wythoff \cite{Wyt1907}, Welter \cite{Wel1952} and Chomp \cite{Sch1952}.
 We have provided a detailed description and formalization of these games in Section Appendix.
 Each category contains multiple classes of ICGs, including some extensions or variants of the original game.
-The PDDL file of each test case are given in this link\footnote{\url{https://github.com/YMH0607/domain/tree/master}}.
+The PDDL file of each test case are given in this link\footnote{\url{https://github.com/caro2357/Domain}}.
 Since the winning formula and strategy are not LIA-definable or unknown in some classes of ICGs, we impose certain limitations on these classes in order to guarantee that they have LIA-definable solution.
 For example, the winning formula of 3-rowed Chomp game is unknown.
 We restrict the maximum number of cookies on the 3rd row to be a fixed integer and obtain a restricted version of 3-rowed Chomp which has an LIA-definable solution.
-In summary, the benchmark consists of a total of $32$ classes with $3,720$ test cases, including the $46$ test cases in \cite{WuFXLQCR2020}.  
-(add more detailed description of each test cases ??)
+In summary, the benchmark consists of a total of $32$ classes with $3,720$ test cases, including the $46$ test cases in \cite{WuFXLQCR2020}. 
+ 
+{\color{red}\textbf{Subtraction games.} The common feature of this category is that each position is determined by a single heap of chips, and each move changes the state by reducing the size of that heap. 
+As a result, these games have the simplest state structure and provide a natural testbed for synthesis methods on basic single-variable games. 
+We consider three classes. 
+\emph{Take Away} is the most basic form: in each move, a player may remove any positive number of chips up to a fixed bound. For example, if the bound is $5$, then the player may remove any number from $1$ to $5$, so the game captures a rule with a continuous range of admissible move sizes. 
+\emph{Subtraction} imposes a stricter rule: in each move, the player may remove only one of several pre-specified numbers. For example, the legal moves may be restricted to $1$, $3$, and $4$, which makes the game more sensitive to the choice of the move set itself and its influence on the winning strategy. 
+\emph{$S,D$-Mark} further extends subtraction games by adding division-style moves. 
+That is, besides subtracting some chips, the player may also shrink the current heap size by dividing it by a fixed divisor whenever the rule allows it. 
+This class therefore combines features of both subtraction games and division games, and is structurally more complex than the other two.}
+
+{\color{red}\textbf{Nim games.} The core feature of this category is that a position consists of multiple heaps of chips. In each move, the player usually changes only one of them, while in some variants chips may also be transferred, redistributed, or structurally rearranged among multiple heaps. 
+Compared with the single-heap subtraction games, Nim-style games have multi-dimensional states, so the relations between different heaps are more likely to dominate the winning strategy. 
+We consider not only standard \emph{Nim}, but also many variants with substantially different rules. 
+In standard \emph{Nim}, the player removes any positive number of chips from any one heap in each move. On this basis, different variants emphasize different kinds of constraints.
+\emph{Monotonic Nim} requires the heap sizes to remain in a fixed monotone order, so a move must not only reduce chips, but also preserve the size relation among the heaps.
+\emph{Empty and Transfer} requires the player to empty one heap and transfer part of its chips to another heap. 
+\emph{Empty All But One} requires all chips of one heap to be redistributed to the other heaps, leaving that heap empty, and therefore emphasizes how a whole heap is emptied and then rerouted. \emph{Empty and Redistribute} is similar in spirit, but highlights more clearly the overall restructuring effect of emptying one heap and redistributing its contents. 
+\emph{Entropy Reduction Game} emphasizes moves that gradually reduce the dispersion of the position, driving the differences among the heaps toward a simpler structure. 
+
+Some variants in this category focus on which heap may be played, or how it may be played. 
+The basic idea of \emph{Min Game} is that the right to move depends on the currently smaller heap, so the player cannot freely choose any heap, but is instead restricted by the current local minimum. 
+As a result, the winning strategy depends to a large extent on the comparison between the two heap sizes. 
+\emph{$l$-Slow Nim} limits each move to removing at most a fixed constant number of chips, so it can be viewed as standard \emph{Nim} with an explicit speed limit. 
+\emph{Sharing Nim} allows chips to be given from one heap to another, so the focus is no longer only on decreasing the total amount, but also on changing its distribution. 
+\emph{Small Nim} and \emph{Greedy Nim} reflect different local move preferences: the former usually emphasizes that only small-scale local moves are allowed, whereas the latter tends to prefer a move that is as large as possible or as far forward as possible.
+
+Some other variants change the game behavior through additional arithmetic or structural constraints. \emph{Odd-or-Even Nim} distinguishes legal moves by the parity of heap sizes, so whether a move is feasible depends not only on how many chips are in the heap, but also on whether the current value is odd or even. 
+\emph{Modular Nim} uses modular conditions to restrict states or moves, so some positions exhibit special strategic structures only when certain residue relations are satisfied. 
+\emph{Pointed Nim} introduces an additional pointer or current-position indicator, so the legal move depends not only on the heap sizes but also on where the pointer currently points. 
+\emph{End Nim} restricts the playable heaps to the ends of a sequence, so the player cannot act on a middle heap arbitrarily. 
+\emph{Loop End Nim} is similar, but the heaps are connected in a cycle, so the two ``ends'' are effectively determined by circular adjacency, making the structure more symmetric than in the linear version. 
+\emph{Staircase Nim} requires the heaps to be connected in a staircase-like adjacent structure, so moves are closely related to the relations between neighboring heaps. 
+\emph{Circular Nim} organizes the heaps into a ring, and allowable moves are constrained by consecutive positions or circular adjacency, so it emphasizes the global layout rather than the size of a single heap itself.}
+
+{\color{red}\textbf{Welter games.} In this category, a position is no longer represented by heap sizes, but by the positions of tokens on a line. The core mechanism is therefore movement rather than reduction: in each move, the player moves a token forward or backward to a legal position while respecting constraints such as non-overlap or ordering. These games are thus better viewed as one-dimensional token-moving games with structural restrictions. We consider three classes. The original \emph{Welter} game captures the basic movement rule for two tokens on a line, and its strategic behavior is governed by their relative positions, which directly determine which moves remain feasible. \emph{$l$-Welter} further restricts the maximal distance of one move, making the game more local than standard Welter and causing the winning strategy to vary significantly with the distance bound. \emph{Max-Welter} emphasizes the role of the maximal movable position or the leading token: whether a move is possible, and which move is preferable, is often determined by the most extreme token position. Unlike the previous heap-based games, Welter games test whether the synthesis methods can handle state spaces based on ordered positions, non-overlap constraints, and bounded movement rules.}
+
+{\color{red}\textbf{Wythoff games.} This category also uses two heaps of chips to represent a position, but differs fundamentally from standard Nim in that, besides reducing one heap at a time, the player may also reduce both heaps simultaneously, usually by the same amount. 
+Because of this synchronized two-heap move, Wythoff-style games often exhibit more intricate geometric structures and more distinctive winning patterns than ordinary Nim. The original \emph{Wythoff} game is the classic example: the player may either reduce a single heap, as in Nim, or reduce both heaps together along a diagonal direction. 
+\emph{$l$-Wythoff} imposes an additional restriction on the synchronized move, so diagonal play remains available but is no longer completely free. 
+\emph{Monotonic $l$-Diet Wythoff} combines monotonicity constraints with restricted synchronized reduction, so not only the two-heap move but also the ordering relation between the heaps becomes important. 
+\emph{Wythoff with subtraction set $S$} enriches the basic Wythoff rule by requiring single-heap moves to come from a fixed finite subtraction set rather than from arbitrary decreases. 
+In this way, it combines the discrete move structure of subtraction games with the synchronized two-heap mechanism of Wythoff games. 
+\emph{Wythoff with a function $f$} uses a function to control the admissible range or form of moves, so the legal synchronized or single-heap changes may vary with the current position instead of being determined by simple constants. 
+The four \emph{$(l_1,l_2)$-restricted Wythoff} games further constrain the difference between the two heaps, the conditions for synchronized moves, or the reachable region from different angles, thereby yielding four distinct forms of restricted two-heap diagonal play. 
+Overall, this category is designed to test whether the synthesis methods can handle games in which single-heap reductions and synchronized two-heap reductions coexist in the same rule system.}
+
+{\color{red}\textbf{Chomp games.} This category differs most clearly from the previous ones in that a position is represented neither by heap sizes nor by token positions, but by a board shape that shrinks over time. 
+In each move, the player selects a square and eats an entire region of the board, so one action typically changes many cells at once. 
+The evolution of the state therefore resembles geometric pruning of a shape rather than a simple numerical decrease. Standard three-row \emph{Chomp} is the most typical example. 
+It can be viewed as a monotone board with three rows of cells; once a player chooses a square, that square together with the cells to its right and the corresponding cells above it are removed, so the winning pattern depends on the global shape of the board rather than on any single local number. 
+\emph{L-shaped Chomp} restricts the board to a fixed L-shaped structure. It still preserves the basic mechanism of removing an entire region from a chosen point, but the overall shape is more regular and the rules are more concentrated, making it a clearer small-scale test case. 
+Compared with the previous heap-based or move-based games, Chomp games emphasize monotone shapes, region deletion, and global structural change, and thus provide a benchmark class with a markedly different state representation and strategy pattern.}
 
 \subsection{Experimental Results}
 \looseness=-1
@@ -3065,7 +3116,7 @@ However, these game-specific analytical approaches rely on deep mathematical ins
 \looseness=-1
 \citet{LuoL2019} extended the situation calculus for formalizing ICGs.
 Situation Calculus is a formal logical language used to describe and reason about dynamic systems, particularly suitable for expressing reasoning problems related to actions and changes.
-They proposed a verification approach for the correctness of winning strategies that are defined in finite state automaton (FAS).
+They proposed a verification approach for the correctness of winning strategies that are defined in finite state automaton (FSA).
 The key idea of this approach is to find an invariant for the FSA strategy, which is similar to the concept of a winning formula. It is important to note that their approach only verifies whether a given FSA is a winning strategy, but it does not address the strategy synthesis problem.
  
 \looseness=-1
@@ -3555,8 +3606,8 @@ For each play rule, the number of test cases of take away game are $30$. % where
 	\item $\constraint: v \ge 0$;
 	\item $\estate: v = 0$;
 	\item $\act:\set{take(k)}$;
-	\item $\pre(take(k): v \ge k \wedge  k > 0 \wedge k \le m$;
-	\item $\eff(take(k)): \set{\tuple{\true, v, v - k}}$.
+		\item $\pre(take(k)) : v \ge k \wedge k > 0 \wedge k \le m$;
+		\item $\eff(take(k)) : \set{\tuple{\true, v, v - k}}$.
 \end{itemize}
 
 \subsubsection{Subtraction \protect\cite{Yag2001}}
@@ -3578,10 +3629,11 @@ There are $385$ test cases in subtraction game.
 \begin{itemize}
 	\item $\statevar: \set{v}$;
 	\item $\constraint: v \ge 0 $;
-	\item $\estate:  v \ge 0 \wedge v < \min(S) $;
-	\item $\act: \set{take(k)}$;
-	\item $\pre(take(k)) : (\bigvee_{s \in S} k = s) \land v \geq \min(S) $;
-	\item $\eff(take(k)) : \set{\tuple{\true, v, v-k}}$;
+		\item $\estate:  v \ge 0 \wedge v < \min(S) $;
+		\item $\act: \set{take(k)}$;
+		\item $\pre(take(k)) : (\bigvee_{s \in S} k = s) \land v \geq \min(S) $;
+		\item {\color{red}$\pre(take(k)) : (\bigvee_{s \in S} k = s) \land v \geq k$;}
+		\item $\eff(take(k)) : \set{\tuple{\true, v, v-k}}$;
 \end{itemize}
 
 \subsubsection{$S,D$-Mark \protect\cite{Sop2016}}
@@ -3600,13 +3652,15 @@ A total of 64 cases are considered.
 
 \begin{itemize}
 	\item $\statevar: \set{v}$;
-	\item $\constraint: v \ge 0$;
-	\item $\estate: v=0$;
-	\item $\act:\set{take_i(k){\mid} 1\le i\le2}$;
-	\item $\pre(take_1(k)) :(\bigvee_{s \in S} k = s) \land v \geq \min(S) $;
-	\item $\eff(take_1(k)) : \set{\tuple{\true, v, v-k}}$;
-	\item $\pre(take_2(k)) :   \bigvee_{d \in D}k \cdot d = v$;
-	\item $\eff(take_2(k)) : \set{\tuple{\true, v, k}}$.
+		\item $\constraint: v \ge 0$;
+		\item $\estate: v=0$;
+		\item $\act:\set{take_i(k){\mid} 1\le i\le2}$;
+		\item $\pre(take_1(k)) :(\bigvee_{s \in S} k = s) \land v \geq \min(S) $;
+		\item {\color{red}$\pre(take_1(k)) : (\bigvee_{s \in S} k = s) \land v \geq k$;}
+		\item $\eff(take_1(k)) : \set{\tuple{\true, v, v-k}}$;
+		\item $\pre(take_2(k)) :   \bigvee_{d \in D}k \cdot d = v$;
+		\item {\color{red}$\pre(take_2(k)) : k > 0 \land \bigvee_{d \in D} k \cdot d = v$;}
+		\item $\eff(take_2(k)) : \set{\tuple{\true, v, k}}$.
 \end{itemize}
 
 \subsection{Nim Games}
@@ -3661,6 +3715,7 @@ Plus the unrestricted version of $v_3$, there are $7$ test cases in total.
 	\item $\estate: \bigwedge_{i=1}^{3} v_i = 0$;
 	\item $\act:\set{take_i(k) {\mid} 1\le i\le 3}$;
 	\item $\pre(take_i(k)) : v_i \ge k \wedge k > 0 \wedge v_i -k \ge v_{i+1}$;
+	\item {\color{red}$\pre(take_i(k)) : v_i \ge k \wedge k > 0 \wedge ((1 \le i < 3 \wedge v_i - k \ge v_{i+1}) \vee i = 3)$;}
 	\item $\eff(take_i(k)) : \set{\tuple{\true,v_i,v_i -k}}$.
 \end{itemize}
 
@@ -3686,14 +3741,17 @@ Plus the unrestricted version of $v_3$, there are $7$ test cases in total.
 	\item $\act:\set{empty_i(k_1, k_2)\mid 1\le i\le 3}$;
 	\item $\pre(empty_1(k_1, k_2)) : ((k_1 =2 \wedge v_2 \ge k_2) \vee\\
 	\hspace*{6mm}(k_1=3 \wedge v_3 \ge k_2)) \wedge k_2\ge 0$;
+	\item {\color{red}$\pre(empty_1(k_1, k_2)) : ((k_1 = 2 \wedge v_2 > k_2) \vee (k_1 = 3 \wedge v_3 > k_2)) \wedge k_2 > 0$;}
 	\item $\eff(empty_1(k_1, k_2)) : \set{\tuple{\true, v_1, k_2}, \\
 		\hspace*{6mm}\tuple{k_1=2, v_2, v_2 - k_2}, \tuple{k_1=3, v_3, v_3 - k_2}}$;
 	\item $\pre(empty_2(k_1, k_2)) : ((k_1 =1 \wedge v_1 \ge k_2) \vee\\
 	\hspace*{6mm}(k_1=3 \wedge v_3 \ge k_2)) \wedge k_2\ge 0$;
+	\item {\color{red}$\pre(empty_2(k_1, k_2)) : ((k_1 = 1 \wedge v_1 > k_2) \vee (k_1 = 3 \wedge v_3 > k_2)) \wedge k_2 > 0$;}
 	\item $\eff(empty_2(k_1, k_2)) : \set{\tuple{\true, v_2, k_2}, \\
 		\hspace*{6mm} \tuple{k_1=1, v_1, v_1 - k_2}, \tuple{k_1=3, v_3, v_3 - k_2}}$;
 	\item $\pre(empty_3(k_1, k_2)) : ((k_1 =2 \wedge v_2 \ge k_2) \vee \\
 	\hspace*{6mm}(k_1=1 \wedge v_1 \ge k_2)) \wedge k_2\ge 0$;
+	\item {\color{red}$\pre(empty_3(k_1, k_2)) : ((k_1 = 2 \wedge v_2 > k_2) \vee (k_1 = 1 \wedge v_1 > k_2)) \wedge k_2 > 0$;}
 	\item $\eff(empty_3(k_1, k_2)) : \set{\tuple{\true, v_3, k_2},\\
 		\hspace*{6mm}\tuple{k_1=1, v_1, v_1 - k_2}, \tuple{k_1=2, v_2, v_2 - k_2}}$.
 \end{itemize}
@@ -3723,6 +3781,7 @@ Plus the unrestricted version of $v_3$, there are $6$ test cases in total.
 	\item $\act:\set{keep_i(k_1, k_2, k_3){\mid}1\le i \le 3}$;
 	\item $\pre(keep_i(k_1, k_2, k_3)) : (\bigwedge_{i=1}^{3} k_i > 0) \wedge \\ \hspace*{6mm}
 	(k_1 + k_2 +k_3)\le v_i $;
+	\item {\color{red}$\pre(keep_i(k_1, k_2, k_3)) : (\bigwedge_{i=1}^{3} k_i > 0) \wedge k_1 + k_2 + k_3 = v_i$;}
 	\item $\eff(keep_i(k_1, k_2, k_3)) : \set{\tuple{\true, v_1, k_1}, \\ \hspace*{6mm}
 		\tuple{\true, v_2, k_2},\tuple{\true, v_3, k_3}}$.
 	
@@ -3745,17 +3804,21 @@ Plus the unrestricted version of $v_3$, there are $6$ test cases in total.
 %	There are $6$ test cases of this game.
 \paragraph{Formalization:}
 
-\begin{itemize}
-	\item $\statevar: \set{v_1, v_2, v_3}$;
-	%		\item $\constraint: v_1 > 0 \wedge v_2 > 0 \wedge  v_3 > 0 \wedge v_3 \le m$;
-	\item $\constraint: (\bigwedge_{i=1}^{3} v_i > 0)\wedge v_3 \le m$;
-	\item $\estate: v_1+ v_2 +v_3 \le 3$;
-	\item $\act: \set{empty_1(k_1, k_2, k_3)}$;
-	\item $\pre(empty_1(k_1, k_2, k_3)) :  (\bigwedge_{i=1}^{3} k_i > 0) \wedge
+	\begin{itemize}
+		\item $\statevar: \set{v_1, v_2, v_3}$;
+		%		\item $\constraint: v_1 > 0 \wedge v_2 > 0 \wedge  v_3 > 0 \wedge v_3 \le m$;
+		\item $\constraint: (\bigwedge_{i=1}^{3} v_i > 0)\wedge v_3 \le m$;
+		\item $\estate: v_1+ v_2 +v_3 \le 3$;
+		\item {\color{red}$\estate: v_1 + v_2 + v_3 < 3$;}
+		\item $\act: \set{empty_1(k_1, k_2, k_3)}$;
+		\item {\color{red}$\act: \set{empty_i(k_1, k_2, k_3) \mid 1 \le i \le 3}$;}
+		\item $\pre(empty_1(k_1, k_2, k_3)) :  (\bigwedge_{i=1}^{3} k_i > 0) \wedge
 	v_1+v_2+ \\ \hspace*{6mm}
 	v_3 - v_i \ge  3    \wedge k_1 + k_2 +k_3 = v_1+v_2+v_3 - v_i$;
-	\item $\eff(empty_1(k_1, k_2, k_3)) : \set{\tuple{\true, v_1, k_1},\\ \hspace*{6mm}
-		\tuple{\true,v_2,k_2},\tuple{\true,v_3,k_3}}$.
+		\item {\color{red}$\pre(empty_i(k_1, k_2, k_3)) : (\bigwedge_{i=1}^{3} k_i > 0) \wedge v_1 + v_2 + v_3 - v_i \ge 3 \wedge k_1 + k_2 + k_3 = v_1 + v_2 + v_3 - v_i$;}
+		\item $\eff(empty_1(k_1, k_2, k_3)) : \set{\tuple{\true, v_1, k_1},\\ \hspace*{6mm}
+			\tuple{\true,v_2,k_2},\tuple{\true,v_3,k_3}}$.
+		\item {\color{red}$\eff(empty_i(k_1, k_2, k_3)) : \set{\tuple{\true, v_1, k_1}, \tuple{\true, v_2, k_2}, \tuple{\true, v_3, k_3}}$.}
 \end{itemize}
 
 
@@ -3818,6 +3881,7 @@ Plus the unrestricted version of $v_2$, there are $6$ test cases in total.
 	\item $\constraint: v_1 \ge 0 \wedge v_2 \ge 0\wedge v_2 \le m$;
 	\item $\estate: v_1=0 \vee v_2 =0$;
 	\item $\act:\set{take_i(k){\mid}1\le i \le3 }$;
+	\item {\color{red}$\act:\set{take_i(k){\mid}1\le i \le 2}$;}
 	\item $\pre(take_1(k)) : v_1 \ge v_2 \wedge k \le v_2 \wedge k > 0$;
 	\item $\eff(take_1(k)) : \set{\tuple{\true, v_1, v_1-k}}$;
 	\item $\pre(take_2(k)) : v_1 \le v_2 \wedge k \le v_1 \wedge k > 0$;
@@ -3852,6 +3916,7 @@ There are $180$ test cases of this game.
 	\item $\estate: \bigwedge_{i=1}^{3} v_i = 0$;
 	\item $\act:\set{take_i(k) {\mid} 1 \le i \le 3}$;
 	\item $\pre(take_i(k)) : v_i \ge k \wedge  k \le m_1$;
+	\item {\color{red}$\pre(take_i(k)) : v_i \ge k \wedge k > 0 \wedge k \le m_1$;}
 	\item $\eff(take_i(k)) :  \set{\tuple{\true, v_i, v_i - k}}$.
 \end{itemize}
 
@@ -3955,6 +4020,7 @@ Plus the unrestricted version of $v_2$, there are $7$ test cases in total.
 	\item $\constraint: v_1 \ge 0 \wedge v_2 \ge 0 \wedge r \ge 0 \wedge  r \le 2 \wedge v_2 \le m$;
 	\item $\estate: v_1 = 0 \wedge v_2 = 0 \wedge r \ge 0 \wedge  r \le 2$;
 	\item $\act:\set{specify(k), take_{e}(k),  take_{o}(k)}$;
+	\item {\color{red}$\act:\set{specify(k), take_{1e}(k), take_{1o}(k), take_{2e}(k), take_{2o}(k)}$;}
 	\item $\pre(specify(k)): r = 2 \land (k = 0 \lor k = 1)$;
 	\item $\eff(specify(k)): \set{\tuple{\true, r, k}}$;
 	\item $\pre(take_{1e}(k)): r \neq 2 \wedge k > 0 \wedge  k \modulo_{2}{r} \land v_1 \ge k$;
@@ -4006,12 +4072,15 @@ Plus the unrestricted version of $v_3$, there are $7$ test cases in total.
 	\item $\statevar: \set{r, v_1, v_2, v_3}$;
 	\item $\constraint: (\bigwedge_{i=1}^{3} v_i \ge 0) \wedge r \ge 0 \wedge r \le 3 \wedge v_3 \le m$;
 	\item $\estate: (\bigwedge_{i=1}^{3} v_i = 0)\wedge r > 0 \wedge r \le 3 $;
+	\item {\color{red}$\estate: \bigwedge_{i=1}^{3} v_i = 0$;}
 	\item $\act:\set{take_i(k_1,k_2) {\mid}1 \le i\le 3}$;
 	\item $\pre(take_i(k_1,k_2)) : v_i \ge k_1 \wedge k_1 > 0 \wedge \\ \hspace*{6mm}
 	(r = i \vee r = 0)$;
+	\item {\color{red}$\pre(take_i(k_1,k_2)) : v_i \ge k_1 \wedge k_1 > 0 \wedge (r = i \vee r = 0) \wedge 1 \le k_2 \le 3 \wedge k_2 \neq i \wedge v_{k_2} > 0$;}
 	\item $\eff(take_i(k_1,k_2)) : \set{\tuple{r = 0\vee r = 1, v_1, v_1-k_1},\\ \hspace*{6mm}
 		\tuple{r = 0\vee r = 2, v_2, v_2-k_1}, \\ \hspace*{6mm}
 		\tuple{i=0\vee i=3, v_3, v_3-k_1},\tuple{\true, r, k_2}}$.
+	\item {\color{red}$\eff(take_i(k_1,k_2)) : \set{\tuple{\true, v_i, v_i-k_1}, \tuple{\true, r, k_2}}$.}
 \end{itemize}
 
 \subsubsection{End Nim \protect\cite{AlbN2001}}	
@@ -4034,6 +4103,7 @@ Plus the unrestricted version of $v_3$, there are $7$ test cases in total.
 	\item $\act:\set{take_i(k) {\mid} 1 \le i \le 3}$;
 	\item $\pre(take_i(k)) : v_i \ge k \wedge k > 1 \wedge ((\bigwedge_{j=1}^{i-1}v_j = 0 )\vee \\ \hspace*{6mm}
 	(\bigwedge_{j=i+1}^{3}v_j = 0))$;
+	\item {\color{red}$\pre(take_i(k)) : v_i \ge k \wedge k > 0 \wedge ((\bigwedge_{j=1}^{i-1} v_j = 0) \vee (\bigwedge_{j=i+1}^{3} v_j = 0))$;}
 	\item $\eff(take_i(k)) : \set{\tuple{\true,v_i,v_i -k}}$.
 \end{itemize}
 
@@ -4079,8 +4149,10 @@ Plus the unrestricted version of $v_3$, there are $7$ test cases in total.
 	\item $\estate: \bigwedge_{i=1}^{3} v_i = 0$;
 	\item $\act:\set{take_i(k){\mid}1 \le i \le 3} $;
 	\item $\pre(take_1(k)) : v_1 \ge k \wedge k > 1$;
+	\item {\color{red}$\pre(take_1(k)) : v_1 \ge k \wedge k > 0$;}
 	\item $\eff(take_1(k)) : \set{\tuple{\true,v_1,v_1 -k}}$;
 	\item $\pre(take_i(k)) : v_i \ge k \wedge k > 1$;
+	\item {\color{red}$\pre(take_i(k)) : 1 < i \le 3 \wedge v_i \ge k \wedge k > 0$;}
 	\item $\eff(take_i(k)) : \set{\tuple{\true,v_i,v_i -k}, \tuple{\true,v_{i-1},v_{i-1} + k}}$
 \end{itemize}
 
@@ -4116,8 +4188,10 @@ There are $15$ test cases of this game.
 	\item $\pre(take_i(k_1, \cdots, k_m)) : (\bigwedge_{i=1}^{m} k_m\ge 0) \wedge \\ \hspace*{6mm}
 	\sum_{i=1}^{m} k_i > 1 \wedge 
 	(\bigwedge_{j=1}^{m} v_{(i+j-1)\%n}\ge k_j)$;
+	\item {\color{red}$\pre(take_i(k_1, \cdots, k_m)) : (\bigwedge_{j=1}^{m} k_j \ge 0) \wedge \sum_{j=1}^{m} k_j > 0 \wedge (\bigwedge_{j=1}^{m} v_{((i+j-2)\% n)+1} \ge k_j)$;}
 	\item $\eff(take_i(k_1, \cdots, k_m)) : \set{\tuple{\true, v_i, v_i - k_1},\cdots, \\\hspace*{6mm}
 		\tuple{\true, v_{(i+m-1)\%n}, v_{(i+m-1)\%n} - k_m}}$.
+	\item {\color{red}$\eff(take_i(k_1, \cdots, k_m)) : \set{\tuple{\true, v_i, v_i - k_1}, \cdots, \tuple{\true, v_{((i+m-2)\% n)+1}, v_{((i+m-2)\% n)+1} - k_m}}$.}
 \end{itemize}
 
 \subsection{Welter Games}
@@ -4308,6 +4382,7 @@ There are $35$ test cases in total.
 	\item $\pre(take_3(k_1, k_2)) : v_1 \ge k_1 \wedge  k_1 > 0 \wedge v_2 \ge k_2 \wedge \\ \hspace*{6mm}
 	k_2 > 0 \wedge((k_1 > k_2 \wedge k_1 - k_2 < m_1)\vee \\ \hspace*{6mm}
 	(k_2 > k_1 \wedge k_2 - k_1 < m_1))$;
+	\item {\color{red}$\pre(take_3(k_1, k_2)) : v_1 \ge k_1 \wedge k_1 > 0 \wedge v_2 \ge k_2 \wedge k_2 > 0 \wedge ((k_1 \ge k_2 \wedge k_1 - k_2 < m_1) \vee (k_2 \ge k_1 \wedge k_2 - k_1 < m_1))$;}
 	\item $\eff(take_3(k_1, k_2)) : \set{\tuple{\true, v_1, v_1 -k_1},\\ \hspace*{6mm}
 		\tuple{\true, v_2, v_2 - k_2}}$.
 \end{itemize}
@@ -4329,12 +4404,14 @@ There are $35$ test cases in total.
 	\item $\statevar: \set{v_1, v_2}$;
 	\item $\constraint: v_2 \ge 0 \wedge  v_1 \ge v_2 \wedge v_2 \le m$;
 	\item $\estate: v_1 =0, v_2 = 0$;
+	\item {\color{red}$\estate: v_1 = 0 \wedge v_2 = 0$;}
 	\item $\act:take_1(k_1), take_2(k_2), take_3(k_1,k_2)$;
 	\item $\pre(take_1(k_1)) : k_1>0 \wedge k_1 \le m_1\wedge v_1 \ge v_2 + k_1$;  
 	\item $\eff(take_1(k_1)) : \set{\tuple{\true, v_1, v_1-k_1}}$;
 	\item $\pre(take_2(k_2)) : k_2>0 \wedge k_2\le m_1  \wedge k_2 \le v_2 $;
 	\item $\eff(take_2(k_2)) : \set{\tuple{\true, v_2, v_2-k_2}}$;
 	\item $\pre(take_3(k_1, k_2)) : v_2 \ge k_2 \wedge v_1 \ge k_1 \wedge \\ \hspace*{6mm} k_1 > 0 \wedge k_1<m_1 \wedge k_1 = k_2$;
+	\item {\color{red}$\pre(take_3(k_1, k_2)) : v_2 \ge k_2 \wedge v_1 \ge k_1 \wedge k_1 > 0 \wedge k_1 \le m_1 \wedge k_1 = k_2$;}
 	\item $\eff(take_3(k_1, k_2)) : \set{\tuple{\true, v_1, v_1 -k_1},\\ \hspace*{6mm} \tuple{\true, v_2, v_2 - k_2}}$.
 \end{itemize}
 
@@ -4367,6 +4444,7 @@ There are $105$ test cases in total.
 	\item $\pre(take_2(k_2)) : v_2 \ge k_2 \wedge  k_2 > 0 $;
 	\item $\eff(take_2(k_2)) :  \set{\tuple{\true, v_2 , v_2 -k_2}}$;
 	\item $\pre(take_3(k_1, k_2)) : (\bigvee_{s \in S} k_1 = s)  \wedge v_1 \ge k_1 \wedge \\ \hspace*{6mm} v_2 \ge k_2 \wedge k_1 = k_2$;
+	\item {\color{red}$\pre(take_3(k_1, k_2)) : (\bigvee_{s \in S} k_1 = s) \wedge v_1 \ge k_1 \wedge v_2 \ge k_2 \wedge k_1 = k_2 \wedge k_1 > 0$;}
 	\item $\eff(take_3(k_1, k_2)) :  \set{\tuple{\true, v_1 , v_1 -k_1}, \\ \hspace*{6mm} \tuple{\true, v_2 , v_2 -k_2}}$.
 \end{itemize}
 
@@ -4394,6 +4472,7 @@ There are $42$ test cases in total.
 	\item $\eff(take_2(k_2)) : \set{\tuple{\true, v_2, v_2-k_2}}$;
 	\item $\pre(take_3(k_1, k_2)) : v_1 \ge k_1 \wedge v_2 \ge k_2 \wedge \\ \hspace*{6mm}
 	k_1 > 0 \wedge k_2 > 0\wedge k_2 < f(k) \wedge k_1 \le k_2$;
+	\item {\color{red}$\pre(take_3(k_1, k_2)) : v_1 \ge k_1 \wedge v_2 \ge k_2 \wedge k_1 > 0 \wedge k_2 > 0 \wedge k_1 \le k_2 \wedge k_2 < f(k_1)$;}
 	\item $\eff(take_3(k_1, k_2)) : \set{\tuple{\true, v_1, v_1 -k_1},\\ \hspace*{6mm}
 		\tuple{\true, v_2, v_2 - k_2}}$.
 \end{itemize}
@@ -4426,6 +4505,7 @@ There are $105$ test cases in total.
 	\item $\pre(take_3(k_1, k_2)) : v_1 \ge k_1 \wedge v_2 \ge k_2 \wedge
 	k_1 > 0 \wedge  \\ \hspace*{6mm} k_1 = k_2 \wedge (v_1 - k_1 \ge m_1 \vee v_2 - k_2 \ge m_1) \wedge \\ \hspace*{6mm}
 	(v_1 - k_1 \ge m_2 \vee v_2 - k_2 \ge m_2)$;
+	\item {\color{red}$\pre(take_3(k_1, k_2)) : v_1 \ge k_1 \wedge v_2 \ge k_2 \wedge k_1 > 0 \wedge k_1 = k_2 \wedge (v_1 - k_1 \ge m_1 \wedge v_2 - k_2 \ge m_1) \wedge ((v_1 - k_1 \ge m_2) \vee (v_2 - k_2 \ge m_2))$;}
 	\item $\eff(take_3(k_1, k_2)) : \set{\tuple{\true, v_1, v_1 -k_1},\\ \hspace*{6mm}
 		\tuple{\true, v_2, v_2 - k_2}}$.
 \end{itemize}
@@ -4462,7 +4542,7 @@ There are $150$ test cases in total.
 	\item $\pre(take(k_1, k_2)) : v_1 \ge k_1 \wedge  k_1 \ge 0 \wedge v_2 \ge k_2 \wedge \\ \hspace*{6mm}
 	k_2 \ge 0 \wedge  k_1 + k_2 > 0 \wedge ( k_1 < m_1 \vee \\ \hspace*{6mm}
 	k_2 < m_1 \vee (k_1\ge k_2 \wedge k_1 - k_2 < m_2) \vee \\ 	\hspace*{6mm}
-	(k_2\ge k_1 \wedge k_2 - k_1 < m_2) $;
+	(k_2\ge k_1 \wedge k_2 - k_1 < m_2))$;
 	\item $\eff(take(k_1, k_2)) : \set{\tuple{\true, v_1, v_1 -k_1}, \\ \hspace*{6mm}
 		\tuple{\true, v_2, v_2 - k_2}}$.
 \end{itemize}
@@ -4529,7 +4609,9 @@ There are $140$ test cases in total.
 \begin{itemize}
 	\item $\statevar: \set{v_1, v_2}$;
 	\item $\constraint: v_1 \ge 0 \wedge  v_2 \ge 0$;
+	\item {\color{red}$\constraint: v_1 \ge 0 \wedge v_2 \ge 0 \wedge v_2 \le m$;}
 	\item $\estate: v_1 = 0\wedge v_2 = 0 \wedge v_2 \le m$;
+	\item {\color{red}$\estate: v_1 = 0 \wedge v_2 = 0$;}
 	\item $\act:take_1(k_1), take_2(k_2), take_3(k_1,k_2)$;
 	\item $\pre(take_1(k_1)) :  k_1 > 0 \wedge k_1 \le v_1$;
 	\item $\eff(take_1(k_1)) : \set{\tuple{\true, v_1, v_1-k_1}}$;
@@ -4563,6 +4645,7 @@ A total of 7 test cases with different restrictions on the maximum of $v_3$ are 
 \begin{itemize}
 	\item $\statevar: \set{v_1, v_2, v_3}$;
 	\item $\constraint: v_1 > 0 \wedge  v_2 \ge 0 \wedge  v_3 \ge 0 \wedge v_3 \le m$;
+	\item {\color{red}$\constraint: v_1 > 0 \wedge v_1 \ge v_2 \wedge v_2 \ge v_3 \wedge v_3 \ge 0 \wedge v_3 \le m$;}
 	\item $\estate: v_1 = 1 \wedge  v_2 = 0 \wedge v_3=0$;
 	\item $\act:\set{eat_i(k){\mid}1 \le i \le 3}$;
 	\item $\pre(eat_1(k)) : v_1 \ge k \wedge k > 1$;
