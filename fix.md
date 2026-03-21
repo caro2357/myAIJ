@@ -103,45 +103,6 @@
 
 `3. A logical framework` 需要修改，而且这一节的修改优先级也比较高。
 
-这一节承担的是全文的核心形式化工作：它不仅要把前面的预备知识落到统一的框架里，还要为后续的 `winning formula`、`strategy synthesis` 和理论结果提供严格的定义基础。  
-从 AIJ 投稿标准看，这一节当前主要有四类问题：
-
-1. 若干核心定义的记号还不够统一，局部存在自洽性风险。
-2. 个别位置存在明显的草稿痕迹或占位符，不适合投稿版本保留。
-
----
-
-### 1. 章节开头的定位还可以更精确
-
-**位置**  
-`AIJ-2025 (ver 2.3).tex:595-596`
-
-**主要问题**
-
-- 当前开头能表达本节大意，但还不够明确地点出本节的目标是“为 ICGs 提供 LIA-definable formalization”。
-- `based on numeric states and actions` 这样的说法略泛，和后面真正引入的形式化对象之间还可以连接得更紧。
-- 这一节在全文中的角色非常关键，因此节首导语应更明确地说明它与后续 synthesis/verification 部分的关系。
-
-**修改方法**
-
-- 将本节开头改写为更明确的定位句，强调这是本文的正式建模框架。
-- 在导语中直接说明：本节将定义游戏表示、winning formula，以及后续策略表示所依赖的基本对象。
-
----
-
-### 2. `Numeric states and actions` 小节存在若干记号不统一与形式化表达问题
-
-**位置**  
-`AIJ-2025 (ver 2.3).tex:601-646`
-
-**主要问题**
-
-
-- successor-state 的分段定义行内还带有数学模式符号混排痕迹，当前公式可读性不够好。
-- `For brevity, we sometimes use a for (semi-ground) actions.` 后面紧接着出现占位符 `(Do we need ground actions ??)`，这是投稿前必须删除的草稿痕迹。
-
-
-
 ### 5. `Rule` 与 `strategy` 的定义需要更清楚地区分“winning”“complete”“exhaustive”
 
 **位置**  
@@ -151,29 +112,7 @@
 
 - `A rule (\psi, a) is a pair of semi-ground formulas \psi and semi-ground actions a.` 这里 `formula` 应为单数
 - `\suc(s, a)` 与前文 successor notation 的顺序再次出现不一致。
-- 后面的解释段也存在若干语言问题，如 `each of its rule`、`winning forced action` 等。
 
-
-
-### 7. 这一节存在投稿前必须清理的草稿痕迹
-
-**位置**
-
-- `AIJ-2025 (ver 2.3).tex:599`
-- `AIJ-2025 (ver 2.3).tex:646`
-
-**主要问题**
-
-- 存在明显的内部备注和占位语句，例如：
-  - `(Do we need ground actions ??)`
-- 这类内容即便当前是注释或单独一行，也不应继续留在投稿版本附近。
-
-**修改方法**
-
-- 删除所有草稿式备注和占位符。
-- 如果这些备注对应的是尚未决定的写法，应先在 `fix.md` 或外部笔记中保留，不要继续留在正文文件里。
-
----
 
 ## `4. Synthesizing winning formulas` 部分审阅建议
 
@@ -189,135 +128,371 @@
 
 - 后文 `AIJ-2025 (ver 2.3).tex:1265` 又明确写了 `We use \phi(s) for the formula that denotes state s`，这与 algorithm input 中 `\phi` 作为 winning formula 发生了直接冲突。
 
+---
 
-### 4. Figure / Example / Algorithm 之间存在局部不一致
+## `5. Synthesizing winning strategies` 部分审阅建议
 
-**位置**  
-`AIJ-2025 (ver 2.3).tex:1138-1155`
+### 总体判断
 
-**主要问题**
+这一节需要修改，而且问题主要集中在符号系统、算法接口、约束公式和对象层次的统一性上，而不是一般性的语言风格。
 
-- Figure `\ref{tab:IsWinningState}` 里只有 `(a)`, `(b)`, `(c)` 三个子图，但 Example `\ref{exm:IsWinningState}` 最后引用了 `(d)`。
-- line 1153 将 state $2$ 对应到 Figure `(c)`，而图示过程更像是在描述中间图 `(b)`。
-- 该图的 label 用的是 `tab:IsWinningState`，但对象实际是 figure；这不影响编译，但会破坏交叉引用命名的一致性。
+从形式化一致性的角度看，这一节最需要优先处理的是：
 
-**修改方法**
-
-- 逐句核对 Example `\ref{exm:IsWinningState}` 与图中三个子图的对应关系。
-- 修正不存在的 `(d)` 引用，并统一每一步对应的子图标号。
-- 将 figure 的 label 命名风格统一为 `fig:*`。
+1. `action schema`、`semi-ground action`、`ground action` 在算法与正文中混用。
+2. `IsValid`、`VerifyWinningRule`、`VerifyCompleteRule` 这几类过程的返回类型不一致。
+3. `covers`、`\delta^c`、`\delta^w`、`\act^f`、`\act^u` 等辅助对象的含义还不够形式化。
+4. rule verification 的约束公式和 proof 中存在括号缺失、记号漂移和作用域不清的问题。
 
 ---
 
-### 5. Algorithm `IsWinningState'` 当前显示版本的语义表达不够稳
+### 1. `SynWinStrat` 主算法里，动作对象的层次没有统一
 
 **位置**  
-`AIJ-2025 (ver 2.3).tex:1170-1275`
+`AIJ-2025 (ver 2.3).tex:1704-1797`
 
 **主要问题**
 
-- 该算法上方的注释版伪代码引入了 `\statevar^0, \statevar^1, ...` 等时间点变量，看起来比当前显示版本更完整；这意味着当前显示版本可能是简化版，但简化后语义已经不够透明。
-- line 1188 和 line 1195 中的替换式容易引发变量捕获/替换方向不清的问题。
-- line 1253 说使用 `\statevar^i`，但 line 1254 举例又写成 `v_0`, `v_1`，再次出现 superscript/subscript 混用。
-- line 1265 又继续使用 `\phi(s)` 表示状态公式，与前面 winning formula 的 `\phi` 冲突未解决。
-- Theorem `\ref{thm:isWinState}` 只给了陈述，没有 proof 或 proof sketch；而 Introduction 里还强调加入了该 theorem 的完整证明，因此这里缺 proof 会很显眼。
+- 这一算法里 `a` 有时看起来是 action schema，有时又像 semi-ground action。
+- line 1736-1738 使用 `\pre(a)` 和 `\suc(s, a)`，但如果 `a` 仍然是带参数的 action schema，这里语义并不完整。
+- line 1723 中 `{\tt EnumerateActions}(\positiveSet'')` 输出的到底是 action schema、parameter instantiation，还是 semi-ground actions，没有在算法接口层说明清楚。
+- line 1715 中 `\act^f`、`\act^u` 被声明为动作集合，但后续把它们同时用于“待补充 condition formula 的 action”和“已被 complete rules 覆盖的 action”，对象层次混杂。
 
 **修改方法**
 
-- 优先决定到底采用哪一套表示法：保留当前简化版算法，还是回到带时间索引变量的更完整表示。
-- 无论采用哪一套，都要确保正文解释与展示的算法是同一套符号系统。
-- 明确处理 line 1188/1195 的 substitution semantics，避免变量替换方向、绑定变量和自由变量混淆。
-- 统一 `\statevar^i` 与 `v_i` 的记号，不要在同一段里混用 superscript/subscript 来表示时间层。
-- 补上 Theorem `\ref{thm:isWinState}` 的证明或至少完整 proof sketch，并与算法描述一一对应。
+- 在这一节开头先明确：后续算法中的 `a` 到底表示 action schema 还是 semi-ground action。
+- 如果 `EnumerateActions` 返回的是 semi-ground actions，那么正文和约束验证部分统一按 semi-ground action 书写。
+- 如果返回的是 action schema，则必须把参数实例化显式写出来，不能在 `\pre(a)` 和 `\suc(s,a)` 里省略。
+- 为 `\act^f` 和 `\act^u` 给出更精确的集合语义，区分“动作已完成”“动作被覆盖”“动作仍需 refinement”。
 
 ---
 
-### 6. 枚举法的小节把“样本一致性问题”和“全空间刻画问题”写混了
+### 2. `covers` 关系被频繁使用，但没有正式定义
 
 **位置**  
-`AIJ-2025 (ver 2.3).tex:1304-1333`
+`AIJ-2025 (ver 2.3).tex:1727-1730`  
+`AIJ-2025 (ver 2.3).tex:1983-1987`
 
 **主要问题**
 
-- line 1320 写  
-  `The enumeration process terminates when it finds candidates formula \phi such that {s | s |= \phi \land \constraint} = \positiveSet`.  
-  这与本节整体设定不一致。
-- `GenerateCandidate(\positiveSet, \negativeSet)` 的任务应是找到一个与正负样本一致的 candidate formula，而不是直接要求其在所有 legal states 上恰好等于 `\positiveSet`。
-- 如果 line 1320 按字面理解，它把“样本集上的一致性问题”写成了“全空间上的精确刻画问题”，这会与 CEGIS 的分层结构矛盾。
+- 主算法中多次出现 `\delta^c$ covers $a`、`covered by \delta^c`，但全文没有给出这个关系的正式定义。
+- line 1985 的自然语言说明只提供了直观含义，但仍然不足以作为算法判定条件的正式规范。
+- 在没有正式定义的情况下，line 1727 的测试条件很难被理解为一个可验证的运算。
 
 **修改方法**
 
-- 将枚举法的小节目标改写为：搜索与当前 `\positiveSet` / `\negativeSet` 一致的公式。
-- 如果你想强调在当前 sample 上完全分离，可以显式写成对 `\positiveSet`、`\negativeSet` 的一致性条件，而不是集合等式。
-- 保持这一小节与前面 `GenerateCandidate` 的伪代码接口完全一致。
+- 单独给出 `\delta^c$ covers $a` 的形式化定义。
+- 明确该关系是针对：
+  - 所有 winning states；
+  - 所有使 `a` 通向 losing states 的 winning states；
+  - 还是当前已知的 sampled states。
+- 若该判定实际只在 sample 上做近似检查，也应明确写出，否则容易被误认为是全局语义判定。
 
 ---
 
-### 7. `Exact binary classification` 部分有若干集合记号与编码记号不一致
+### 3. `\psi'_a` 在主算法中被使用，但没有被正式引入
 
 **位置**  
-`AIJ-2025 (ver 2.3).tex:1352-1482`
+`AIJ-2025 (ver 2.3).tex:1770`  
+`AIJ-2025 (ver 2.3).tex:1776`
 
 **主要问题**
 
-- Definition `\ref{def:extBinClass}` 使用的是 `\featureSet`，但后面 partial MaxSAT encoding 中 line 1432 写成了 `\psi \in \Psi`。
-- Example `\ref{exm:NimMaxSatTheory}` line 1466 也把 atom set 写成 `\Psi`，而非前文统一使用的 `\featureSet`。
-- hard constraint 的写法  
-  `\bigvee_{\psi(s) \neq \psi(t)} Sel(\psi)`  
-  省略了 `\psi \in \featureSet` 这一域说明；作为正式编码定义并不够严谨。
-- partial MaxSAT encoding 实际上只完成了“选取一组 distinguishing atoms”，但“如何由选中的 atoms 构造最终公式”这一步在这一段里没有被清楚写成方法步骤。
+- 当前算法直接使用 `(\psi'_a, a)`，并在注释中说它是 “the existing incomplete but winning rule of `\delta^w`”。
+- 但 `\psi'_a` 没有在算法输入、数据结构定义或正文解释中正式引入。
+- 读者无法确定：
+  - 是否总存在唯一的 `(\psi'_a, a)`；
+  - 若存在多个 rule 具有同一 action `a` 时如何处理；
+  - 若不存在对应 rule 时该操作是否仍然定义。
 
 **修改方法**
 
-- 将这一子节中关于 feature set 的记号统一为同一个符号，不要在 `\featureSet` / `\Psi` 之间切换。
-- 在 hard constraints 的定义里显式写出析取范围。
-- 在 partial MaxSAT encoding 之后单独补一句或一个步骤，明确说明 solver 选中 atom 子集后如何构造 candidate formula。
+- 在算法说明部分明确 `\delta^w` 中关于同一 action 的 rule 是否唯一。
+- 若唯一，直接在正文中写明：对每个 `a \in \act^u`，`\delta^w` 至多保存一个当前 condition formula。
+- 若不唯一，则必须重写 line 1770 / 1776 的更新规则。
 
 ---
 
-### 8. `Correctness verification` 的证明部分存在更严重的逻辑问题
+### 4. `IsValid` 的返回类型在 strategy synthesis 中出现明显不一致
 
 **位置**  
-`AIJ-2025 (ver 2.3).tex:1484-1571`
+`AIJ-2025 (ver 2.3).tex:1786-1795`
 
 **主要问题**
 
-- Definition `\ref{def:consWinForm}` 的三个约束整体思路是合理的，但 substitution notation 的说明最好与前文的替换记号保持完全一致。
-- 在 Theorem `\ref{thm:consWinForm}` 的 `(\Leftarrow)` 方向证明中，line 1536 写 `by induction on s`，这在形式上是不成立的；这里需要的是对“到终局的剩余步数”或某个 well-founded rank 进行归纳，而不是对状态对象本身归纳。
-- 更严重的是，line 1541 在尚未证明 `\phi` 是 winning formula 的情况下，直接写  
-  `By the definition of winning formula ..., s is a losing state.`  
-  这构成了明显的循环论证风险。
-- 同一 proof 中继续使用 `\tau(s, a)`，而前文 successor notation 并不始终一致；如果正文决定用 `\suc` 或 `\tau`，这里应统一。
-- Corollary `\ref{cor:winForm}` 的 proof sketch 依赖 `VerifyWinForm` 返回 `\emptyset` 等价于“所有约束有效”，但这一点在当前算法接口描述中没有被足够明确地 formalize。
+- line 1786 写  
+  `$S^e \assign {\tt IsValid}((\constraint \land \phi) \leftrightarrow ... )$`
+- 但 `IsValid` 在前文算法中一直被当作返回布尔值的判定过程使用。
+- 这里随后又比较 `S^e = \emptyset`，并在 else 分支中把 `S^e` 当成状态集合加入 `\positiveSet'`。
+- 这说明这里的过程实际上不应叫 `IsValid`，或者它不应返回布尔值。
 
 **修改方法**
 
-- 统一 substitution notation，使 Definition `\ref{def:consWinForm}` 与前文替换记法严格一致。
-- 将 Theorem `\ref{thm:consWinForm}` 的 `(\Leftarrow)` 方向 proof 重写为基于 well-founded game length / remaining moves 的归纳证明。
-- 删除 proof 中对“winning formula 定义”的循环调用，改为直接用三个约束与 `winning/losing states` 的递归定义推出结论。
-- 统一 successor notation，在 theorem、proof、definition 中使用同一套记号。
-- 在 `VerifyWinForm` 的描述里更明确地写出它与 Definition `\ref{def:consWinForm}` 的关系，使 Corollary `\ref{cor:winForm}` 的 proof sketch 更可追溯。
+- 统一这一类过程的接口。
+- 如果这里需要的是“返回违反 exhaustiveness 的 counterexample states”，那么应使用与 `VerifyWinForm` 更一致的命名和返回类型。
+- 若想保留 `IsValid`，则它必须始终返回布尔值，不能在这一处把返回值当作状态集合。
 
 ---
 
-### 9. 本节仍有若干应尽快修正的直接错误或草稿痕迹
+### 5. `EnumerateActions` 算法中，`a` 与 `a(k)` 的使用存在严重符号错误
 
-**位置**
-
-- `AIJ-2025 (ver 2.3).tex:801`
-- `AIJ-2025 (ver 2.3).tex:927`
-- `AIJ-2025 (ver 2.3).tex:1253-1255`
+**位置**  
+`AIJ-2025 (ver 2.3).tex:2059-2095`
 
 **主要问题**
 
-- `winnig` 是直接拼写错误。
-- 注释中仍残留 `(The difference and descriptions of the two algorithms ??)` 这类草稿痕迹。
-- 时间索引变量的说明里 `\statevar^i`、`v_0`、`v_1`、`v^i` 混杂使用，属于明显的符号管理问题。
+- line 2069 迭代的是 `a \in \act`，看起来 `a` 是 action schema。
+- line 2071 又写 `k \in Dom(k)` 和 `\pre(a(k))`，说明这里实际在考虑参数实例化。
+- 但 line 2079 写的是 `s \models \pre(a)` 和 `\suc(s, a) \in \loseSet`，这里又把 `a(k)` 退化成了 `a`。
+- line 2083 加入到 `\act_p` 的也是 `a`，而不是具体实例化后的动作。
+- 如果 strategy synthesis 是基于 semi-ground action 生成 rules，那么这里丢失参数实例化会直接影响后续 correctness。
 
 **修改方法**
 
-- 先扫掉所有直接拼写错误和草稿占位符。
-- 再统一时间索引变量的记法，确保正文、算法和公式说明都使用同一体系。
+- 明确 `EnumerateActions` 输出的是：
+  - action schemas；
+  - ground/semi-ground actions；
+  - 还是 action schemas together with admissible instantiations。
+- 若目标是返回可直接参与 rule synthesis 的动作，则 line 2079 和 line 2083 应统一使用实例化后的动作对象。
+- 对 `Dom(k)` 的写法也要补定义，说明参数域来自何处。
+
+---
+
+### 6. `EnumerateActions` 中若干集合和中间变量似乎没有真正参与算法结果
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:2075-2088`
+
+**主要问题**
+
+- `\positiveSet_a` 和 `\negativeSet_a` 在 `EnumerateActions` 里被构造出来，但最终输出只有 `\act_p`。
+- 从当前伪代码看，这两个集合在该算法内部没有实质作用，只是被临时构造后丢弃。
+- 这容易让人误判 `EnumerateActions` 的职责：它究竟只是枚举动作，还是同时完成动作级 sample collection。
+
+**修改方法**
+
+- 若这两个集合仅用于判断某个动作是否值得加入 `\act_p`，可以将该逻辑压缩为更简单的存在性条件。
+- 若后续确实需要保留它们，则应调整算法接口，使其显式输出这些集合或缓存它们。
+- 让 `EnumerateActions` 的输出与主算法 line 1723 的实际需要保持一致。
+
+---
+
+### 7. strategy synthesis 的示例中存在动作记号前后不一致
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:2120-2124`  
+`AIJ-2025 (ver 2.3).tex:2140-2142`
+
+**主要问题**
+
+- Table \ref{table:synWinRule} 第二轮中出现了动作 `take(v  \%  4)`。
+- 但 example 文本 line 2141 中对应动作却写成了 `take(v - 4)`。
+- 这不是简单的排版差异，而是两个完全不同的动作实例化表达。
+
+**修改方法**
+
+- 统一表格与 example 文本中的动作记号。
+- 同时检查该动作在 game formalization 中是否真的允许这种参数表达方式。
+- 若 `%` 表示取模而前文统一使用的是 `\modulo`，也应统一动作参数表达的符号体系。
+
+---
+
+### 8. rule verification 的约束公式存在括号缺失和 `\trans(a)` 语义未定义的问题
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:2150-2156`
+
+**主要问题**
+
+- line 2153 的 winning-rule constraint 括号不平衡。
+- 同样的问题在后面的 proof 中 line 2170 和 line 2175 又重复出现。
+- 此外，前文正式定义过的是 `\trans(a(\actparm))` 和 `\trans(\act)`，但这里直接使用 `\trans(a)`，没有说明当 `a` 为 semi-ground action 时该记号如何解释。
+- line 2155 的 complete-rule constraint 也使用了 `\trans(a)`，同样依赖这一定义。
+
+**修改方法**
+
+- 先修正所有括号缺失问题，确保约束公式语法完整。
+- 明确引入 `\trans(a)` 的含义：如果 `a` 是 semi-ground action，应说明它是对应 action instance 的 transition formula。
+- 让这一节中的 `\trans(a)` 用法与前文 transition-formula 部分正式接轨，而不是临时缩写。
+
+---
+
+### 9. `Theorem \ref{thm:consWinRule}` 的 proof 依赖未说明的语义桥接
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:2159-2196`
+
+**主要问题**
+
+- proof 中多次从  
+  `s \models \forall \statevar' [\trans(a) \rightarrow ... ]`  
+  直接推出  
+  `\suc(s, a)` 是 losing state。
+- 这个推理在直觉上成立，但需要依赖“`\trans(a)` 正确刻画了从 `s` 到其 successor 的状态转移”这一语义桥接。
+- 如果 `a` 在此处仍有 schema / instance 不清的问题，那么 proof 的这一步就不够严谨。
+- complete-rule 的 `(\Leftarrow)` 方向也默认了  
+  `\suc(s, a)$ is losing $\Rightarrow s \models \exists \statevar' [\trans(a) \land ... ]`
+  这一点，需要同样的桥接说明。
+
+**修改方法**
+
+- 在 theorem 前或 proof 开头明确调用 transition-formula 的语义正确性。
+- 若需要，可补一条简单 lemma：对任一 semi-ground action `a` 和 state `s`，`\trans(a)` 与 `\suc(s,a)` 的定义一致。
+- 这样可避免 proof 中的关键一步显得像“默认成立”。
+
+---
+
+### 10. `complete`、`winning`、`exhaustive` 三者在算法说明里仍有轻微层次混杂
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:1980-2051`
+
+**主要问题**
+
+- `\delta^c` 被定义为 complete winning rules，`\delta^w` 被定义为 winning but incomplete rules，这一点是清楚的。
+- 但 line 1983-1987 对 `\act^f` 的说明把“action has a complete rule”与“action is covered by \delta^c”两种不同情形放在一起，语义层次不完全一致。
+- line 2043-2051 又通过 global equivalence 检查 strategy exhaustiveness，这与 action-level `covered` 之间的关系没有完全说清楚。
+
+**修改方法**
+
+- 将 action-level `finished / unfinished / covered` 与 strategy-level `winning / exhaustive` 这两层概念分开说明。
+- 明确指出：`covered` 只是 pruning criterion，而不是 strategy correctness 本身。
+- 避免让读者误以为“action 被覆盖”等价于“全局策略已经 exhaustive”。
+
+---
+
+### 11. `SynWinStrat` 的全局检查与反例回灌规则在语义上不自洽
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:1786-1795`  
+`AIJ-2025 (ver 2.3).tex:2043-2051`
+
+**主要问题**
+
+- 当前主算法使用的是  
+  `(\constraint \land \phi) \leftrightarrow [\constraint \land (\bigvee_{(\psi_a, a) \in \delta} \psi_a)]`
+  的双向等价检查。
+- 但 line 1794 无论得到什么反例，都统一把 `S^e` 加入 `\positiveSet'` 和 `\positiveSet`。
+- 这与双向等价检查不匹配，因为等价失败的反例理论上有两类：
+  - winning state 被策略漏掉；
+  - losing state 被策略错误覆盖。
+- line 2050-2051 的正文解释只描述了第一类情形，因此算法、解释和返回值语义目前没有完全对齐。
+
+**修改方法**
+
+- 在这里二选一统一语义：
+  - 若该步真正只想检查 strategy 的 exhaustiveness，那么把双向等价改成单向检查，只寻找“winning 但未被覆盖”的反例；
+  - 若坚持使用双向等价，则必须把反例分成正反两类，分别更新 `\positiveSet` 与 `\negativeSet`，而不能全部加入 `\positiveSet`。
+- 正文说明、伪代码变量名和后面的 proof sketch 必须与这一选择同步修改。
+- 建议显式写出该过程返回的到底是“missing winning states”还是“general counterexample states”。
+
+---
+
+### 12. strategy-level 全局反例的符号与术语没有统一
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:1786-1795`  
+`AIJ-2025 (ver 2.3).tex:2149-2157`  
+`AIJ-2025 (ver 2.3).tex:2168-2175`  
+`AIJ-2025 (ver 2.3).tex:2245-2247`
+
+**主要问题**
+
+- 伪代码中 strategy-level 全局检查的反例记号是 `S^e`。
+- 但表格最后一列写的是 `S^c`，example 文本里也写 `S^c = \{6\}` 和 `S^c = \emptyset`。
+- 同时正文有时把这一步叫 `exhaustiveness check`，有时又叫 `completeness check`，容易与单条 rule 的 `complete rule` 混淆。
+- 这会导致读者难以区分：
+  - `S^c_a`：单条 rule 的 completeness counterexamples；
+  - `S^e` 或 `S^c`：全局 strategy 检查返回的 counterexamples。
+
+**修改方法**
+
+- 统一 strategy-level 反例的记号，建议与 `exhaustive` 对应，单独保留一个符号并全文一致使用。
+- 单条 rule 的 `S^c_a` 和全局 strategy 的 counterexample set 不要共用同一个上标字母体系。
+- 在表格标题、列名、example 文字和 proof sketch 中统一术语：
+  - rule level 用 `complete / completeness`；
+  - strategy level 用 `exhaustive / exhaustiveness`。
+
+---
+
+### 13. `SynWinStrat` 的示例表格与正文文字在第二轮结果上明显对不上
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:2155-2157`  
+`AIJ-2025 (ver 2.3).tex:2173-2175`
+
+**主要问题**
+
+- 表格第二轮第三行写的是动作 `take(v \% 4)`。
+- 但 example 正文写成了 `take(v - 4)`，这是完全不同的动作。
+- 表格中该行对应的 condition formula 是 `v < 8 \vee v \modulo_4 3`，正文却写成了 `v = 5 \vee v = 6 \vee v \modulo_4 3`。
+- 这说明目前表格与正文至少有一处不是同一次运行结果。
+
+**修改方法**
+
+- 重新核对第二轮第三个 action 的真实实例化形式，到底是 `take(v \bmod 4)`、`take(v-4)`，还是别的 semi-ground action。
+- 核对该 action 对应的真实 `\positiveSet_a`、`\negativeSet_a`、`\psi_a` 和 counterexample，再统一更新表格与 example 文字。
+- 若采用模运算表达，动作参数符号应与正文统一，避免同时出现 `%`、`\mod`、`\modulo` 三种写法。
+
+---
+
+### 14. `table:synWinRule` 中至少有一行训练集与公式本身不一致
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:2157`
+
+**主要问题**
+
+- 表格第二轮第三行给出：
+  - `\positiveSet_a = \{1,2,3,5,6,7\}`
+  - `\negativeSet_a = \{4\}`
+  - `\psi_a = v < 8 \vee v \modulo_4 3`
+- 但该公式在 `v=4` 时也为真，因此它不可能把 `\negativeSet_a = \{4\}` 排除在外。
+- 这不是措辞问题，而是“表中样本集”和“表中学到的公式”之间的直接冲突。
+
+**修改方法**
+
+- 重新计算这一行的训练集和 candidate formula，二者必须满足最基本的一致性：
+  - 公式在所有 `\positiveSet_a` 中为真；
+  - 公式在所有 `\negativeSet_a` 中为假。
+- 如果该公式其实是简化前或简化后的另一个版本，需要在表格中统一写成同一阶段的结果。
+- 建议把整张表按“algorithm raw result”还是“simplified result”固定成一种口径，避免混用。
+
+---
+
+### 15. `proof sketch` 中引用的行号和变量仍对应旧版算法
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:2244-2248`
+
+**主要问题**
+
+- proof sketch 中使用了 `Line 13`、`Line 15`、`Line 19`、`Line 20` 以及 `S^c` 等说法。
+- 这些说法和当前 `SynWinStrat` 伪代码中的实际步骤、变量名已经不完全对应。
+- 尤其是全局 strategy 检查在当前算法里用的是 `S^e`，而 proof sketch 仍在说 `S^c`。
+
+**修改方法**
+
+- 在主算法定稿后，最后回头统一刷新 proof sketch 中的行号引用。
+- 证明草稿中的变量名必须与当前算法完全一致，尤其是 `S^w_a`、`S^c_a` 和 strategy-level 的全局反例集合。
+- 若投稿版本希望减少行号敏感性，也可以把 proof sketch 改成“the winning-rule verification step / the global exhaustiveness check”这类表述。
+
+---
+
+### 16. `SynWinForm` 的 `The main algorithm` 基本自洽，但可以做一处小幅澄清
+
+**位置**  
+`AIJ-2025 (ver 2.3).tex:832-912`
+
+**主要问题**
+
+- 这一段整体上比 strategy synthesis 部分更自洽，表格与文字描述大体是对得上的。
+- 但 line 866 写“verification procedure yields some states of `S'` ... and incorporates them into `\positiveSet` and `\negativeSet`, respectively”，这里略显简写。
+- 从读者视角看，最好明确 `ClassifyStates(S')` 会把这些 counterexample states 分成 winning 与 losing 两类，再分别并入 `\positiveSet` 和 `\negativeSet`。
+
+**修改方法**
+
+- 保持算法主体不变。
+- 仅把这句解释写得更明确，避免与 strategy synthesis 那里“把所有反例都并入 `\positiveSet`”形成歧义对照。
 
 ---
 
@@ -325,9 +500,10 @@
 
 对这一节，建议优先按下面顺序处理：
 
-1. 先修 Algorithm `IsWinningState` / `IsWinningState'` 中 `\phi` 的符号复用问题，以及 transition / successor 相关记号不一致。
-2. 再修 Theorem `\ref{thm:consWinForm}` 与 Theorem `\ref{thm:isWinState}` 附近的证明严谨性问题。
-3. 然后统一 `\featureSet` / `\Psi`、`\statevar^i` / `v_i`、`\suc` / `\tau` 等整节范围内的符号系统。
-4. 最后再处理拼写、小型图号引用错误和注释残留。
+1. 先决定 strategy-level 全局检查到底是“单向 exhaustiveness 检查”还是“双向等价检查”，并据此统一 `S^e` 的语义和回灌规则。
+2. 再统一动作对象层次，尤其是 `a`、`a(k)`、semi-ground action、`\trans(a)` 的含义。
+3. 然后修 `IsValid` 返回类型不一致，以及 `\psi'_a`、`covers` 未正式定义的问题。
+4. 接着修 rule-verification 约束与 proof 中的括号、记号和语义桥接问题。
+5. 最后统一 example/table 中的动作、公式、反例记号和术语。
 
-这一节如果只做语言润色而不修这些符号与证明层面的硬问题，审稿人很可能仍会把它视为“形式化尚未完全收口”的稿件。
+这一节的主要风险不是“说得不够漂亮”，而是算法对象到底是什么、验证约束到底对应哪一层语义还没有完全收紧。

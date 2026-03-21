@@ -924,7 +924,7 @@ Hence, this paper does not include the illustration and experimental comparison 
     %The first one works in a forward direction which recursively determining the value of a given state by evaluating the value of its successor state until it reaches an ending state.
     %The second one works in a backward direction which starts from the set of ending states. to a set of winning (or losing) states.
     %If the given state is in a set of winning states, then it is winning; otherwise, it is losing.    
-    %(The difference and descriptions of the two algorithms ??)    
+    
     %One adopts a symbolic backward induction method, providing a formal proof for the decidability result of determining if a state is winning in an LIA-definable ICG. The other is designed to improve practical efficiency.
     %\end{color}
 
@@ -1140,18 +1140,16 @@ Hence, this paper does not include the illustration and experimental comparison 
 
 		\begin{example}\label{exm:IsWinningState} \rm
 			\looseness=-1
-				Let us consider the Take-away-3 game, starting from state $4$.
-				Figure \ref{tab:IsWinningState} shows the run of Algorithm \ref{alg:IsWinningState} for state $4$.
-				Since the value of state $4$ has not been computed and it is not an ending state, Algorithm \ref{alg:IsWinningState} iterates through its successor states $1$, $2$ and $3$.
-				State $1$, also not previously computed and not an ending state, leads to its unique successor state $0$.
-				As state $0$ is an ending state, it is classified as losing and stored in the cache. %, which implies that state $1$ is winning.
-				 %it implies that $0$ is a losing state which is stored in the cache.
-				It follows that state $1$ is a winning state, which is stored in the cache (Figure \ref{tab:IsWinningState}(a)).
-				Then, Algorithm \ref{alg:IsWinningState} evaluates state $2$ by examining its successor states $0$ and $1$.
-				%Now, Algorithm \ref{alg:IsWinningState} iterates its successor states $0$ and $1$.
-				Since state $0$ was already known as a losing state according to the memorization, state $2$ is winning (Figure \ref{tab:IsWinningState}(b)).
-				Similarly, state $3$ is identified as winning.
-				Because all of its successor states of state $4$ are winning, state $4$ itself is a losing state (Figure \ref{tab:IsWinningState}(c)). \qed					
+				Let us consider the Take-away-$3$ game with initial state $4$.
+				Figure \ref{tab:IsWinningState} illustrates a run of Algorithm \ref{alg:IsWinningState} on this game.
+				Since state $4$ is not in the cache and is not an ending state, the algorithm recursively explores its successor states $1$, $2$, and $3$.
+				It first visits state $1$, whose unique successor is state $0$.
+				Because state $0$ is an ending state, it is classified as losing and stored in the cache.
+				Consequently, state $1$ is classified as winning and stored in the cache, as shown in Figure \ref{tab:IsWinningState}(a).
+				The algorithm then evaluates state $2$.
+				Since state $2$ has a successor state $0$, which is already known to be losing, state $2$ is classified as winning, as shown in Figure \ref{tab:IsWinningState}(b).
+				Similarly, state $3$ is classified as winning because it also has a move to state $0$, as shown in Figure \ref{tab:IsWinningState}(c).
+				As all successor states of state $4$ are winning, state $4$ itself is classified as losing. \qed					
 %			
 %			This algorithm first checks the cache for the value of $s$.
 %			Since it is unknown, the algorithm verifies if $s=4$ is a legal ending state $s'=0$.
@@ -1265,7 +1263,24 @@ Hence, this paper does not include the illustration and experimental comparison 
 	If $s$ satisfies $\psi$, then $s$ is a losing state (Lines 2 and 8).
 	Similarly, $s$ is a winning state when $s$ satisfies $\varphi$ (Lines 6).		
 	Since any ICG always ends in a finite number of moves, the loop (Lines 4 - 8) is guaranteed to terminate.
-	
+
+	\looseness=-1
+	{\red
+	Algorithm \ref{alg:IsWinningState'} explains how to determine whether a given legal state $s$ is winning by iteratively constructing two formulas, $\psi$ and $\varphi$, according to Definition \ref{def:wlState}.
+	The algorithm initializes $\psi$ as $\constraint \land \estate$ and $\varphi$ as $\false$ (Line 1).
+	Thus, $\psi$ initially denotes the set of legal ending states, which are losing states, while $\varphi$ denotes the empty set of winning states identified so far.
+	The algorithm then checks whether the given state $s$ is already captured by $\psi$.
+	If $\phi(s) \rightarrow \psi$ is valid, then $s$ is a legal ending state, and the algorithm returns $\false$ (Lines 2).
+	If the above test fails, then the algorithm enters the loop and alternately expands $\varphi$ and $\psi$ (Lines 4--8).
+	The algorithm first enlarges $\varphi$ by adding the states that have at least one successor satisfying $\psi$, so $\varphi$ always denotes the set of states already determined to be winning (Line 5).
+	If $\phi(s) \rightarrow \constraint \land \varphi$ is valid, then $s$ is winning, and the algorithm returns $\true$ (Line 6).
+	Otherwise, the algorithm enlarges $\psi$ by adding the states all of whose successor states satisfy $\varphi$, so $\psi$ always denotes the set of states already determined to be losing (Line 7).
+	If $\phi(s) \rightarrow \constraint \land \psi$ is valid, then $s$ is losing, and the algorithm returns $\false$ (Line 8).
+	Since every ICG terminates after finitely many moves, the repeated updates of $\varphi$ and $\psi$ eventually determine whether $s$ is winning or losing, and hence the loop terminates (Lines 4--8).
+	}
+
+
+
 	\looseness=-1
 	We obtain the decidability of determining if a state is winning for any LIA-definable ICG.
 
@@ -2080,6 +2095,39 @@ The two sets $\positiveSet$ and $\positiveSet'$ will be extended by $S^e$ for th
 \end{algorithm}
 
 
+
+\begin{algorithm}[!t]
+	\red
+	\caption{$\tt{EnumerateActions}(\positiveSet, \act^f, \act^u)$}
+	\label{alg:EnumerateActionsNew}
+	\KwIn{$\Pi = \tuple{\statevar, \act, \constraint, \estate}$: an LIA-definable ICG; \\
+		\hspace*{12.5mm}$\positiveSet$: the set of winning states generated at the previous iteration; \\
+		\hspace*{12.5mm}$\act^f$: the set of finished actions; \\
+		\hspace*{12.5mm}$\act^u$: the set of unfinished actions.}
+	\KwOut{$\act_p$: a set of new instantiated actions}
+
+	$\act_p \assign \emptyset$
+
+	\ForEach{$s \in \positiveSet$}
+	{
+		\ForEach{$a(\parmset) \in \act$}
+		{
+			\ForEach{instantiation $\expVec$ of $\parmset$ {\bf and} $a[\expVec] \notin \act_p \cup \act^f \cup \act^u$ }
+			{
+				\If{$s \models \pre(a[\expVec])$ {\bf and} $\suc(s, a[\expVec]) \in \loseSet$}
+				{
+					$\act_p \assign \act_p \cup \set{a[\expVec]}$
+					
+					break
+				}
+			}
+		}
+	}
+
+	\Return {$\act_p$}
+\end{algorithm}
+
+
 \looseness=-1
 Algorithm \ref{alg:EnumerateActions} provides a procedure for enumerating candidate actions from the current set of winning states $\positiveSet$ in an LIA-definable ICG. 
 For each action $a$ in the action set $\act$, the algorithm systematically explores all possible parameter instantiations $k$ within the domain of $a$, subject to the precondition $\pre(a(k))$ and the global constraint $\constraint$. 
@@ -2093,38 +2141,42 @@ thereby improving both the efficiency and relevance of the candidate action pool
 
 \begin{table}[h]
     \centering
-        \fontsize{9}{15}  
-        \selectfont
-        \setlength{\tabcolsep}{8pt}
-    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \scriptsize
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.05}
+    {\color{red}
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{|>{\centering\arraybackslash}m{0.7cm}|>{\centering\arraybackslash}m{1.2cm}|>{\centering\arraybackslash}m{1.65cm}|>{\centering\arraybackslash}m{1.45cm}|>{\centering\arraybackslash}m{1.15cm}|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{2.0cm}|>{\centering\arraybackslash}m{0.55cm}|>{\centering\arraybackslash}m{0.55cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.35cm}|>{\centering\arraybackslash}m{0.55cm}|}
         \hline
-        Round & $\act_p$ & $\positiveSet_a$ & $\negativeSet_a$ & $\psi_a$ & $S^c_a$ & $S^c$ \\ \hline
-        \multirow{4}*{1} & $take(1)$ & $ 1, 5 $ &$2, 3, 4$& $v \modulo_4 1$ & $\emptyset$ & \multirow{4}*{$6$}\\ \cline{2-6}
-        & $take(2)$ & $ 2 $ & $ 1, 3, 4, 5$ & $v = 2$ & $ 6 $ &\\ \cline{2-6} 
-        & $take(3)$ & $ 3 $ & $ 1, 2, 4, 5$ & $v = 3$ & $ 7 $ &\\ \cline{2-6}
-        & $take(v)$ & $ 1, 2, 3 $ & $ 4, 5$ & $v \geq 1 \land v < 4$ & $\emptyset$ &\\ \hline
+        Round & $\positiveSet''$ & $\act'$ & $a$ & $\positiveSet_a$ & $\negativeSet_a$ & $\psi_a$ & $S^w_a$ & $S^c_a$ & $\act^f$ & $\act^u$ & $S^e$ \\ \hline
+        \multirow{4}*{1} & \multirow{4}*{$\{1, 2, 3, 5\}$} & \multirow{4}*{\shortstack[c]{$take(1)$\\$take(2)$\\$take(3)$\\$take(v)$}} & $take(1)$ & $\{1, 5\}$ & $\{0, 2, 3, 4\}$ & $v \modulo_4 1$ & $\emptyset$ & $\emptyset$ & \multirow{4}*{\shortstack[c]{$take(1)$\\$take(v)$}} & \multirow{4}*{\shortstack[c]{$take(2)$\\$take(3)$}} & \multirow{4}*{$\{6\}$}\\ \cline{4-9}
+        & & & $take(2)$ & $\{2\}$ & $\{0, 1, 3, 4, 5\}$ & $v = 2$ & $\emptyset$ & $\{6\}$ & & &\\ \cline{4-9}
+        & & & $take(3)$ & $\{3\}$ & $\{0, 1, 2, 4, 5\}$ & $v = 3$ & $\emptyset$ & $\{7\}$ & & &\\ \cline{4-9}
+        & & & $take(v)$ & $\{1, 2, 3\}$ & $\{0, 4, 5\}$ & $v \geq 1 \land v < 4$ & $\emptyset$ & $\emptyset$ & & &\\ \hline
         
-        \multirow{3}*{2} &$take(2)$ & $ 2 , 6 $ & $1, 3, 4, 5, 7$ & $v \modulo_4 2$ & $ \emptyset $ & \multirow{3}*{$\emptyset$} \\ \cline{2-6}
-        & $take(3)$ & $ 3, 7 $ & $ 1, 2, 4, 5, 6$ & $v = 3 \vee v= 7$ & $ 11 $ &\\ \cline{2-6}
-        & $take(v  \%  4)$ & $1, 2, 3,5, 6, 7 $ & $4$ & $ v < 8 \vee v \modulo_4 3$ & $ 9 $ &\\ \hline
-         
-    \end{tabular}
-    \caption{A run of synthesizing the winning strategy }
-    \label{table:synWinRule}
+        \multirow{3}*{\parbox[c][16.8ex][c]{0.7cm}{\centering 2}} & \multirow{3}*{\parbox[c][16.8ex][c]{1.2cm}{\centering $\{6, 7\}$}} & \multirow{3}*{\parbox[c][16.8ex][c]{1.65cm}{\centering $take(v - 4)$}} & $\rule{0pt}{5.6ex}take(2)$ & $\{2, 6\}$ & $\{0, 1, 3, 4, 5, 7\}$ & $v \modulo_4 2$ & $\emptyset$ & $\emptyset$ & \multirow{3}*{\parbox[c][16.8ex][c]{1.8cm}{\centering $take(1)$\\$take(v)$\\$take(2)$\\$take(3)$\\$take(v - 4)$}} & \multirow{3}*{\parbox[c][16.8ex][c]{1.35cm}{\centering $\emptyset$}} & \multirow{3}*{\parbox[c][16.8ex][c]{0.55cm}{\centering $\emptyset$}} \\ \cline{4-9}
+        & & & $\rule{0pt}{5.6ex}take(3)$ & $\{3, 7\}$ & $\{0, 1, 2, 4, 5, 6\}$ & $v \modulo_4 3$ & $\emptyset$ & $\emptyset$ & & &\\ \cline{4-9}
+        & & & $\rule{0pt}{5.6ex}take(v - 4)$ & $\{5, 6, 7\}$ & $\{0, 1, 2, 3, 4\}$ & $v > 4 \land v < 8$ & $\emptyset$ & $\emptyset$ & & &\\ \hline
+    \end{tabular}}
+    \caption{\color{red}A run of synthesizing the winning strategy \label{table:synWinRule}}
+    }
 \end{table}
 
 \begin{example} \rm
     \looseness=-1
     Table \ref{table:synWinRule} shows the synthesis process of the winning strategy for the Take-away-$3$ game under the new algorithm. 
-	In the first iteration, four actions $take(1)$, $take(2)$, $take(3)$ and $take(v)$ and the algorithm learns rules for the four generated actions based on the initial set of $P=\{1, 2, 3,5\} $ and  $N=\{0, 4\}$.
-	The rules $(v = 2, take(2))$ and $(v = 3, take(3))$ are winning but incomplete, with counterexamples $S^c_a = \{6\}$ and $S^c_a = \{7\}$. 
+	In the first iteration, $\positiveSet'' = \{1, 2, 3, 5\}$ and $\act' = \{take(1), take(2), take(3), take(v)\}$.
+	The algorithm learns four rules from the initial sets $\positiveSet = \{1, 2, 3, 5\}$ and $\negativeSet = \{0, 4\}$.
+	All four candidate rules satisfy the winning check, that is, $S^w_a = \emptyset$.
+	Among them, $(v = 2, take(2))$ and $(v = 3, take(3))$ are incomplete, with $S^c_a = \{6\}$ and $S^c_a = \{7\}$, respectively.
 	The other two rules $(v \modulo_4 1, take(1))$ and $(v \geq 1 \land v < 4, take(v))$ are both winning and complete.
-	After the rule learning for all actions is complete, the algorithm aggregates and simplifies all generated winning rules (regardless of their completeness) into a strategy $\delta$.	 
-	However, the $\delta = \set{(v \modulo_4 1, take(1)), (v = 2, take(2)), (v = 3, take(3)), (v \geq 1 \land v < 4, take(v))}$ fails on the completeness check, returning a counterexample $S^c=\{6\}$.
+	After aggregating the generated rules into a strategy $\delta$, the global exhaustiveness check returns $S^e = \{6\}$.
 
-    In the second iteration, a new action $take(v \mod 4)$ is added, and the conditions for $take(2)$ and $take(3)$ are refined.
-	The rules $(v \modulo_4 2, take(2))$ become winning and complete ($S^c_a=\emptyset$), but $(v = 3 \vee v = 7, take(3))$ and $(v = 5 \vee v = 6 \vee v \modulo_4 3, take(v - 4))$ are incomplete, with counterexamples $S^c_a = \{11\}$ and $S^c_a = \{9\}$. 
-	But the final simplified strategy $\delta = \set{(v \modulo_4 1, take(1)), (v \modulo_4 2, take(2)), (v \modulo_4 3, take(3))}$ is complete ($S^c=\emptyset$)  and the algorithm successfully synthesizes the final winning strategy and terminates. \qed
+    In the second iteration, $\positiveSet'' = \{6, 7\}$ and the new action set is $\act' = \{take(v - 4)\}$.
+	The conditions for $take(2)$ and $take(3)$ are refined to $v \modulo_4 2$ and $v \modulo_4 3$, respectively, and a new rule $(v > 4 \land v < 8, take(v - 4))$ is generated.
+	All three candidate rules in this iteration satisfy both the winning and completeness checks, that is, $S^w_a = \emptyset$ and $S^c_a = \emptyset$.
+	After simplification, the final strategy $\delta = \set{(v \modulo_4 1, take(1)), (v \modulo_4 2, take(2)), (v \modulo_4 3, take(3))}$ is exhaustive, since the global check returns $S^e = \emptyset$.
+	Hence, the algorithm successfully synthesizes the final winning strategy and terminates. \qed
 \end{example}	
 
 \subsection{Correctness verification} \label{sec:winStrCorVer}
