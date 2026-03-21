@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex AIJ-2025 (ver 2.3)"] 1774092919.58117 "AIJ-2025 (ver 2.3).aux" "AIJ-2025 (ver 2.3).bbl" "AIJ-2025 (ver 2.3)" 1774092930.83738 0
+["bibtex AIJ-2025 (ver 2.3)"] 1774095039.31456 "AIJ-2025 (ver 2.3).aux" "AIJ-2025 (ver 2.3).bbl" "AIJ-2025 (ver 2.3)" 1774095047.1979 0
   "./AIJ-2025.bib" 1761902036.76891 84495 061cdc6eb0b062c5b7cab950a3bb678a ""
   "./elsarticle-num-names.bst" 1742799060 28896 b24eb82d1afd0a3fa7d82c6efbe1f559 ""
-  "AIJ-2025 (ver 2.3).aux" 1774092924.8622 50165 3027fead837e0da86d12c92576935e6b "pdflatex"
+  "AIJ-2025 (ver 2.3).aux" 1774095044.17123 50184 4cd0caf4ef5efec0d91201b09bb114b0 "pdflatex"
   (generated)
   "AIJ-2025 (ver 2.3).bbl"
   "AIJ-2025 (ver 2.3).blg"
   (rewritten before read)
-["pdflatex"] 1774092919.74039 "AIJ-2025 (ver 2.3).tex" "AIJ-2025 (ver 2.3).pdf" "AIJ-2025 (ver 2.3)" 1774092930.85274 0
+["pdflatex"] 1774095039.4635 "AIJ-2025 (ver 2.3).tex" "AIJ-2025 (ver 2.3).pdf" "AIJ-2025 (ver 2.3)" 1774095047.21535 0
   "/home/caro/.TinyTeX/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/home/caro/.TinyTeX/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/home/caro/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ecbx0500.tfm" 1136768653 3584 0913860e6fa2bdf78ecaf460b391112b ""
@@ -253,11 +253,11 @@
   "/home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1774084881.54009 11524 dd03214d0820b3ff60deb8dd53d61eef ""
   "/home/caro/.TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1774065130 2236160 bdff4017c7be386ffe99478f711c53e1 ""
   "/home/caro/.TinyTeX/texmf.cnf" 1774065095 637 edd806fb06a89761a6034e1968af9017 ""
-  "AIJ-2025 (ver 2.3).aux" 1774092924.8622 50165 3027fead837e0da86d12c92576935e6b "pdflatex"
-  "AIJ-2025 (ver 2.3).bbl" 1774092917.88459 48424 b8f766975cbcf90613486a490cb443aa "bibtex AIJ-2025 (ver 2.3)"
-  "AIJ-2025 (ver 2.3).out" 1774092924.8802 13194 032a73a75df85722dc43cb0090d8b64d "pdflatex"
-  "AIJ-2025 (ver 2.3).spl" 1774092918.53806 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "AIJ-2025 (ver 2.3).tex" 1774092904.48892 311438 4a97e5ae73daa3bf1f9479409bd42b34 ""
+  "AIJ-2025 (ver 2.3).aux" 1774095044.17123 50184 4cd0caf4ef5efec0d91201b09bb114b0 "pdflatex"
+  "AIJ-2025 (ver 2.3).bbl" 1774095037.34608 48424 b8f766975cbcf90613486a490cb443aa "bibtex AIJ-2025 (ver 2.3)"
+  "AIJ-2025 (ver 2.3).out" 1774095044.19023 13194 032a73a75df85722dc43cb0090d8b64d "pdflatex"
+  "AIJ-2025 (ver 2.3).spl" 1774095037.99569 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "AIJ-2025 (ver 2.3).tex" 1774094997.18593 312101 0c284f1d3fdaece712fe17d0a930475c ""
   "elsarticle.cls" 1774084642.85924 45320 6a09c4ebaa5b931b22a08adb773e6074 ""
   "fig/misere-chomp-f.png" 1746507216 26480 6148da88ed242306057e256332a88006 ""
   "fig/misere-chomp-s.png" 1746507216 19990 464cc392382228c26a8c13996547f5e4 ""

@@ -2100,11 +2100,10 @@ The two sets $\positiveSet$ and $\positiveSet'$ will be extended by $S^e$ for th
 	\red
 	\caption{$\tt{EnumerateActions}(\positiveSet, \act^f, \act^u)$}
 	\label{alg:EnumerateActionsNew}
-	\KwIn{$\Pi = \tuple{\statevar, \act, \constraint, \estate}$: an LIA-definable ICG; \\
-		\hspace*{12.5mm}$\positiveSet$: the set of winning states generated at the previous iteration; \\
-		\hspace*{12.5mm}$\act^f$: the set of finished actions; \\
-		\hspace*{12.5mm}$\act^u$: the set of unfinished actions.}
-	\KwOut{$\act_p$: a set of new instantiated actions}
+	\KwIn{$\Pi = \tuple{\statevar, \act, \constraint, \estate}$: an LIA-definable ICG;   $\positiveSet$;    
+	$\act^f$;    
+	$\act^u$;}
+	\KwOut{$\act'$: a set of new instantiated actions;}
 
 	$\act_p \assign \emptyset$
 
@@ -2112,11 +2111,11 @@ The two sets $\positiveSet$ and $\positiveSet'$ will be extended by $S^e$ for th
 	{
 		\ForEach{$a(\parmset) \in \act$}
 		{
-			\ForEach{instantiation $\expVec$ of $\parmset$ {\bf and} $a[\expVec] \notin \act_p \cup \act^f \cup \act^u$ }
+			\ForEach{instantiation $\expVec$ of $\parmset$ {\bf and} $a[\expVec] \notin \act' \cup \act^f \cup \act^u$ }
 			{
 				\If{$s \models \pre(a[\expVec])$ {\bf and} $\suc(s, a[\expVec]) \in \loseSet$}
 				{
-					$\act_p \assign \act_p \cup \set{a[\expVec]}$
+					$\act_p \assign \act' \cup \set{a[\expVec]}$
 					
 					break
 				}
@@ -2124,7 +2123,7 @@ The two sets $\positiveSet$ and $\positiveSet'$ will be extended by $S^e$ for th
 		}
 	}
 
-	\Return {$\act_p$}
+	\Return {$\act'$}
 \end{algorithm}
 
 
@@ -2137,6 +2136,14 @@ Whenever a valid action-state pair is found, the corresponding action is added t
 This targeted enumeration ensures that only actions capable of transitioning winning states to losing states are considered for subsequent strategy synthesis, 
 thereby improving both the efficiency and relevance of the candidate action pool.
 
+{\color{red}
+Algorithm \ref{alg:EnumerateActionsNew} enumerates candidate actions from the winning state set $\positiveSet$ together with the two action sets $\act^f$ and $\act^u$.
+For each state $s \in \positiveSet$, the algorithm considers each action $a(\parmset) \in \act$ and searches for an instantiation $\expVec$ such that $a[\expVec] \notin \act_p \cup \act^f \cup \act^u$, $s \models \pre(a[\expVec])$, and $\suc(s, a[\expVec]) \in \loseSet$.
+If such an instantiation is found, the corresponding action $a[\expVec]$ is added to $\act_p$.
+After that, the search for the current pair of state and action stops immediately and proceeds to the next action.
+In this way, the algorithm returns a set of candidate actions that are applicable to the states in $\positiveSet$, lead to losing successor states, and have not appeared in $\act^f$ and $\act^u$.
+}
+
 
 
 \begin{table}[h]
@@ -2148,15 +2155,15 @@ thereby improving both the efficiency and relevance of the candidate action pool
     \resizebox{\columnwidth}{!}{
     \begin{tabular}{|>{\centering\arraybackslash}m{0.7cm}|>{\centering\arraybackslash}m{1.2cm}|>{\centering\arraybackslash}m{1.65cm}|>{\centering\arraybackslash}m{1.45cm}|>{\centering\arraybackslash}m{1.15cm}|>{\centering\arraybackslash}m{1.9cm}|>{\centering\arraybackslash}m{2.0cm}|>{\centering\arraybackslash}m{0.55cm}|>{\centering\arraybackslash}m{0.55cm}|>{\centering\arraybackslash}m{1.8cm}|>{\centering\arraybackslash}m{1.35cm}|>{\centering\arraybackslash}m{0.55cm}|}
         \hline
-        Round & $\positiveSet''$ & $\act'$ & $a$ & $\positiveSet_a$ & $\negativeSet_a$ & $\psi_a$ & $S^w_a$ & $S^c_a$ & $\act^f$ & $\act^u$ & $S^e$ \\ \hline
+        Round & $\positiveSet$ & $\act'$ & $a$ & $\positiveSet_a$ & $\negativeSet_a$ & $\psi_a$ & $S^w_a$ & $S^c_a$ & $\act^f$ & $\act^u$ & $S^e$ \\ \hline
         \multirow{4}*{1} & \multirow{4}*{$\{1, 2, 3, 5\}$} & \multirow{4}*{\shortstack[c]{$take(1)$\\$take(2)$\\$take(3)$\\$take(v)$}} & $take(1)$ & $\{1, 5\}$ & $\{0, 2, 3, 4\}$ & $v \modulo_4 1$ & $\emptyset$ & $\emptyset$ & \multirow{4}*{\shortstack[c]{$take(1)$\\$take(v)$}} & \multirow{4}*{\shortstack[c]{$take(2)$\\$take(3)$}} & \multirow{4}*{$\{6\}$}\\ \cline{4-9}
         & & & $take(2)$ & $\{2\}$ & $\{0, 1, 3, 4, 5\}$ & $v = 2$ & $\emptyset$ & $\{6\}$ & & &\\ \cline{4-9}
         & & & $take(3)$ & $\{3\}$ & $\{0, 1, 2, 4, 5\}$ & $v = 3$ & $\emptyset$ & $\{7\}$ & & &\\ \cline{4-9}
         & & & $take(v)$ & $\{1, 2, 3\}$ & $\{0, 4, 5\}$ & $v \geq 1 \land v < 4$ & $\emptyset$ & $\emptyset$ & & &\\ \hline
         
-        \multirow{3}*{\parbox[c][16.8ex][c]{0.7cm}{\centering 2}} & \multirow{3}*{\parbox[c][16.8ex][c]{1.2cm}{\centering $\{6, 7\}$}} & \multirow{3}*{\parbox[c][16.8ex][c]{1.65cm}{\centering $take(v - 4)$}} & $\rule{0pt}{5.6ex}take(2)$ & $\{2, 6\}$ & $\{0, 1, 3, 4, 5, 7\}$ & $v \modulo_4 2$ & $\emptyset$ & $\emptyset$ & \multirow{3}*{\parbox[c][16.8ex][c]{1.8cm}{\centering $take(1)$\\$take(v)$\\$take(2)$\\$take(3)$\\$take(v - 4)$}} & \multirow{3}*{\parbox[c][16.8ex][c]{1.35cm}{\centering $\emptyset$}} & \multirow{3}*{\parbox[c][16.8ex][c]{0.55cm}{\centering $\emptyset$}} \\ \cline{4-9}
-        & & & $\rule{0pt}{5.6ex}take(3)$ & $\{3, 7\}$ & $\{0, 1, 2, 4, 5, 6\}$ & $v \modulo_4 3$ & $\emptyset$ & $\emptyset$ & & &\\ \cline{4-9}
-        & & & $\rule{0pt}{5.6ex}take(v - 4)$ & $\{5, 6, 7\}$ & $\{0, 1, 2, 3, 4\}$ & $v > 4 \land v < 8$ & $\emptyset$ & $\emptyset$ & & &\\ \hline
+        \multirow{3}*{\parbox[c][20.4ex][c]{0.7cm}{\centering 2}} & \multirow{3}*{\parbox[c][20.4ex][c]{1.2cm}{\centering $\{6, 7\}$}} & \multirow{3}*{\parbox[c][20.4ex][c]{1.65cm}{\centering $take(v - 4)$}} & \parbox[c][6.8ex][c]{1.45cm}{\centering $take(2)$} & $\{2, 6\}$ & $\{0, 1, 3, 4, 5, 7\}$ & $v \modulo_4 2$ & $\emptyset$ & $\emptyset$ & \multirow{3}*{\parbox[c][20.4ex][c]{1.8cm}{\centering $take(1)$\\$take(v)$\\$take(2)$\\$take(3)$\\$take(v - 4)$}} & \multirow{3}*{\parbox[c][20.4ex][c]{1.35cm}{\centering $\emptyset$}} & \multirow{3}*{\parbox[c][20.4ex][c]{0.55cm}{\centering $\emptyset$}} \\ \cline{4-9}
+        & & & \parbox[c][6.8ex][c]{1.45cm}{\centering $take(3)$} & $\{3, 7\}$ & $\{0, 1, 2, 4, 5, 6\}$ & $v \modulo_4 3$ & $\emptyset$ & $\emptyset$ & & &\\ \cline{4-9}
+        & & & \parbox[c][6.8ex][c]{1.45cm}{\centering $take(v - 4)$} & $\{5, 6, 7\}$ & $\{0, 1, 2, 3, 4\}$ & $v > 4 \land v < 8$ & $\emptyset$ & $\emptyset$ & & &\\ \hline
     \end{tabular}}
     \caption{\color{red}A run of synthesizing the winning strategy \label{table:synWinRule}}
     }
@@ -2164,19 +2171,26 @@ thereby improving both the efficiency and relevance of the candidate action pool
 
 \begin{example} \rm
     \looseness=-1
-    Table \ref{table:synWinRule} shows the synthesis process of the winning strategy for the Take-away-$3$ game under the new algorithm. 
-	In the first iteration, $\positiveSet'' = \{1, 2, 3, 5\}$ and $\act' = \{take(1), take(2), take(3), take(v)\}$.
-	The algorithm learns four rules from the initial sets $\positiveSet = \{1, 2, 3, 5\}$ and $\negativeSet = \{0, 4\}$.
-	All four candidate rules satisfy the winning check, that is, $S^w_a = \emptyset$.
-	Among them, $(v = 2, take(2))$ and $(v = 3, take(3))$ are incomplete, with $S^c_a = \{6\}$ and $S^c_a = \{7\}$, respectively.
-	The other two rules $(v \modulo_4 1, take(1))$ and $(v \geq 1 \land v < 4, take(v))$ are both winning and complete.
-	After aggregating the generated rules into a strategy $\delta$, the global exhaustiveness check returns $S^e = \{6\}$.
+    {\color{red}Table \ref{table:synWinRule} shows the synthesis process of the winning strategy for the Take-away-$3$ game under the algorithm \ref{alg:SynWinStrat}. 
+	In the first iteration, the input winning states are $\positiveSet = \{1, 2, 3, 5\}$, so the algorithm enumerates $\act' = \{take(1), take(2), take(3), take(v)\}$.
+	For each action $a \in \act'$, the table lists the states in $\positiveSet_a$ that can use $a$ to reach a losing state, and the states in $\negativeSet_a$ that cannot be handled by $a$.
+	For example, for $take(1)$, the states $\{1, 5\}$ belong to $\positiveSet_a$, so the learned condition is $v \modulo_4 1$.
+	Similarly, $take(v)$ works exactly on $\{1, 2, 3\}$, and therefore yields the rule $(v \geq 1 \land v < 4, take(v))$.
+	The four candidate rules all satisfy the winning check, namely $S^w_a = \emptyset$ for every row in the first iteration.
+	However, the rules for $take(2)$ and $take(3)$ are not yet complete, because they still miss the winning states $6$ and $7$, respectively.
+	This is why their completeness counterexamples are $S^c_a = \{6\}$ and $S^c_a = \{7\}$.
+	In contrast, the rules $(v \modulo_4 1, take(1))$ and $(v \geq 1 \land v < 4, take(v))$ satisfy both checks, so these two actions are moved to $\act^f$.
+	The actions $take(2)$ and $take(3)$ are kept in $\act^u$, because they are already useful but still need to be refined in later iterations.
+	After combining the rules obtained so far, the global check returns $S^e = \{6\}$, which means that the current strategy still does not cover all winning states and another iteration is needed.
 
-    In the second iteration, $\positiveSet'' = \{6, 7\}$ and the new action set is $\act' = \{take(v - 4)\}$.
-	The conditions for $take(2)$ and $take(3)$ are refined to $v \modulo_4 2$ and $v \modulo_4 3$, respectively, and a new rule $(v > 4 \land v < 8, take(v - 4))$ is generated.
-	All three candidate rules in this iteration satisfy both the winning and completeness checks, that is, $S^w_a = \emptyset$ and $S^c_a = \emptyset$.
-	After simplification, the final strategy $\delta = \set{(v \modulo_4 1, take(1)), (v \modulo_4 2, take(2)), (v \modulo_4 3, take(3))}$ is exhaustive, since the global check returns $S^e = \emptyset$.
-	Hence, the algorithm successfully synthesizes the final winning strategy and terminates. \qed
+    In the second iteration, the algorithm continues with the newly generated winning states $\positiveSet = \{6, 7\}$.
+	Since $take(2)$ and $take(3)$ are already in $\act^u$, the only newly enumerated action is $\act' = \{take(v - 4)\}$.
+	The table then shows how the previously unfinished actions are refined on the enlarged data.
+	After adding the new information from states $6$ and $7$, the condition for $take(2)$ becomes $v \modulo_4 2$, and the condition for $take(3)$ becomes $v \modulo_4 3$.
+	At the same time, the new action $take(v - 4)$ is learned from $\positiveSet_a = \{5, 6, 7\}$, which yields the rule $(v > 4 \land v < 8, take(v - 4))$.
+	All three rules in this iteration satisfy both the winning and completeness checks, so now all remaining actions are moved to $\act^f$ and $\act^u$ becomes empty.
+	At the end of this iteration, $\act^f = \{take(1), take(v), take(2), take(3), take(v - 4)\}$, $\act^u = \emptyset$, and the global check returns $S^e = \emptyset$.
+	Therefore, every winning state is covered by some rule in the synthesized strategy, and the algorithm terminates with an exhaustive winning strategy.} \qed
 \end{example}	
 
 \subsection{Correctness verification} \label{sec:winStrCorVer}
