@@ -2,8 +2,8 @@ PWD /mnt/c/Users/2357/Desktop/myAIJ
 INPUT /home/caro/.TinyTeX/texmf.cnf
 INPUT /home/caro/.TinyTeX/texmf-dist/web2c/texmf.cnf
 INPUT /home/caro/.TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT AIJ-2025 (ver 2.3).tex
-OUTPUT AIJ-2025 (ver 2.3).log
+INPUT AIJ-2025 (ver 2.6).tex
+OUTPUT AIJ-2025 (ver 2.6).log
 INPUT ./elsarticle.cls
 INPUT elsarticle.cls
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
@@ -39,12 +39,11 @@ INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT ./AIJ-2025 (ver 2.3).spl
-INPUT ./AIJ-2025 (ver 2.3).spl
-INPUT AIJ-2025 (ver 2.3).spl
+INPUT ./AIJ-2025 (ver 2.6).spl
+INPUT ./AIJ-2025 (ver 2.6).spl
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
-OUTPUT AIJ-2025 (ver 2.3).spl
+OUTPUT AIJ-2025 (ver 2.6).spl
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
@@ -288,26 +287,29 @@ INPUT /home/caro/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-INPUT ./AIJ-2025 (ver 2.3).aux
-INPUT ./AIJ-2025 (ver 2.3).aux
-INPUT AIJ-2025 (ver 2.3).aux
-OUTPUT AIJ-2025 (ver 2.3).aux
+INPUT ./AIJ-2025 (ver 2.6).aux
+INPUT ./AIJ-2025 (ver 2.6).aux
+INPUT AIJ-2025 (ver 2.6).aux
+OUTPUT AIJ-2025 (ver 2.6).aux
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/tipa/t3cmr.fd
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/tipa/t3cmr.fd
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/tipa/t3cmr.fd
+INPUT /home/caro/.TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /home/caro/.TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /home/caro/.TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /home/caro/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT ./AIJ-2025 (ver 2.3).out
-INPUT ./AIJ-2025 (ver 2.3).out
-INPUT AIJ-2025 (ver 2.3).out
-INPUT AIJ-2025 (ver 2.3).out
-OUTPUT AIJ-2025 (ver 2.3).pdf
-INPUT ./AIJ-2025 (ver 2.3).out
-INPUT ./AIJ-2025 (ver 2.3).out
-OUTPUT AIJ-2025 (ver 2.3).out
+INPUT ./AIJ-2025 (ver 2.6).out
+INPUT ./AIJ-2025 (ver 2.6).out
+INPUT AIJ-2025 (ver 2.6).out
+INPUT AIJ-2025 (ver 2.6).out
+OUTPUT AIJ-2025 (ver 2.6).pdf
+INPUT ./AIJ-2025 (ver 2.6).out
+INPUT ./AIJ-2025 (ver 2.6).out
+OUTPUT AIJ-2025 (ver 2.6).out
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -370,8 +372,6 @@ INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/public/latex-fonts/lasy9.tfm
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ecti0900.tfm
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ectt0900.tfm
-INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ecti0700.tfm
-INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ecti0500.tfm
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/tfm/jknappen/ec/ecbx0600.tfm
 INPUT ./fig/normal-sub-f.png
 INPUT ./fig/normal-sub-f.png
@@ -498,18 +498,17 @@ INPUT ./fig/misere-chomp-s.png
 INPUT ./fig/misere-chomp-s.png
 INPUT ./fig/misere-chomp-s.png
 INPUT ./fig/misere-chomp-s.png
-INPUT ./AIJ-2025 (ver 2.3).bbl
-INPUT ./AIJ-2025 (ver 2.3).bbl
-INPUT AIJ-2025 (ver 2.3).bbl
-INPUT AIJ-2025 (ver 2.3).aux
-INPUT ./AIJ-2025 (ver 2.3).out
-INPUT ./AIJ-2025 (ver 2.3).out
-INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk
+INPUT ./AIJ-2025 (ver 2.6).bbl
+INPUT ./AIJ-2025 (ver 2.6).bbl
+INPUT AIJ-2025 (ver 2.6).bbl
+INPUT AIJ-2025 (ver 2.6).aux
+INPUT ./AIJ-2025 (ver 2.6).out
+INPUT ./AIJ-2025 (ver 2.6).out
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0500.600pk
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0500.600pk
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0600.600pk
+INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk
-INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900.600pk
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0700.600pk
@@ -525,7 +524,6 @@ INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk
 INPUT /home/caro/.TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /home/caro/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /home/caro/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb

@@ -1325,7 +1325,7 @@
 \newcommand*{\qed}{\hbox{}\hfill$\Box$}
 
 \@ifundefined{@biboptions}{\xdef\@biboptions{numbers}}{}
-\InputIfFileExists{\jobname.spl}{}{}
+\KwInIfFileExists{\jobname.spl}{}{}
 \ifnonatbib\relax\else
   \RequirePackage[\@biboptions]{natbib}
 \fi
@@ -1381,7 +1381,7 @@
  }
  \global\let\bibfont=\footnotesize
  \global\bibsep=0pt
- \if@twocolumn\input{fleqn.clo}\fi
+ \if@twocolumn\KwIn{fleqn.clo}\fi
 %    \end{macrocode}
 %
 %\subsection{Option '5p'}
@@ -1403,7 +1403,7 @@
  }%
  \global\let\bibfont=\footnotesize
  \global\bibsep=0pt
- \input{fleqn.clo}
+ \KwIn{fleqn.clo}
  \global\@twocolumntrue
 %%
 %% End of option '5p'

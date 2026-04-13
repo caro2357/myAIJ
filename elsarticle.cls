@@ -1237,7 +1237,7 @@
 \newcommand*{\qed}{\hbox{}\hfill$\Box$}
 
 \@ifundefined{@biboptions}{\xdef\@biboptions{numbers}}{}
-\InputIfFileExists{\jobname.spl}{}{}
+\IfFileExists{\jobname.spl}{}{}
 \ifnonatbib\relax\else
   \RequirePackage[\@biboptions]{natbib}
 \fi
@@ -1280,7 +1280,7 @@
  }
  \global\let\bibfont=\footnotesize
  \global\bibsep=0pt
- \if@twocolumn\input{fleqn.clo}\fi
+ \if@twocolumn\KwIn{fleqn.clo}\fi
 \else\ifnum\jtype=5
  \RequirePackage{geometry}
  \geometry{twoside,
@@ -1297,7 +1297,7 @@
  }%
  \global\let\bibfont=\footnotesize
  \global\bibsep=0pt
- \input{fleqn.clo}
+ \KwIn{fleqn.clo}
  \global\@twocolumntrue
 %%
 %% End of option '5p'

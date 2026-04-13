@@ -1,4 +1,4 @@
-\begin{thebibliography}{119}
+\begin{thebibliography}{113}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -139,32 +139,6 @@
 \bibinfo{author}{A.~Cobham},
 \newblock \bibinfo{title}{On the base-dependence of sets of numbers recognizable by finite automata},
 \newblock \bibinfo{journal}{Mathematical Systems Theory} \bibinfo{volume}{3} (\bibinfo{year}{1969}) \bibinfo{pages}{186--192}.
-%Type = Book
-\bibitem[{Minsky(1967)}]{Min1967}
-\bibinfo{author}{M.~Minsky}, \bibinfo{title}{{Computation: Finite and Infinite Machines}}, \bibinfo{publisher}{Prentice-Hall}, \bibinfo{year}{1967}.
-%Type = Article
-\bibitem[{Hermes(1954)}]{Her1954}
-\bibinfo{author}{H.~Hermes},
-\newblock \bibinfo{title}{Die universalit\"{a}t programmgesteuerter rechenmaschinen},
-\newblock \bibinfo{journal}{Mathematisch-Physikalische Semesterberichte (G\"{o}ttingen)} \bibinfo{volume}{4} (\bibinfo{year}{1954}) \bibinfo{pages}{42--53}.
-%Type = Article
-\bibitem[{Ershov(1958)}]{Ers1958}
-\bibinfo{author}{A.~P. Ershov},
-\newblock \bibinfo{title}{Ob operatsionnykh algoritmakh},
-\newblock \bibinfo{journal}{Doklady Akademii Nauk SSSR} \bibinfo{volume}{122} (\bibinfo{year}{1958}) \bibinfo{pages}{967--970}.
-%Type = Article
-\bibitem[{P\'{e}ter(1958)}]{Pet1958}
-\bibinfo{author}{R.~P\'{e}ter},
-\newblock \bibinfo{title}{Graphschemata und rekursive funktionen},
-\newblock \bibinfo{journal}{Dialectica} \bibinfo{volume}{12} (\bibinfo{year}{1958}) \bibinfo{pages}{373--393}.
-%Type = Article
-\bibitem[{Minsky(1961)}]{Min1961}
-\bibinfo{author}{M.~L. Minsky},
-\newblock \bibinfo{title}{{Recursive Unsolvability of Post's Problem of ``Tag" and other Topics in Theory of Turing Machines}},
-\newblock \bibinfo{journal}{Annals of Mathematics} \bibinfo{volume}{74} (\bibinfo{year}{1961}) \bibinfo{pages}{437--455}.
-%Type = Book
-\bibitem[{Cutland(1980)}]{Cut1980}
-\bibinfo{author}{N.~J. Cutland}, \bibinfo{title}{{Computability: An introduction to recursive function theory}}, \bibinfo{publisher}{Cambridge University Press}, \bibinfo{year}{1980}.
 %Type = Inproceedings
 \bibitem[{Zermelo(1913)}]{Zer1913}
 \bibinfo{author}{E.~Zermelo},
@@ -210,14 +184,94 @@
 \bibinfo{author}{C.~P. Welter},
 \newblock \bibinfo{title}{{The advancing operation in a special abelian group}},
 \newblock \bibinfo{journal}{Indagationes Mathematicae} \bibinfo{volume}{55} (\bibinfo{year}{1952}) \bibinfo{pages}{304--314}.
+%Type = Article
+\bibitem[{Cairns and Ho(2010)}]{CaiH2010}
+\bibinfo{author}{G.~Cairns}, \bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{Min, A Combinatorial Game Having a Connection With Prime Numbers}},
+\newblock \bibinfo{journal}{Integers} \bibinfo{volume}{10} (\bibinfo{year}{2010}) \bibinfo{pages}{765--770}.
+%Type = Article
+\bibitem[{Ho(2016)}]{Ho2016}
+\bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{Three-pile Sharing Nim and the Quadratic Time Winning Strategy}},
+\newblock \bibinfo{journal}{Theoretical Computer Science} \bibinfo{volume}{646} (\bibinfo{year}{2016}) \bibinfo{pages}{49--60}.
+%Type = Book
+\bibitem[{Berlekamp et~al.(2001)Berlekamp, Conway, and Guy}]{BerCG2001}
+\bibinfo{author}{E.~R. Berlekamp}, \bibinfo{author}{J.~H. Conway}, \bibinfo{author}{R.~K. Guy}, \bibinfo{title}{Winning Ways for Your Mathematical Plays}, \bibinfo{edition}{2nd} ed., \bibinfo{publisher}{AK Peters/CRC Press}, \bibinfo{year}{2001}.
+%Type = Article
+\bibitem[{Albert and Nowakowski(2004)}]{AlbN2004}
+\bibinfo{author}{M.~Albert}, \bibinfo{author}{R.~J. Nowakowski},
+\newblock \bibinfo{title}{{Nim Restrictions}},
+\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial Number Theory} \bibinfo{volume}{4} (\bibinfo{year}{2004}) \bibinfo{pages}{1--10}.
+%Type = Article
+\bibitem[{Smith and St\u{a}nic\u{a}(2002)}]{SmiS2002}
+\bibinfo{author}{F.~Smith}, \bibinfo{author}{P.~St\u{a}nic\u{a}},
+\newblock \bibinfo{title}{{Comply/Constrain Games or Games with a Muller Twist}},
+\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial Number Theory} \bibinfo{volume}{2} (\bibinfo{year}{2002}) \bibinfo{pages}{1--11}.
+%Type = Article
+\bibitem[{Gavel and Strimling(2004)}]{GavS2004}
+\bibinfo{author}{H.~Gavel}, \bibinfo{author}{P.~Strimling},
+\newblock \bibinfo{title}{{Nim with a Modular Muller Twist}},
+\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial Number Theory} \bibinfo{volume}{4} (\bibinfo{year}{2004}) \bibinfo{pages}{1--9}.
+%Type = Article
+\bibitem[{Albert and Nowakowski(2011)}]{AlbN2001}
+\bibinfo{author}{M.~H. Albert}, \bibinfo{author}{R.~J. Nowakowski},
+\newblock \bibinfo{title}{{The Game of End-Nim}},
+\newblock \bibinfo{journal}{Electronic Journal of Combinatorics} \bibinfo{volume}{8} (\bibinfo{year}{2011}) \bibinfo{pages}{1--12}.
+%Type = Article
+\bibitem[{Sprague(1937)}]{Spr1937}
+\bibinfo{author}{R.~Sprague},
+\newblock \bibinfo{title}{{\"U}ber zwei abarten von nim},
+\newblock \bibinfo{journal}{Tohoku Mathematical Journal} \bibinfo{volume}{43} (\bibinfo{year}{1937}) \bibinfo{pages}{351--354}.
+%Type = Article
+\bibitem[{Dufour and Heubach(2013)}]{DufH2013}
+\bibinfo{author}{M.~Dufour}, \bibinfo{author}{S.~Heubach},
+\newblock \bibinfo{title}{{Circular Nim Games}},
+\newblock \bibinfo{journal}{The Electronic Journal of Combinatorics} \bibinfo{volume}{20} (\bibinfo{year}{2013}) \bibinfo{pages}{1--26}.
+%Type = Article
+\bibitem[{Kahane and Fraenkel(1987)}]{KahF1987}
+\bibinfo{author}{J.~Kahane}, \bibinfo{author}{A.~S. Fraenkel},
+\newblock \bibinfo{title}{{$k$-Welter--A Generalization of Welter's Game}},
+\newblock \bibinfo{journal}{Journal of Combinatorial Theory, Series A} \bibinfo{volume}{46} (\bibinfo{year}{1987}) \bibinfo{pages}{1--20}.
+%Type = Article
+\bibitem[{Ho(2014)}]{Ho2014}
+\bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{The Max--Welter Game}},
+\newblock \bibinfo{journal}{Discrete Mathematics} \bibinfo{volume}{318} (\bibinfo{year}{2014}) \bibinfo{pages}{41--47}.
+%Type = Article
+\bibitem[{Fraenkel(1982)}]{Fra1982}
+\bibinfo{author}{A.~S. Fraenkel},
+\newblock \bibinfo{title}{How to beat your wythoff games' opponent on three fronts},
+\newblock \bibinfo{journal}{The American Mathematical Monthly} \bibinfo{volume}{89} (\bibinfo{year}{1982}) \bibinfo{pages}{353--361}.
+%Type = Article
+\bibitem[{Duchene et~al.(2009)Duchene, Fraenkel, Gravier, and Nowakowski}]{DucFGN2009}
+\bibinfo{author}{E.~Duchene}, \bibinfo{author}{A.~Fraenkel}, \bibinfo{author}{S.~Gravier}, \bibinfo{author}{R.~J. Nowakowski},
+\newblock \bibinfo{title}{{Another bridge between Nim and Wythoff}},
+\newblock \bibinfo{journal}{The Australasian Journal of Combinatorics} \bibinfo{volume}{44} (\bibinfo{year}{2009}) \bibinfo{pages}{43--56}.
+%Type = Article
+\bibitem[{Fraenkel and Ho(2015)}]{FraH2014}
+\bibinfo{author}{A.~S. Fraenkel}, \bibinfo{author}{N.~B. Ho},
+\newblock \bibinfo{title}{{When are Translations of P-positions of Wythoff's Game P-positions?}},
+\newblock \bibinfo{journal}{Integers} \bibinfo{volume}{15A} (\bibinfo{year}{2015}) \bibinfo{pages}{1--12}.
+%Type = Article
+\bibitem[{Gurvich(2012)}]{Gur2012}
+\bibinfo{author}{V.~Gurvich},
+\newblock \bibinfo{title}{{Further Generalizations of the Wythoff Game and the Minimum Excludant}},
+\newblock \bibinfo{journal}{Discrete Applied Mathematics} \bibinfo{volume}{160} (\bibinfo{year}{2012}) \bibinfo{pages}{941--947}.
+%Type = Article
+\bibitem[{Liu and Li(2014)}]{LiuL2014}
+\bibinfo{author}{W.~Liu}, \bibinfo{author}{H.~Li},
+\newblock \bibinfo{title}{{General Restriction of $(s, t) $-Wythoff's Game}},
+\newblock \bibinfo{journal}{The Electronic Journal of Combinatorics} \bibinfo{volume}{21} (\bibinfo{year}{2014}) \bibinfo{pages}{2--44}.
+%Type = Article
+\bibitem[{Eric and Sylvain(2009)}]{EriS2009}
+\bibinfo{author}{D.~Eric}, \bibinfo{author}{G.~Sylvain},
+\newblock \bibinfo{title}{{Geometrical Extensions of Wythoff’s game}},
+\newblock \bibinfo{journal}{Discrete Mathematics} \bibinfo{volume}{309} (\bibinfo{year}{2009}) \bibinfo{pages}{3595--3608}.
 %Type = Incollection
 \bibitem[{Alur et~al.(2017)Alur, Radhakrishna, and Udupa}]{AlurRU2017}
 \bibinfo{author}{R.~Alur}, \bibinfo{author}{A.~Radhakrishna}, \bibinfo{author}{A.~Udupa},
 \newblock \bibinfo{title}{{Scaling Enumerative Program Synthesis via Divide and Conquer}},
 \newblock in: \bibinfo{booktitle}{Proceedings of Twenty-Third International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS-2017)}, volume \bibinfo{volume}{10205} of \textit{\bibinfo{series}{Lecture Notes in Computer Science}}, \bibinfo{publisher}{Springer}, \bibinfo{year}{2017}, pp. \bibinfo{pages}{319--336}.
-%Type = Book
-\bibitem[{Berlekamp et~al.(2001)Berlekamp, Conway, and Guy}]{BerCG2001}
-\bibinfo{author}{E.~R. Berlekamp}, \bibinfo{author}{J.~H. Conway}, \bibinfo{author}{R.~K. Guy}, \bibinfo{title}{Winning Ways for Your Mathematical Plays}, \bibinfo{edition}{2nd} ed., \bibinfo{publisher}{AK Peters/CRC Press}, \bibinfo{year}{2001}.
 %Type = Article
 \bibitem[{Larsson and W\"{a}stlund(2013)}]{LarW2013}
 \bibinfo{author}{U.~Larsson}, \bibinfo{author}{J.~W\"{a}stlund},
@@ -405,10 +459,10 @@
 \newblock \bibinfo{title}{{Learning-based Synthesis of Safety Controllers}},
 \newblock in: \bibinfo{booktitle}{Proceedings of the Nineteenth International Conference on Formal Methods in Computer Aided Design (FMCAD-2019)}, \bibinfo{organization}{IEEE}, \bibinfo{year}{2019}, pp. \bibinfo{pages}{120--128}.
 %Type = Inproceedings
-\bibitem[{Samuel et~al.(2021)Samuel, D'Souza, and Komondoor}]{StaDK2021}
+\bibitem[{Samuel et~al.(2023)Samuel, D'Souza, and Komondoor}]{StaDK2023}
 \bibinfo{author}{S.~Samuel}, \bibinfo{author}{D.~D'Souza}, \bibinfo{author}{R.~Komondoor},
-\newblock \bibinfo{title}{{GenSys: a Scalable Fixed-Point Engine for Maximal Controller Synthesis over Infinite State Spaces}},
-\newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-Ninth ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE-2021)}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{1585--1589}.
+\newblock \bibinfo{title}{{Symbolic Fixpoint Algorithms for Logical LTL Games}},
+\newblock in: \bibinfo{booktitle}{Proceedings of the Thirty-Eighth IEEE/ACM International Conference on Automated Software Engineering (ASE-2023)}, \bibinfo{organization}{IEEE}, \bibinfo{year}{2023}, pp. \bibinfo{pages}{698--709}.
 %Type = Article
 \bibitem[{Heim and Dimitrova(2024)}]{HeiR2024}
 \bibinfo{author}{P.~Heim}, \bibinfo{author}{R.~Dimitrova},
@@ -514,85 +568,5 @@
 \bibinfo{author}{G.~{De Giacomo}}, \bibinfo{author}{A.~Murano}, \bibinfo{author}{S.~Rubin}, \bibinfo{author}{A.~D. Stasio},
 \newblock \bibinfo{title}{{Imperfect-Information Games and Generalized Planning}},
 \newblock in: \bibinfo{booktitle}{Proceedings of the Twenty-fifth International Joint Conference on Artificial Intelligence (IJCAI-2016)}, \bibinfo{year}{2016}, pp. \bibinfo{pages}{1037--1043}.
-%Type = Article
-\bibitem[{Cairns and Ho(2010)}]{CaiH2010}
-\bibinfo{author}{G.~Cairns}, \bibinfo{author}{N.~B. Ho},
-\newblock \bibinfo{title}{{Min, A Combinatorial Game Having a Connection With Prime Numbers}},
-\newblock \bibinfo{journal}{Integers} \bibinfo{volume}{10} (\bibinfo{year}{2010}) \bibinfo{pages}{765--770}.
-%Type = Article
-\bibitem[{Ho(2016)}]{Ho2016}
-\bibinfo{author}{N.~B. Ho},
-\newblock \bibinfo{title}{{Three-pile Sharing Nim and the Quadratic Time Winning Strategy}},
-\newblock \bibinfo{journal}{Theoretical Computer Science} \bibinfo{volume}{646} (\bibinfo{year}{2016}) \bibinfo{pages}{49--60}.
-%Type = Article
-\bibitem[{Albert and Nowakowski(2004)}]{AlbN2004}
-\bibinfo{author}{M.~Albert}, \bibinfo{author}{R.~J. Nowakowski},
-\newblock \bibinfo{title}{{Nim Restrictions}},
-\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial Number Theory} \bibinfo{volume}{4} (\bibinfo{year}{2004}) \bibinfo{pages}{1--10}.
-%Type = Article
-\bibitem[{Smith and St\u{a}nic\u{a}(2002)}]{SmiS2002}
-\bibinfo{author}{F.~Smith}, \bibinfo{author}{P.~St\u{a}nic\u{a}},
-\newblock \bibinfo{title}{{Comply/Constrain Games or Games with a Muller Twist}},
-\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial Number Theory} \bibinfo{volume}{2} (\bibinfo{year}{2002}) \bibinfo{pages}{1--11}.
-%Type = Article
-\bibitem[{Gavel and Strimling(2004)}]{GavS2004}
-\bibinfo{author}{H.~Gavel}, \bibinfo{author}{P.~Strimling},
-\newblock \bibinfo{title}{{Nim with a Modular Muller Twist}},
-\newblock \bibinfo{journal}{Integers: Electronic Journal of Combinatorial Number Theory} \bibinfo{volume}{4} (\bibinfo{year}{2004}) \bibinfo{pages}{1--9}.
-%Type = Article
-\bibitem[{Albert and Nowakowski(2011)}]{AlbN2001}
-\bibinfo{author}{M.~H. Albert}, \bibinfo{author}{R.~J. Nowakowski},
-\newblock \bibinfo{title}{{The Game of End-Nim}},
-\newblock \bibinfo{journal}{Electronic Journal of Combinatorics} \bibinfo{volume}{8} (\bibinfo{year}{2011}) \bibinfo{pages}{1--12}.
-%Type = Article
-\bibitem[{Sprague(1937)}]{Spr1937}
-\bibinfo{author}{R.~Sprague},
-\newblock \bibinfo{title}{{\"U}ber zwei abarten von nim},
-\newblock \bibinfo{journal}{Tohoku Mathematical Journal} \bibinfo{volume}{43} (\bibinfo{year}{1937}) \bibinfo{pages}{351--354}.
-%Type = Article
-\bibitem[{Dufour and Heubach(2013)}]{DufH2013}
-\bibinfo{author}{M.~Dufour}, \bibinfo{author}{S.~Heubach},
-\newblock \bibinfo{title}{{Circular Nim Games}},
-\newblock \bibinfo{journal}{The Electronic Journal of Combinatorics} \bibinfo{volume}{20} (\bibinfo{year}{2013}) \bibinfo{pages}{1--26}.
-%Type = Article
-\bibitem[{Kahane and Fraenkel(1987)}]{KahF1987}
-\bibinfo{author}{J.~Kahane}, \bibinfo{author}{A.~S. Fraenkel},
-\newblock \bibinfo{title}{{$k$-Welter--A Generalization of Welter's Game}},
-\newblock \bibinfo{journal}{Journal of Combinatorial Theory, Series A} \bibinfo{volume}{46} (\bibinfo{year}{1987}) \bibinfo{pages}{1--20}.
-%Type = Article
-\bibitem[{Ho(2014)}]{Ho2014}
-\bibinfo{author}{N.~B. Ho},
-\newblock \bibinfo{title}{{The Max--Welter Game}},
-\newblock \bibinfo{journal}{Discrete Mathematics} \bibinfo{volume}{318} (\bibinfo{year}{2014}) \bibinfo{pages}{41--47}.
-%Type = Article
-\bibitem[{Fraenkel(1982)}]{Fra1982}
-\bibinfo{author}{A.~S. Fraenkel},
-\newblock \bibinfo{title}{How to beat your wythoff games' opponent on three fronts},
-\newblock \bibinfo{journal}{The American Mathematical Monthly} \bibinfo{volume}{89} (\bibinfo{year}{1982}) \bibinfo{pages}{353--361}.
-%Type = Article
-\bibitem[{Duchene et~al.(2009)Duchene, Fraenkel, Gravier, and Nowakowski}]{DucFGN2009}
-\bibinfo{author}{E.~Duchene}, \bibinfo{author}{A.~Fraenkel}, \bibinfo{author}{S.~Gravier}, \bibinfo{author}{R.~J. Nowakowski},
-\newblock \bibinfo{title}{{Another bridge between Nim and Wythoff}},
-\newblock \bibinfo{journal}{The Australasian Journal of Combinatorics} \bibinfo{volume}{44} (\bibinfo{year}{2009}) \bibinfo{pages}{43--56}.
-%Type = Article
-\bibitem[{Fraenkel and Ho(2015)}]{FraH2014}
-\bibinfo{author}{A.~S. Fraenkel}, \bibinfo{author}{N.~B. Ho},
-\newblock \bibinfo{title}{{When are Translations of P-positions of Wythoff's Game P-positions?}},
-\newblock \bibinfo{journal}{Integers} \bibinfo{volume}{15A} (\bibinfo{year}{2015}) \bibinfo{pages}{1--12}.
-%Type = Article
-\bibitem[{Gurvich(2012)}]{Gur2012}
-\bibinfo{author}{V.~Gurvich},
-\newblock \bibinfo{title}{{Further Generalizations of the Wythoff Game and the Minimum Excludant}},
-\newblock \bibinfo{journal}{Discrete Applied Mathematics} \bibinfo{volume}{160} (\bibinfo{year}{2012}) \bibinfo{pages}{941--947}.
-%Type = Article
-\bibitem[{Liu and Li(2014)}]{LiuL2014}
-\bibinfo{author}{W.~Liu}, \bibinfo{author}{H.~Li},
-\newblock \bibinfo{title}{{General Restriction of $(s, t) $-Wythoff's Game}},
-\newblock \bibinfo{journal}{The Electronic Journal of Combinatorics} \bibinfo{volume}{21} (\bibinfo{year}{2014}) \bibinfo{pages}{2--44}.
-%Type = Article
-\bibitem[{Eric and Sylvain(2009)}]{EriS2009}
-\bibinfo{author}{D.~Eric}, \bibinfo{author}{G.~Sylvain},
-\newblock \bibinfo{title}{{Geometrical Extensions of Wythoff’s game}},
-\newblock \bibinfo{journal}{Discrete Mathematics} \bibinfo{volume}{309} (\bibinfo{year}{2009}) \bibinfo{pages}{3595--3608}.
 
 \end{thebibliography}
