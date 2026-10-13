@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  14 APR 2026 01:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  25 SEP 2026 08:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/2357/Desktop/myAIJ/AIJ-2025 (ver 2.6)"
-(c:/Users/2357/Desktop/myAIJ/AIJ-2025 (ver 2.6).tex
+**"c:/Users/2357/Desktop/作业汇总/Articles/myAIJ/AIJ-2025 (ver 3.3)"
+(c:/Users/2357/Desktop/作业汇总/Articles/myAIJ/AIJ-2025 (ver 3.3).tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (./elsarticle.cls
@@ -86,7 +86,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count278
 )
 \splwrite=\write3
-\openout3 = `"AIJ-2025 (ver 2.6).spl"'.
+\openout3 = `"AIJ-2025 (ver 3.3).spl"'.
 
 \appnamewidth=\dimen148
 ) (c:/texlive/2025/texmf-dist/tex/latex/lineno/lineno.sty
@@ -698,33 +698,33 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowlinewidth=\dimen318
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (./AIJ-2025 (ver 2.6).aux)
-\openout1 = `"AIJ-2025 (ver 2.6).aux"'.
+) (./AIJ-2025 (ver 3.3).aux)
+\openout1 = `"AIJ-2025 (ver 3.3).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 158.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 158.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 159.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 159.
  (c:/texlive/2025/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    ... okay on input line 159.
  (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count356
@@ -744,23 +744,23 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 158.
- (./AIJ-2025 (ver 2.6).out) (./AIJ-2025 (ver 2.6).out)
+Package hyperref Info: Link coloring OFF on input line 159.
+ (./AIJ-2025 (ver 3.3).out) (./AIJ-2025 (ver 3.3).out)
 \@outlinefile=\write5
-\openout5 = `"AIJ-2025 (ver 2.6).out"'.
+\openout5 = `"AIJ-2025 (ver 3.3).out"'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 261.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 262.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 261.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 262.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 261.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 262.
  (c:/texlive/2025/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -774,35 +774,18 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 [3]
 
-LaTeX Warning: Reference `thm:gameIsICG' on page 4 undefined on input line 406.
-
-
-LaTeX Warning: Reference `thm:isWinState' on page 4 undefined on input line 406.
-
-
-LaTeX Warning: Reference `thm:gameIsICG' on page 4 undefined on input line 407.
-
-
-LaTeX Warning: Reference `thm:isWinState' on page 4 undefined on input line 407.
-
-
-
 [4]
 
 [5]
 
 [6]
 
-Package natbib Warning: Citation `FengFLG2026' on page 7 undefined on input line 540.
-
-
-
 [7]
 
 [8]
 
 [9]
-Overfull \hbox (15.736pt too wide) detected at line 639
+Overfull \hbox (15.736pt too wide) detected at line 643
 \OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^\\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; a\OT1/cmr/m/n/10 [^^F])) = []
  []
 
@@ -813,7 +796,7 @@ Overfull \hbox (15.736pt too wide) detected at line 639
 [11]
 
 [12]
-Overfull \hbox (0.35901pt too wide) in paragraph at lines 836--838
+Overfull \hbox (0.35901pt too wide) in paragraph at lines 865--867
 \T1/cmr/m/n/10 (CEGIS) ap-proach to syn-the-siz-ing win-ning for-mu-las for ICGs over in-fi-nite states,
  []
 
@@ -826,24 +809,29 @@ Overfull \hbox (0.35901pt too wide) in paragraph at lines 836--838
 [15]
 
 [16]
-Overfull \hbox (41.46207pt too wide) in paragraph at lines 1078--1142
- [][] 
+
+[17]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 1182.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 1182.
+
+Overfull \hbox (49.14632pt too wide) in paragraph at lines 1176--1238
+ []|  [] 
  []
 
 
-
-[17]
 
 [18]
 
 [19]
-Overfull \hbox (9.27455pt too wide) in paragraph at lines 1414--1416
+
+[20]
+Overfull \hbox (9.27455pt too wide) in paragraph at lines 1507--1509
 \T1/cmr/m/it/10 for-mula \T1/cmr/m/n/10 of $\OML/cmm/m/it/10 S$ \T1/cmr/m/n/10 based on $\OT1/cmr/m/n/10 	$ \T1/cmr/m/n/10 is $[][] []$. 
  []
 
 
-
-[20]
 
 [21]
 
@@ -853,7 +841,7 @@ Overfull \hbox (9.27455pt too wide) in paragraph at lines 1414--1416
 
 [24]
 
-LaTeX Warning: Float too large for page by 25.93515pt on input line 1756.
+LaTeX Warning: Float too large for page by 25.93515pt on input line 1901.
 
 
 
@@ -864,90 +852,87 @@ LaTeX Warning: Float too large for page by 25.93515pt on input line 1756.
 [27]
 
 [28]
-Overfull \vbox (29.53072pt too high) detected at line 2009
+
+[29]
+Overfull \vbox (29.53072pt too high) detected at line 2048
  []
 
 
-Overfull \hbox (2.38039pt too wide) in paragraph at lines 2009--2009
+Overfull \hbox (2.38039pt too wide) in paragraph at lines 2048--2048
  []$\OT1/cmr/m/n/9 1\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 2\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 3\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 5$ 
  []
 
 
-Overfull \vbox (29.53072pt too high) detected at line 2009
+Overfull \vbox (29.53072pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (29.53072pt too high) detected at line 2009
+Overfull \vbox (29.53072pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (29.53072pt too high) detected at line 2009
+Overfull \vbox (29.53072pt too high) detected at line 2048
  []
 
 
-Overfull \hbox (0.98735pt too wide) in paragraph at lines 2009--2009
+Overfull \hbox (0.98735pt too wide) in paragraph at lines 2048--2048
  [][] 
  []
 
 
-Overfull \vbox (29.53072pt too high) detected at line 2009
+Overfull \vbox (29.53072pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (29.53072pt too high) detected at line 2009
+Overfull \vbox (29.53072pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (22.78638pt too high) detected at line 2009
+Overfull \vbox (22.78638pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (22.78638pt too high) detected at line 2009
+Overfull \vbox (22.78638pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (22.78638pt too high) detected at line 2009
+Overfull \vbox (22.78638pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (22.78638pt too high) detected at line 2009
+Overfull \vbox (22.78638pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (22.78638pt too high) detected at line 2009
+Overfull \vbox (22.78638pt too high) detected at line 2048
  []
 
 
-Overfull \vbox (22.78638pt too high) detected at line 2009
+Overfull \vbox (22.78638pt too high) detected at line 2048
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (35.65157pt too wide) in paragraph at lines 2022--2034
-[]\T1/cmr/m/n/10 In the first it-er-a-tion, we enu-mer-ate the set of ac-tions $\OMS/cmsy/m/n/10 A[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 take\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 ; take\OT1/cmr/m/n/10 (2)\OML/cmm/m/it/10 ; take\OT1/cmr/m/n/10 (3)\OMS/cmsy/m/n/10 g$\T1/cmr/m/n/10 .
+Overfull \hbox (37.58852pt too wide) in paragraph at lines 2061--2073
+[]\T1/cmr/m/it/10 In the first it-er-a-tion, we enu-mer-ate the set of ac-tions $\OMS/cmsy/m/n/10 A[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 take\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 ; take\OT1/cmr/m/n/10 (2)\OML/cmm/m/it/10 ; take\OT1/cmr/m/n/10 (3)\OMS/cmsy/m/n/10 g$\T1/cmr/m/it/10 .
  []
 
 
-
-[29]
 
 [30]
-Overfull \hbox (48.42706pt too wide) in paragraph at lines 2070--2071
+Overfull \hbox (48.42706pt too wide) in paragraph at lines 2097--2098
 []\T1/cmr/m/n/10 The con-straint for the re-dun-dant rule $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10  []; a[]\OT1/cmr/m/n/10 )$ \T1/cmr/m/n/10 w.r.t. a strat-egy $\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10  []; a[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []  ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10  []; a[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$
  []
 
 
 
 [31]
-Overfull \hbox (46.0846pt too wide) in paragraph at lines 2127--2134
+
+[32]
+Overfull \hbox (46.0846pt too wide) in paragraph at lines 2154--2161
 []\T1/cmr/m/n/10 The ex-haus-tive-ness prop-erty of strate-gies: ($\OMS/cmsy/m/n/10 )$\T1/cmr/m/n/10 ): As-sume that $\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10  []; a[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []  ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10  []; a[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$
  []
 
 
-
-[32]
 
 [33]
 
@@ -964,439 +949,223 @@ Overfull \hbox (46.0846pt too wide) in paragraph at lines 2127--2134
 [39]
 
 [40]
+Overfull \hbox (0.6204pt too wide) in paragraph at lines 2459--2466
+[]\T1/cmr/m/n/10 This is the sec-ond re-stric-tion of Wythoff game
+ []
+
+
 
 [41]
 
 [42]
 
 [43]
-Overfull \hbox (4.67282pt too wide) in paragraph at lines 2894--2902
- [][] 
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig/normal-sub-f.png, id=763, 462.528pt x 346.896pt>
+File: fig/normal-sub-f.png Graphic file (type png)
+<use fig/normal-sub-f.png>
+Package pdftex.def Info: fig/normal-sub-f.png  used on input line 2609.
+(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
+<fig/normal-sub-s.png, id=765, 462.528pt x 346.896pt>
+File: fig/normal-sub-s.png Graphic file (type png)
+<use fig/normal-sub-s.png>
+Package pdftex.def Info: fig/normal-sub-s.png  used on input line 2614.
+(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
 [44]
-<fig/normal-sub-f.png, id=743, 462.528pt x 346.896pt>
-File: fig/normal-sub-f.png Graphic file (type png)
-<use fig/normal-sub-f.png>
-Package pdftex.def Info: fig/normal-sub-f.png  used on input line 2921.
-(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-sub-s.png, id=745, 462.528pt x 346.896pt>
-File: fig/normal-sub-s.png Graphic file (type png)
-<use fig/normal-sub-s.png>
-Package pdftex.def Info: fig/normal-sub-s.png  used on input line 2926.
-(pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
-Overfull \hbox (12.99033pt too wide) in paragraph at lines 2908--2932
-[]\T1/cmr/m/n/10 Table []5[] sum-ma-rizes the re-sults about syn-the-siz-ing win-ning strate-gies. SynEnum
- []
+[45 <./fig/normal-sub-f.png> <./fig/normal-sub-s.png>]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (3.43587pt too wide) in paragraph at lines 2942--2966
- [][] 
- []
-
-
-
-[45]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[46 <./fig/normal-sub-f.png> <./fig/normal-sub-s.png>]
-
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2978.
-
-LaTeX Font Info:    Calculating math sizes for size <4> on input line 2982.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 2982.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <4> not available
-(Font)              size <5> substituted on input line 2985.
-
-
-Overfull \hbox (0.63158pt too wide) in paragraph at lines 2982--3005
- [][] 
- []
-
-<fig/normal-nim-f.png, id=762, 462.528pt x 346.896pt>
+<fig/normal-nim-f.png, id=786, 462.528pt x 346.896pt>
 File: fig/normal-nim-f.png Graphic file (type png)
 <use fig/normal-nim-f.png>
-Package pdftex.def Info: fig/normal-nim-f.png  used on input line 3012.
+Package pdftex.def Info: fig/normal-nim-f.png  used on input line 2709.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-nim-s.png, id=763, 462.528pt x 346.896pt>
+<fig/normal-nim-s.png, id=787, 462.528pt x 346.896pt>
 File: fig/normal-nim-s.png Graphic file (type png)
 <use fig/normal-nim-s.png>
-Package pdftex.def Info: fig/normal-nim-s.png  used on input line 3017.
+Package pdftex.def Info: fig/normal-nim-s.png  used on input line 2714.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[47]
-<fig/normal-welter-f.png, id=770, 462.528pt x 346.896pt>
+[46]
+
+[47 <./fig/normal-nim-f.png> <./fig/normal-nim-s.png>]
+<fig/normal-welter-f.png, id=803, 462.528pt x 346.896pt>
 File: fig/normal-welter-f.png Graphic file (type png)
 <use fig/normal-welter-f.png>
-Package pdftex.def Info: fig/normal-welter-f.png  used on input line 3065.
+Package pdftex.def Info: fig/normal-welter-f.png  used on input line 2779.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-welter-s.png, id=771, 462.528pt x 346.896pt>
+<fig/normal-welter-s.png, id=804, 462.528pt x 346.896pt>
 File: fig/normal-welter-s.png Graphic file (type png)
 <use fig/normal-welter-s.png>
-Package pdftex.def Info: fig/normal-welter-s.png  used on input line 3070.
+Package pdftex.def Info: fig/normal-welter-s.png  used on input line 2784.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 
 [48]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 3083.
-
-LaTeX Font Info:    Calculating math sizes for size <3> on input line 3086.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.09999> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <1.5> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.09999> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <1.5> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.09999> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <1.5> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <2.09999> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <1.5> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <3> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <2.09999> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <1.5> not available
-(Font)              size <5> substituted on input line 3086.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <3> not available
-(Font)              size <5> substituted on input line 3089.
-
-
-
-[49 <./fig/normal-nim-f.png> <./fig/normal-nim-s.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[50 <./fig/normal-welter-f.png> <./fig/normal-welter-s.png>]
-
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 3111.
-
-LaTeX Font Info:    Calculating math sizes for size <2> on input line 3114.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <1.4> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <1> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <1.4> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <1> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <1.4> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <1> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <1.4> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <1> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <1.4> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <1> not available
-(Font)              size <5> substituted on input line 3114.
-
-
-LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <2> not available
-(Font)              size <5> substituted on input line 3117.
-
-
-Overfull \hbox (8.1625pt too wide) in paragraph at lines 3114--3128
- [][] 
- []
-
-<fig/normal-wythoff-f.png, id=801, 462.528pt x 346.896pt>
+[49 <./fig/normal-welter-f.png> <./fig/normal-welter-s.png>]
+<fig/normal-wythoff-f.png, id=827, 462.528pt x 346.896pt>
 File: fig/normal-wythoff-f.png Graphic file (type png)
 <use fig/normal-wythoff-f.png>
-Package pdftex.def Info: fig/normal-wythoff-f.png  used on input line 3135.
+Package pdftex.def Info: fig/normal-wythoff-f.png  used on input line 2861.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-wythoff-s.png, id=802, 462.528pt x 346.896pt>
+<fig/normal-wythoff-s.png, id=828, 462.528pt x 346.896pt>
 File: fig/normal-wythoff-s.png Graphic file (type png)
 <use fig/normal-wythoff-s.png>
-Package pdftex.def Info: fig/normal-wythoff-s.png  used on input line 3140.
+Package pdftex.def Info: fig/normal-wythoff-s.png  used on input line 2866.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
 
-[51]
-
-[52 <./fig/normal-wythoff-f.png> <./fig/normal-wythoff-s.png>]
-<fig/normal-chomp-f.png, id=820, 462.528pt x 346.896pt>
+[50 <./fig/normal-wythoff-f.png> <./fig/normal-wythoff-s.png>]
+<fig/normal-chomp-f.png, id=841, 462.528pt x 346.896pt>
 File: fig/normal-chomp-f.png Graphic file (type png)
 <use fig/normal-chomp-f.png>
-Package pdftex.def Info: fig/normal-chomp-f.png  used on input line 3185.
+Package pdftex.def Info: fig/normal-chomp-f.png  used on input line 2929.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/normal-chomp-s.png, id=821, 462.528pt x 346.896pt>
+<fig/normal-chomp-s.png, id=842, 462.528pt x 346.896pt>
 File: fig/normal-chomp-s.png Graphic file (type png)
 <use fig/normal-chomp-s.png>
-Package pdftex.def Info: fig/normal-chomp-s.png  used on input line 3190.
+Package pdftex.def Info: fig/normal-chomp-s.png  used on input line 2934.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
 
+[51 <./fig/normal-chomp-f.png> <./fig/normal-chomp-s.png>]
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-
-[53]
-
-[54 <./fig/normal-chomp-f.png> <./fig/normal-chomp-s.png>]
-<fig/misere-sub-f.png, id=841, 462.528pt x 346.896pt>
+<fig/misere-sub-f.png, id=853, 462.528pt x 346.896pt>
 File: fig/misere-sub-f.png Graphic file (type png)
 <use fig/misere-sub-f.png>
-Package pdftex.def Info: fig/misere-sub-f.png  used on input line 3241.
+Package pdftex.def Info: fig/misere-sub-f.png  used on input line 3001.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-sub-s.png, id=842, 462.528pt x 346.896pt>
+<fig/misere-sub-s.png, id=854, 462.528pt x 346.896pt>
 File: fig/misere-sub-s.png Graphic file (type png)
 <use fig/misere-sub-s.png>
-Package pdftex.def Info: fig/misere-sub-s.png  used on input line 3246.
+Package pdftex.def Info: fig/misere-sub-s.png  used on input line 3006.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
-Overfull \hbox (5.64815pt too wide) in paragraph at lines 3292--3315
- [][] 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/misere-nim-f.png, id=847, 462.528pt x 346.896pt>
+
+
+[52]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig/misere-nim-f.png, id=867, 462.528pt x 346.896pt>
 File: fig/misere-nim-f.png Graphic file (type png)
 <use fig/misere-nim-f.png>
-Package pdftex.def Info: fig/misere-nim-f.png  used on input line 3322.
+Package pdftex.def Info: fig/misere-nim-f.png  used on input line 3101.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-nim-s.png, id=848, 462.528pt x 346.896pt>
+<fig/misere-nim-s.png, id=868, 462.528pt x 346.896pt>
 File: fig/misere-nim-s.png Graphic file (type png)
 <use fig/misere-nim-s.png>
-Package pdftex.def Info: fig/misere-nim-s.png  used on input line 3327.
+Package pdftex.def Info: fig/misere-nim-s.png  used on input line 3106.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[55 <./fig/misere-sub-f.png> <./fig/misere-sub-s.png>]
+
+
+[53 <./fig/misere-sub-f.png> <./fig/misere-sub-s.png>]
+
+[54 <./fig/misere-nim-f.png> <./fig/misere-nim-s.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/misere-welter-f.png, id=864, 462.528pt x 346.896pt>
+<fig/misere-welter-f.png, id=887, 462.528pt x 346.896pt>
 File: fig/misere-welter-f.png Graphic file (type png)
 <use fig/misere-welter-f.png>
-Package pdftex.def Info: fig/misere-welter-f.png  used on input line 3373.
+Package pdftex.def Info: fig/misere-welter-f.png  used on input line 3171.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-welter-s.png, id=865, 462.528pt x 346.896pt>
+<fig/misere-welter-s.png, id=888, 462.528pt x 346.896pt>
 File: fig/misere-welter-s.png Graphic file (type png)
 <use fig/misere-welter-s.png>
-Package pdftex.def Info: fig/misere-welter-s.png  used on input line 3378.
+Package pdftex.def Info: fig/misere-welter-s.png  used on input line 3176.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-
-
-[56 <./fig/misere-nim-f.png> <./fig/misere-nim-s.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (1.77713pt too wide) in paragraph at lines 3392--3406
- [][] 
- []
 
+[55]
 
-Overfull \hbox (4.79028pt too wide) in paragraph at lines 3414--3428
- [][] 
- []
-
-<fig/misere-wythoff-f.png, id=873, 462.528pt x 346.896pt>
+[56 <./fig/misere-welter-f.png> <./fig/misere-welter-s.png>]
+<fig/misere-wythoff-f.png, id=906, 462.528pt x 346.896pt>
 File: fig/misere-wythoff-f.png Graphic file (type png)
 <use fig/misere-wythoff-f.png>
-Package pdftex.def Info: fig/misere-wythoff-f.png  used on input line 3435.
+Package pdftex.def Info: fig/misere-wythoff-f.png  used on input line 3253.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-wythoff-s.png, id=874, 462.528pt x 346.896pt>
+<fig/misere-wythoff-s.png, id=907, 462.528pt x 346.896pt>
 File: fig/misere-wythoff-s.png Graphic file (type png)
 <use fig/misere-wythoff-s.png>
-Package pdftex.def Info: fig/misere-wythoff-s.png  used on input line 3440.
+Package pdftex.def Info: fig/misere-wythoff-s.png  used on input line 3258.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
 [57]
 
-LaTeX Warning: Text page 58 contains only floats.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-
-[58 <./fig/misere-welter-f.png> <./fig/misere-welter-s.png>]
-
-[59]
-<fig/misere-chomp-f.png, id=898, 462.528pt x 346.896pt>
+<fig/misere-chomp-f.png, id=917, 462.528pt x 346.896pt>
 File: fig/misere-chomp-f.png Graphic file (type png)
 <use fig/misere-chomp-f.png>
-Package pdftex.def Info: fig/misere-chomp-f.png  used on input line 3484.
+Package pdftex.def Info: fig/misere-chomp-f.png  used on input line 3321.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
-<fig/misere-chomp-s.png, id=899, 462.528pt x 346.896pt>
+<fig/misere-chomp-s.png, id=918, 462.528pt x 346.896pt>
 File: fig/misere-chomp-s.png Graphic file (type png)
 <use fig/misere-chomp-s.png>
-Package pdftex.def Info: fig/misere-chomp-s.png  used on input line 3489.
+Package pdftex.def Info: fig/misere-chomp-s.png  used on input line 3326.
 (pdftex.def)             Requested size: 169.0519pt x 126.78801pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[58 <./fig/misere-wythoff-f.png> <./fig/misere-wythoff-s.png>]
+
+[59 <./fig/misere-chomp-f.png> <./fig/misere-chomp-s.png>]
 
 [60]
 
-[61 <./fig/misere-wythoff-f.png> <./fig/misere-wythoff-s.png>]
+[61]
 
-[62 <./fig/misere-chomp-f.png> <./fig/misere-chomp-s.png>]
+[62]
+Overfull \hbox (42.60732pt too wide) in paragraph at lines 3448--3458
+[]$
+ []
+
+
 
 [63]
 
@@ -1416,30 +1185,35 @@ Package pdftex.def Info: fig/misere-chomp-s.png  used on input line 3489.
 
 [71]
 
-[72] (./AIJ-2025 (ver 2.6).bbl
+[72]
 
-[73]
+[73] (./AIJ-2025 (ver 3.3).bbl
 
 [74]
 
 [75]
 
 [76]
+Underfull \hbox (badness 2158) in paragraph at lines 222--230
+[]\T1/cmr/m/n/10 S. Feng, L. Fang, J. Luo, Q. Guan,  De-cid-abil-ity and Un-de-
+ []
+
+
 
 [77]
 
 [78]
 
 [79]
-Underfull \hbox (badness 1852) in paragraph at lines 353--357
-[]\T1/cmr/m/n/10 K. Luo, Y. Liu,  Au-to-matic Ver-i-fi-ca-tion of FSA Strate-gies via
- []
-
-
 
 [80]
 
 [81]
+Underfull \hbox (badness 1852) in paragraph at lines 653--660
+[]\T1/cmr/m/n/10 K. Luo, Y. Liu,  Au-to-matic Ver-i-fi-ca-tion of FSA Strate-gies via
+ []
+
+
 
 [82]
 
@@ -1447,41 +1221,35 @@ Underfull \hbox (badness 1852) in paragraph at lines 353--357
 
 [84]
 
-[85])
+[85]
 
-Package natbib Warning: There were undefined citations.
+[86]
 
+[87]
 
+[88])
 
-[86] (./AIJ-2025 (ver 2.6).aux)
+[89] (./AIJ-2025 (ver 3.3).aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 4.0pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `"AIJ-2025 (ver 2.6)".out' has not changed.
-(rerunfilecheck)             Checksum: 49E5903EF38FA065ABBD09A4A9DA4E32;6197.
+Package rerunfilecheck Info: File `"AIJ-2025 (ver 3.3)".out' has not changed.
+(rerunfilecheck)             Checksum: F9E839564BEE58E31AD0B1F8D2E34100;6884.
  ) 
 Here is how much of TeX's memory you used:
- 27233 strings out of 473190
- 492435 string characters out of 5719979
- 907854 words of memory out of 5000000
- 49598 multiletter control sequences out of 15000+600000
- 587972 words of font info for 122 fonts, out of 8000000 for 9000
+ 27301 strings out of 473190
+ 493312 string characters out of 5719979
+ 887834 words of memory out of 5000000
+ 49618 multiletter control sequences out of 15000+600000
+ 585670 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,24n,91p,1489b,810s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on "AIJ-2025 (ver 2.6).pdf" (86 pages, 1284655 bytes).
+ 84i,24n,91p,966b,866s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on "AIJ-2025 (ver 3.3).pdf" (89 pages, 1286869 bytes).
 PDF statistics:
- 1418 PDF objects out of 1440 (max. 8388607)
- 1200 compressed objects within 12 object streams
- 398 named destinations out of 1000 (max. 500000)
- 401 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1548 PDF objects out of 1728 (max. 8388607)
+ 1317 compressed objects within 14 object streams
+ 436 named destinations out of 1000 (max. 500000)
+ 433 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,281 @@
+group,category,task,sheet1_target,summary_solved,kept,ignored,status,rule,method
+sub,Take-away,formula,30,30,30,0,ok,normal,SynEnum
+sub,Take-away,strategy,30,30,30,0,ok,normal,SynEnum
+sub,Subtraction,formula,98,369,98,271,ok,normal,SynEnum
+sub,Subtraction,strategy,98,369,98,271,ok,normal,SynEnum
+sub,"S, D-MarkGame",formula,8,8,8,0,ok,normal,SynEnum
+sub,"S, D-MarkGame",strategy,8,8,8,0,ok,normal,SynEnum
+nim,Nim,formula,1,1,1,0,ok,normal,SynEnum
+nim,Nim,strategy,1,1,1,0,ok,normal,SynEnum
+nim,Small Nim,formula,7,7,7,0,ok,normal,SynEnum
+nim,Small Nim,strategy,7,7,7,0,ok,normal,SynEnum
+nim,Greedy Nim,formula,2,2,2,0,ok,normal,SynEnum
+nim,Greedy Nim,strategy,2,2,2,0,ok,normal,SynEnum
+nim,Odd-or-Even Nim,formula,2,2,2,0,ok,normal,SynEnum
+nim,Odd-or-Even Nim,strategy,2,2,2,0,ok,normal,SynEnum
+nim,Modular Nim,formula,1,1,1,0,ok,normal,SynEnum
+nim,Modular Nim,strategy,1,1,1,0,ok,normal,SynEnum
+nim,Pointed Nim,formula,1,1,1,0,ok,normal,SynEnum
+nim,Pointed Nim,strategy,1,1,1,0,ok,normal,SynEnum
+nim,End Nim,formula,1,1,1,0,ok,normal,SynEnum
+nim,End Nim,strategy,1,1,1,0,ok,normal,SynEnum
+nim,Loop End Nim,formula,2,2,2,0,ok,normal,SynEnum
+nim,Loop End Nim,strategy,2,2,2,0,ok,normal,SynEnum
+nim,Staircase Nim,formula,7,7,7,0,ok,normal,SynEnum
+nim,Staircase Nim,strategy,7,7,7,0,ok,normal,SynEnum
+nim,Circular Nim,formula,7,7,7,0,ok,normal,SynEnum
+nim,Circular Nim,strategy,7,7,7,0,ok,normal,SynEnum
+nim,Monotonic Nim,formula,7,7,7,0,ok,normal,SynEnum
+nim,Monotonic Nim,strategy,7,7,7,0,ok,normal,SynEnum
+nim,Empty and Transfer,formula,2,2,2,0,ok,normal,SynEnum
+nim,Empty and Transfer,strategy,2,2,2,0,ok,normal,SynEnum
+nim,Empty All But One,formula,6,6,6,0,ok,normal,SynEnum
+nim,Empty All But One,strategy,6,6,6,0,ok,normal,SynEnum
+nim,Empty and Redistribute,formula,1,1,1,0,ok,normal,SynEnum
+nim,Empty and Redistribute,strategy,0,1,0,1,ok,normal,SynEnum
+nim,Entropy Reduction Game,formula,1,1,1,0,ok,normal,SynEnum
+nim,Entropy Reduction Game,strategy,0,0,0,0,ok,normal,SynEnum
+nim,Min Game,formula,1,1,1,0,ok,normal,SynEnum
+nim,Min Game,strategy,1,1,1,0,ok,normal,SynEnum
+nim,l-Slow Nim,formula,9,9,9,0,ok,normal,SynEnum
+nim,l-Slow Nim,strategy,9,9,9,0,ok,normal,SynEnum
+nim,Sharing Nim,formula,4,4,4,0,ok,normal,SynEnum
+nim,Sharing Nim,strategy,3,3,3,0,ok,normal,SynEnum
+welter,Welter Game,formula,1,1,1,0,ok,normal,SynEnum
+welter,Welter Game,strategy,1,1,1,0,ok,normal,SynEnum
+welter,l-welter Game,formula,2,3,2,1,ok,normal,SynEnum
+welter,l-welter Game,strategy,2,3,2,1,ok,normal,SynEnum
+welter,Max-Welter Game,formula,1,1,1,0,ok,normal,SynEnum
+welter,Max-Welter Game,strategy,1,1,1,0,ok,normal,SynEnum
+wythoff,Wythoff,formula,13,13,13,0,ok,normal,SynEnum
+wythoff,Wythoff,strategy,13,13,13,0,ok,normal,SynEnum
+wythoff,l-Wythoffff Game,formula,93,93,93,0,ok,normal,SynEnum
+wythoff,l-Wythoffff Game,strategy,93,93,93,0,ok,normal,SynEnum
+wythoff,Monotonic_l_Diet_Game,formula,81,81,81,0,ok,normal,SynEnum
+wythoff,Monotonic_l_Diet_Game,strategy,81,81,81,0,ok,normal,SynEnum
+wythoff,Wythoff_game_with_subtraction_Game,formula,177,207,177,30,ok,normal,SynEnum
+wythoff,Wythoff_game_with_subtraction_Game,strategy,177,207,177,30,ok,normal,SynEnum
+wythoff,Wythoff_game_with_a_function_Game,formula,118,118,118,0,ok,normal,SynEnum
+wythoff,Wythoff_game_with_a_function_Game,strategy,118,118,118,0,ok,normal,SynEnum
+wythoff,st1_lm_restricted,formula,119,219,119,100,ok,normal,SynEnum
+wythoff,st1_lm_restricted,strategy,119,219,119,100,ok,normal,SynEnum
+wythoff,nd2_lm_restricted,formula,543,543,543,0,ok,normal,SynEnum
+wythoff,nd2_lm_restricted,strategy,543,543,543,0,ok,normal,SynEnum
+wythoff,rd3_lm_restricted,formula,392,492,392,100,ok,normal,SynEnum
+wythoff,rd3_lm_restricted,strategy,392,492,392,100,ok,normal,SynEnum
+wythoff,th4_lm_restricted,formula,327,427,327,100,ok,normal,SynEnum
+wythoff,th4_lm_restricted,strategy,279,423,279,144,ok,normal,SynEnum
+chomp,Chomp game,formula,1,1,1,0,ok,normal,SynEnum
+chomp,Chomp game,strategy,1,1,1,0,ok,normal,SynEnum
+chomp,L-shaped Chomp Game,formula,1,1,1,0,ok,normal,SynEnum
+chomp,L-shaped Chomp Game,strategy,1,1,1,0,ok,normal,SynEnum
+sub,Take-away,formula,30,30,30,0,ok,misere,SynEnum
+sub,Take-away,strategy,30,30,30,0,ok,misere,SynEnum
+sub,Subtraction,formula,96,366,96,270,ok,misere,SynEnum
+sub,Subtraction,strategy,94,364,94,270,ok,misere,SynEnum
+sub,"S, D-MarkGame",formula,52,52,52,0,ok,misere,SynEnum
+sub,"S, D-MarkGame",strategy,52,52,52,0,ok,misere,SynEnum
+nim,Nim,formula,1,1,1,0,ok,misere,SynEnum
+nim,Nim,strategy,1,1,1,0,ok,misere,SynEnum
+nim,Small Nim,formula,2,2,2,0,ok,misere,SynEnum
+nim,Small Nim,strategy,2,2,2,0,ok,misere,SynEnum
+nim,Greedy Nim,formula,2,2,2,0,ok,misere,SynEnum
+nim,Greedy Nim,strategy,2,2,2,0,ok,misere,SynEnum
+nim,Odd-or-Even Nim,formula,2,2,2,0,ok,misere,SynEnum
+nim,Odd-or-Even Nim,strategy,2,2,2,0,ok,misere,SynEnum
+nim,Modular Nim,formula,1,1,1,0,ok,misere,SynEnum
+nim,Modular Nim,strategy,1,1,1,0,ok,misere,SynEnum
+nim,Pointed Nim,formula,0,0,0,0,ok,misere,SynEnum
+nim,Pointed Nim,strategy,0,0,0,0,ok,misere,SynEnum
+nim,End Nim,formula,1,1,1,0,ok,misere,SynEnum
+nim,End Nim,strategy,1,1,1,0,ok,misere,SynEnum
+nim,Loop End Nim,formula,1,1,1,0,ok,misere,SynEnum
+nim,Loop End Nim,strategy,1,1,1,0,ok,misere,SynEnum
+nim,Staircase Nim,formula,7,7,7,0,ok,misere,SynEnum
+nim,Staircase Nim,strategy,7,7,7,0,ok,misere,SynEnum
+nim,Circular Nim,formula,5,5,5,0,ok,misere,SynEnum
+nim,Circular Nim,strategy,4,5,4,1,ok,misere,SynEnum
+nim,Monotonic Nim,formula,4,4,4,0,ok,misere,SynEnum
+nim,Monotonic Nim,strategy,4,4,4,0,ok,misere,SynEnum
+nim,Empty and Transfer,formula,0,0,0,0,ok,misere,SynEnum
+nim,Empty and Transfer,strategy,0,0,0,0,ok,misere,SynEnum
+nim,Empty All But One,formula,0,0,0,0,ok,misere,SynEnum
+nim,Empty All But One,strategy,0,0,0,0,ok,misere,SynEnum
+nim,Empty and Redistribute,formula,0,0,0,0,ok,misere,SynEnum
+nim,Empty and Redistribute,strategy,0,0,0,0,ok,misere,SynEnum
+nim,Entropy Reduction Game,formula,0,0,0,0,ok,misere,SynEnum
+nim,Entropy Reduction Game,strategy,0,0,0,0,ok,misere,SynEnum
+nim,Min Game,formula,1,1,1,0,ok,misere,SynEnum
+nim,Min Game,strategy,1,1,1,0,ok,misere,SynEnum
+nim,l-Slow Nim,formula,7,7,7,0,ok,misere,SynEnum
+nim,l-Slow Nim,strategy,7,7,7,0,ok,misere,SynEnum
+nim,Sharing Nim,formula,4,4,4,0,ok,misere,SynEnum
+nim,Sharing Nim,strategy,3,3,3,0,ok,misere,SynEnum
+welter,Welter Game,formula,0,0,0,0,ok,misere,SynEnum
+welter,Welter Game,strategy,0,0,0,0,ok,misere,SynEnum
+welter,l-welter Game,formula,2,2,2,0,ok,misere,SynEnum
+welter,l-welter Game,strategy,2,2,2,0,ok,misere,SynEnum
+welter,Max-Welter Game,formula,0,0,0,0,ok,misere,SynEnum
+welter,Max-Welter Game,strategy,0,0,0,0,ok,misere,SynEnum
+wythoff,Wythoff,formula,10,10,10,0,ok,misere,SynEnum
+wythoff,Wythoff,strategy,10,10,10,0,ok,misere,SynEnum
+wythoff,l-Wythoffff Game,formula,80,80,80,0,ok,misere,SynEnum
+wythoff,l-Wythoffff Game,strategy,80,80,80,0,ok,misere,SynEnum
+wythoff,Monotonic_l_Diet_Game,formula,61,61,61,0,ok,misere,SynEnum
+wythoff,Monotonic_l_Diet_Game,strategy,61,61,61,0,ok,misere,SynEnum
+wythoff,Wythoff_game_with_subtraction_Game,formula,200,200,200,0,ok,misere,SynEnum
+wythoff,Wythoff_game_with_subtraction_Game,strategy,200,200,200,0,ok,misere,SynEnum
+wythoff,Wythoff_game_with_a_function_Game,formula,116,116,116,0,ok,misere,SynEnum
+wythoff,Wythoff_game_with_a_function_Game,strategy,116,116,116,0,ok,misere,SynEnum
+wythoff,st1_lm_restricted,formula,214,214,214,0,ok,misere,SynEnum
+wythoff,st1_lm_restricted,strategy,214,214,214,0,ok,misere,SynEnum
+wythoff,nd2_lm_restricted,formula,440,440,440,0,ok,misere,SynEnum
+wythoff,nd2_lm_restricted,strategy,440,440,440,0,ok,misere,SynEnum
+wythoff,rd3_lm_restricted,formula,404,404,404,0,ok,misere,SynEnum
+wythoff,rd3_lm_restricted,strategy,404,404,404,0,ok,misere,SynEnum
+wythoff,th4_lm_restricted,formula,408,408,408,0,ok,misere,SynEnum
+wythoff,th4_lm_restricted,strategy,394,407,394,13,ok,misere,SynEnum
+chomp,Chomp game,formula,1,1,1,0,ok,misere,SynEnum
+chomp,Chomp game,strategy,1,1,1,0,ok,misere,SynEnum
+chomp,L-shaped Chomp Game,formula,1,1,1,0,ok,misere,SynEnum
+chomp,L-shaped Chomp Game,strategy,1,1,1,0,ok,misere,SynEnum
+sub,Take-away,formula,30,30,30,0,ok,normal,SynMS
+sub,Take-away,strategy,30,30,30,0,ok,normal,SynMS
+sub,Subtraction,formula,382,382,382,0,ok,normal,SynMS
+sub,Subtraction,strategy,382,382,382,0,ok,normal,SynMS
+sub,"S, D-MarkGame",formula,55,55,55,0,ok,normal,SynMS
+sub,"S, D-MarkGame",strategy,54,54,54,0,ok,normal,SynMS
+nim,Nim,formula,2,2,2,0,ok,normal,SynMS
+nim,Nim,strategy,2,2,2,0,ok,normal,SynMS
+nim,Small Nim,formula,7,7,7,0,ok,normal,SynMS
+nim,Small Nim,strategy,7,7,7,0,ok,normal,SynMS
+nim,Greedy Nim,formula,7,7,7,0,ok,normal,SynMS
+nim,Greedy Nim,strategy,5,5,5,0,ok,normal,SynMS
+nim,Odd-or-Even Nim,formula,6,6,6,0,ok,normal,SynMS
+nim,Odd-or-Even Nim,strategy,6,6,6,0,ok,normal,SynMS
+nim,Modular Nim,formula,2,2,2,0,ok,normal,SynMS
+nim,Modular Nim,strategy,2,2,2,0,ok,normal,SynMS
+nim,Pointed Nim,formula,7,7,7,0,ok,normal,SynMS
+nim,Pointed Nim,strategy,7,7,7,0,ok,normal,SynMS
+nim,End Nim,formula,7,7,7,0,ok,normal,SynMS
+nim,End Nim,strategy,4,4,4,0,ok,normal,SynMS
+nim,Loop End Nim,formula,7,7,7,0,ok,normal,SynMS
+nim,Loop End Nim,strategy,7,7,7,0,ok,normal,SynMS
+nim,Staircase Nim,formula,7,7,7,0,ok,normal,SynMS
+nim,Staircase Nim,strategy,7,7,7,0,ok,normal,SynMS
+nim,Circular Nim,formula,6,6,6,0,ok,normal,SynMS
+nim,Circular Nim,strategy,3,3,3,0,ok,normal,SynMS
+nim,Monotonic Nim,formula,7,7,7,0,ok,normal,SynMS
+nim,Monotonic Nim,strategy,7,7,7,0,ok,normal,SynMS
+nim,Empty and Transfer,formula,1,1,1,0,ok,normal,SynMS
+nim,Empty and Transfer,strategy,1,1,1,0,ok,normal,SynMS
+nim,Empty All But One,formula,6,6,6,0,ok,normal,SynMS
+nim,Empty All But One,strategy,6,6,6,0,ok,normal,SynMS
+nim,Empty and Redistribute,formula,2,2,2,0,ok,normal,SynMS
+nim,Empty and Redistribute,strategy,1,1,1,0,ok,normal,SynMS
+nim,Entropy Reduction Game,formula,1,1,1,0,ok,normal,SynMS
+nim,Entropy Reduction Game,strategy,1,1,1,0,ok,normal,SynMS
+nim,Min Game,formula,3,3,3,0,ok,normal,SynMS
+nim,Min Game,strategy,3,3,3,0,ok,normal,SynMS
+nim,l-Slow Nim,formula,11,11,11,0,ok,normal,SynMS
+nim,l-Slow Nim,strategy,11,11,11,0,ok,normal,SynMS
+nim,Sharing Nim,formula,6,6,6,0,ok,normal,SynMS
+nim,Sharing Nim,strategy,6,6,6,0,ok,normal,SynMS
+welter,Welter Game,formula,1,1,1,0,ok,normal,SynMS
+welter,Welter Game,strategy,1,1,1,0,ok,normal,SynMS
+welter,l-welter Game,formula,3,3,3,0,ok,normal,SynMS
+welter,l-welter Game,strategy,3,3,3,0,ok,normal,SynMS
+welter,Max-Welter Game,formula,1,1,1,0,ok,normal,SynMS
+welter,Max-Welter Game,strategy,1,1,1,0,ok,normal,SynMS
+wythoff,Wythoff,formula,19,19,19,0,ok,normal,SynMS
+wythoff,Wythoff,strategy,12,12,12,0,ok,normal,SynMS
+wythoff,l-Wythoffff Game,formula,120,120,120,0,ok,normal,SynMS
+wythoff,l-Wythoffff Game,strategy,73,73,73,0,ok,normal,SynMS
+wythoff,Monotonic_l_Diet_Game,formula,103,103,103,0,ok,normal,SynMS
+wythoff,Monotonic_l_Diet_Game,strategy,103,103,103,0,ok,normal,SynMS
+wythoff,Wythoff_game_with_subtraction_Game,formula,287,287,287,0,ok,normal,SynMS
+wythoff,Wythoff_game_with_subtraction_Game,strategy,253,253,253,0,ok,normal,SynMS
+wythoff,Wythoff_game_with_a_function_Game,formula,154,154,154,0,ok,normal,SynMS
+wythoff,Wythoff_game_with_a_function_Game,strategy,110,110,110,0,ok,normal,SynMS
+wythoff,st1_lm_restricted,formula,285,285,285,0,ok,normal,SynMS
+wythoff,st1_lm_restricted,strategy,257,257,257,0,ok,normal,SynMS
+wythoff,nd2_lm_restricted,formula,600,600,600,0,ok,normal,SynMS
+wythoff,nd2_lm_restricted,strategy,577,577,577,0,ok,normal,SynMS
+wythoff,rd3_lm_restricted,formula,578,578,578,0,ok,normal,SynMS
+wythoff,rd3_lm_restricted,strategy,350,350,350,0,ok,normal,SynMS
+wythoff,th4_lm_restricted,formula,533,533,533,0,ok,normal,SynMS
+wythoff,th4_lm_restricted,strategy,465,465,465,0,ok,normal,SynMS
+chomp,Chomp game,formula,2,2,2,0,ok,normal,SynMS
+chomp,Chomp game,strategy,1,1,1,0,ok,normal,SynMS
+chomp,L-shaped Chomp Game,formula,1,1,1,0,ok,normal,SynMS
+chomp,L-shaped Chomp Game,strategy,1,1,1,0,ok,normal,SynMS
+sub,Take-away,formula,30,30,30,0,ok,misere,SynMS
+sub,Take-away,strategy,30,30,30,0,ok,misere,SynMS
+sub,Subtraction,formula,382,382,382,0,ok,misere,SynMS
+sub,Subtraction,strategy,382,382,382,0,ok,misere,SynMS
+sub,"S, D-MarkGame",formula,54,54,54,0,ok,misere,SynMS
+sub,"S, D-MarkGame",strategy,54,54,54,0,ok,misere,SynMS
+nim,Nim,formula,1,1,1,0,ok,misere,SynMS
+nim,Nim,strategy,1,1,1,0,ok,misere,SynMS
+nim,Small Nim,formula,7,7,7,0,ok,misere,SynMS
+nim,Small Nim,strategy,7,7,7,0,ok,misere,SynMS
+nim,Greedy Nim,formula,7,7,7,0,ok,misere,SynMS
+nim,Greedy Nim,strategy,6,6,6,0,ok,misere,SynMS
+nim,Odd-or-Even Nim,formula,5,5,5,0,ok,misere,SynMS
+nim,Odd-or-Even Nim,strategy,5,5,5,0,ok,misere,SynMS
+nim,Modular Nim,formula,2,2,2,0,ok,misere,SynMS
+nim,Modular Nim,strategy,2,2,2,0,ok,misere,SynMS
+nim,Pointed Nim,formula,4,4,4,0,ok,misere,SynMS
+nim,Pointed Nim,strategy,4,4,4,0,ok,misere,SynMS
+nim,End Nim,formula,7,7,7,0,ok,misere,SynMS
+nim,End Nim,strategy,7,7,7,0,ok,misere,SynMS
+nim,Loop End Nim,formula,7,7,7,0,ok,misere,SynMS
+nim,Loop End Nim,strategy,6,6,6,0,ok,misere,SynMS
+nim,Staircase Nim,formula,7,7,7,0,ok,misere,SynMS
+nim,Staircase Nim,strategy,7,7,7,0,ok,misere,SynMS
+nim,Circular Nim,formula,6,6,6,0,ok,misere,SynMS
+nim,Circular Nim,strategy,4,4,4,0,ok,misere,SynMS
+nim,Monotonic Nim,formula,5,5,5,0,ok,misere,SynMS
+nim,Monotonic Nim,strategy,5,5,5,0,ok,misere,SynMS
+nim,Empty and Transfer,formula,1,1,1,0,ok,misere,SynMS
+nim,Empty and Transfer,strategy,1,1,1,0,ok,misere,SynMS
+nim,Empty All But One,formula,0,0,0,0,ok,misere,SynMS
+nim,Empty All But One,strategy,0,0,0,0,ok,misere,SynMS
+nim,Empty and Redistribute,formula,2,2,2,0,ok,misere,SynMS
+nim,Empty and Redistribute,strategy,0,0,0,0,ok,misere,SynMS
+nim,Entropy Reduction Game,formula,1,1,1,0,ok,misere,SynMS
+nim,Entropy Reduction Game,strategy,0,0,0,0,ok,misere,SynMS
+nim,Min Game,formula,4,4,4,0,ok,misere,SynMS
+nim,Min Game,strategy,4,4,4,0,ok,misere,SynMS
+nim,l-Slow Nim,formula,15,15,15,0,ok,misere,SynMS
+nim,l-Slow Nim,strategy,9,9,9,0,ok,misere,SynMS
+nim,Sharing Nim,formula,4,4,4,0,ok,misere,SynMS
+nim,Sharing Nim,strategy,2,2,2,0,ok,misere,SynMS
+welter,Welter Game,formula,1,1,1,0,ok,misere,SynMS
+welter,Welter Game,strategy,1,1,1,0,ok,misere,SynMS
+welter,l-welter Game,formula,5,5,5,0,ok,misere,SynMS
+welter,l-welter Game,strategy,3,3,3,0,ok,misere,SynMS
+welter,Max-Welter Game,formula,1,1,1,0,ok,misere,SynMS
+welter,Max-Welter Game,strategy,1,1,1,0,ok,misere,SynMS
+wythoff,Wythoff,formula,19,19,19,0,ok,misere,SynMS
+wythoff,Wythoff,strategy,16,16,16,0,ok,misere,SynMS
+wythoff,l-Wythoffff Game,formula,123,123,123,0,ok,misere,SynMS
+wythoff,l-Wythoffff Game,strategy,102,102,102,0,ok,misere,SynMS
+wythoff,Monotonic_l_Diet_Game,formula,104,104,104,0,ok,misere,SynMS
+wythoff,Monotonic_l_Diet_Game,strategy,95,95,95,0,ok,misere,SynMS
+wythoff,Wythoff_game_with_subtraction_Game,formula,287,287,287,0,ok,misere,SynMS
+wythoff,Wythoff_game_with_subtraction_Game,strategy,266,266,266,0,ok,misere,SynMS
+wythoff,Wythoff_game_with_a_function_Game,formula,153,153,153,0,ok,misere,SynMS
+wythoff,Wythoff_game_with_a_function_Game,strategy,140,140,140,0,ok,misere,SynMS
+wythoff,st1_lm_restricted,formula,285,285,285,0,ok,misere,SynMS
+wythoff,st1_lm_restricted,strategy,264,264,264,0,ok,misere,SynMS
+wythoff,nd2_lm_restricted,formula,600,600,600,0,ok,misere,SynMS
+wythoff,nd2_lm_restricted,strategy,538,538,538,0,ok,misere,SynMS
+wythoff,rd3_lm_restricted,formula,588,588,588,0,ok,misere,SynMS
+wythoff,rd3_lm_restricted,strategy,499,499,499,0,ok,misere,SynMS
+wythoff,th4_lm_restricted,formula,532,532,532,0,ok,misere,SynMS
+wythoff,th4_lm_restricted,strategy,500,500,500,0,ok,misere,SynMS
+chomp,Chomp game,formula,2,2,2,0,ok,misere,SynMS
+chomp,Chomp game,strategy,1,1,1,0,ok,misere,SynMS
+chomp,L-shaped Chomp Game,formula,1,1,1,0,ok,misere,SynMS
+chomp,L-shaped Chomp Game,strategy,1,1,1,0,ok,misere,SynMS

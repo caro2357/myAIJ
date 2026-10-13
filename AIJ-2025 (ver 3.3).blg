@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: AIJ-2025 (ver 3.3).aux
+The style file: elsarticle-num-names.bst
+Database file #1: AIJ-2025.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--can't use both volume and number fields in FraP1975
+You've used 143 entries,
+            2918 wiz_defined-function locations,
+            1570 strings with 28970 characters,
+and the built_in function-call counts, 96613 in all, are:
+= -- 7358
+> -- 3093
+< -- 163
++ -- 1168
+- -- 1016
+* -- 10517
+:= -- 13057
+add.period$ -- 146
+call.type$ -- 143
+change.case$ -- 1052
+chr.to.int$ -- 142
+cite$ -- 144
+duplicate$ -- 7597
+empty$ -- 7691
+format.name$ -- 1446
+if$ -- 18563
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 1368
+newline$ -- 716
+num.names$ -- 574
+pop$ -- 2602
+preamble$ -- 1
+purify$ -- 1053
+quote$ -- 0
+skip$ -- 2387
+stack$ -- 0
+substring$ -- 5161
+swap$ -- 5415
+text.length$ -- 69
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1269
+warning$ -- 1
+while$ -- 744
+width$ -- 0
+write$ -- 1954
+(There was 1 warning)
